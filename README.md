@@ -29,8 +29,12 @@ entities:
 ### Icon set
 ![icon_preview](hue_icons.png)
 
+
+### Sample Dash (with view icons and state color applied)
+![lovelace_example](lovelace_example.png)
+
 ### Troubleshooting:
-If you cannot see the new icons, flush your network cache. 
+If you cannot see the new icons, or you get an empty box where you're expecting an icon, flush your network cache. 
 
 # Thanks and Props
 @hulkhaugen and @thomasloven for the technique.
