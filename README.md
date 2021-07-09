@@ -25,6 +25,9 @@ entities:
     icon: hue:wall_spot
 ```
 
+### Icon set
+![icon_preview](hue_icons.png)
+
 ### Troubleshooting:
 If you cannot see the new icons, flush your network cache. 
 
