@@ -5,7 +5,7 @@ Vector based icon pack for Home Assistant, inspired by the Hue icons. For person
 ## Installation
 
 ### Manual:
-- Copy `hass-hue-icons.js` into your config/www folder.
+- Copy `dist/hass-hue-icons.js` into your `config/www` folder.
 - Go to Configuration -> Lovelace Dashboards -> Resources -> Add Resource
 - set url as `/local/hass-hue-icons.js` and Resource Type as `Javascript Module`.
 - Save, restart Home Assistant.
