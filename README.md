@@ -11,8 +11,14 @@ Vector based icon pack for Home Assistant, inspired by the Hue icons. For person
 - Save, restart Home Assistant.
 
 ### HACS:
-- In progress...
+Hass-hue-icons is a custom repository for HACS. To install:
 
+- Go to HACS, Frontend.
+- Click the three dots
+- Choose custom repositories
+- For the custom repository URL, choose https://github.com/arallsopp/hass-hue-icons
+- For the category, choose Lovelace
+- Click Add.
 
 ## Usage
 - In your entity editor, specify an icon as `hue:icon_name` 
