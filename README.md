@@ -4,13 +4,17 @@ Vector based icon pack for Home Assistant, inspired by the Hue icons. For person
 
 ## Installation
 
+### Manual:
 - Copy `hass-hue-icons.js` into your config/www folder.
 - Go to Configuration -> Lovelace Dashboards -> Resources -> Add Resource
 - set url as `/local/hass-hue-icons.js` and Resource Type as `Javascript Module`.
 - Save, restart Home Assistant.
 
-## Usage
+### HACS:
+- In progress...
 
+
+## Usage
 - In your entity editor, specify an icon as `hue:icon_name` 
 - If you set `state_color: true` in your card, you'll see the icons get colorised based upon the current RGB setting.
 
@@ -27,11 +31,11 @@ entities:
 ```
 
 ### Icon set
-![icon_preview](hue_icons.png)
+![icon_preview](docs/hue_icons.png)
 
 
 ### Sample Dash (with view icons and state color applied)
-![lovelace_example](lovelace_example.png)
+![lovelace_example](docs/lovelace_example.png)
 
 ### Troubleshooting:
 If you cannot see the new icons, or you get an empty box where you're expecting an icon, flush your network cache. 
