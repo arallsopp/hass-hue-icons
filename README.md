@@ -39,8 +39,14 @@ entities:
 ### Icon set
 ![icon_preview](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/hue_icons.png)
 
+| Icon | Notes |
+| --- | --- |
+| ![hue:upstairs](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/upstairs.svg)| Based upon Hue icon in IOS App |
+| git diff | Show file differences that haven't been staged |
 
-### Sample Dash (with view icons and state color applied)
+
+### Sample Dash 
+With view icons and state color applied. Play bars are offline.
 ![lovelace_example](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/lovelace_example.png)
 
 ### Troubleshooting:
