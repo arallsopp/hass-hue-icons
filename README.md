@@ -55,7 +55,6 @@ Icons modelled upon the Hue iOS app for personal use
 | ![hue:ceiling_round](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/ceiling_round.svg)| hue:ceiling_round |
 | ![hue:ceiling_square](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/ceiling_square.svg)| hue:ceiling_square |
 | ![hue:desk_lamp](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/desk_lamp.svg)| hue:desk_lamp |
-| ![hue:device_dimmer](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/device_dimmer.svg)| hue:device_dimmer |
 | ![hue:dimmer_switch](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/dimmer_switch.svg)| hue:dimmer_switch |
 | ![hue:double_spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/double_spot.svg)| hue:double_spot |
 | ![hue:downstairs](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/downstairs.svg)| hue:downstairs |
