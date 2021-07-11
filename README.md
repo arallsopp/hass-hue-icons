@@ -42,31 +42,37 @@ entities:
 
 Icons modelled upon the Hue iOS app for personal use
 
+[//]: # (Start Hue Icons) 
+
 | Icon | Name 
 | :--- | :--- |
-| ![hue:upstairs](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/upstairs.svg)| hue:upstairs |
-| ![hue:downstairs](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/downstairs.svg)| hue:downstairs |
-| ![hue:ceiling_round](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/ceiling_round.svg)| hue:ceiling_round |
-| ![hue:ceiling_square](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/ceiling_square.svg)| hue:ceiling_square |
-| ![hue:pendant_long](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/pendant_long.svg)| hue:pendant_long |
-| ![hue:pendant_round](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/pendant_round.svg)| hue:pendant_round |
-| ![hue:play_bar](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/play_bar.svg)| hue:play_bar |
-| ![hue:double_spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/double_spot.svg)| hue:double_spot |
-| ![hue:wall_spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/wall_spot.svg)| hue:wall_spot |
+| ![hue:upstairs](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/upstairs.svg)| hue:upstairs |
+| ![hue:downstairs](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/downstairs.svg)| hue:downstairs |
+| ![hue:ceiling_round](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/ceiling_round.svg)| hue:ceiling_round |
+| ![hue:ceiling_square](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/ceiling_square.svg)| hue:ceiling_square |
+| ![hue:pendant_long](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/pendant_long.svg)| hue:pendant_long |
+| ![hue:pendant_round](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/pendant_round.svg)| hue:pendant_round |
+| ![hue:play_bar](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/play_bar.svg)| hue:play_bar |
+| ![hue:double_spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/double_spot.svg)| hue:double_spot |
+| ![hue:wall_spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/wall_spot.svg)| hue:wall_spot |
 
+[//]: # (End Hue Icons) 
 
 Icons designed by author
 
+[//]: # (Start Custom Icons) 
+
 | Icon | Name 
 | :--- | :--- |
-| ![hue:wall_flood](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/wall_flood.svg)| hue:wall_flood |
-| ![hue:amaze](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/amaze.svg)| hue:amaze | 
-| ![hue:pendant_long_up](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/pendant_long_up.svg)| hue:pendant_long_up |
+| ![hue:wall_flood](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall_flood.svg)| hue:wall_flood |
+| ![hue:amaze](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/amaze.svg)| hue:amaze | 
+| ![hue:pendant_long_up](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pendant_long_up.svg)| hue:pendant_long_up |
 
+[//]: # (End Custom Icons) 
 
 ### Sample Dash 
 With view icons and state color applied. Play bars are offline.
-![lovelace_example](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/lovelace_example.png)
+![lovelace_example](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/examples/lovelace_example.png)
 
 ### Troubleshooting:
 If you cannot see the new icons, or you get an empty box where you're expecting an icon, flush your network cache. 
