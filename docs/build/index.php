@@ -11,10 +11,41 @@
 
 
 ini_set('display_errors','on');
+
 $readme_file = '../../README.md';
+$script_file = '../../dist/hass-hue-icons.js';
+
 $hue_icons = read_files('../svgs/');
 $custom_icons = read_files('../custom_svgs/');
 update_readme($readme_file,$hue_icons,$custom_icons);
+update_script($script_file,$hue_icons,$custom_icons);
+
+
+
+function update_script($script_file,$hue_icons,$custom_icons){
+    $script = file_get_contents($script_file);
+
+    $re = '/const HUE_ICONS_MAP = {.*?};/s';
+    $subst = 'const HUE_ICONS_MAP = {' . PHP_EOL;
+
+    //do the hue icons
+    foreach ($hue_icons as $icon){
+        $subst .=  PHP_EOL . '  "' . $icon->name . '":' . PHP_EOL . '    "' . $icon->content . '", ' . PHP_EOL;
+    }
+    foreach ($custom_icons as $icon){
+        $subst .=  PHP_EOL . '  "' . $icon->name . '":' . PHP_EOL . '    "' . $icon->content . '", ' . PHP_EOL;
+    }
+
+    //lose the last comma
+    $subst = substr($subst,0,strlen($subst)-3);
+
+    $subst .= PHP_EOL . '};';
+    $script = preg_replace($re, $subst, $script);
+
+
+    echo '<pre>' . $script . '</pre>';
+    //file_put_contents($script_file,$script);
+}
 
 function update_readme($readme_file,$hue_icons,$custom_icons){
     $readme = file_get_contents($readme_file);
