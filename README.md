@@ -39,10 +39,6 @@ entities:
 ### Icon set
 ![icon_preview](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/hue_icons.png)
 
-| Icon | Notes |
-| --- | --- |
-| ![hue:upstairs](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/upstairs.svg)| Based upon Hue icon in IOS App |
-| git diff | Show file differences that haven't been staged |
 
 
 ### Sample Dash 
