@@ -47,7 +47,7 @@ Icons modelled upon the Hue iOS app for personal use
 | ![hue:upstairs](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/upstairs.svg)| hue:upstairs |
 | ![hue:downstairs](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/downstairs.svg)| hue:downstairs |
 | ![hue:ceiling_round](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/ceiling_round.svg)| hue:ceiling_round |
-| ![hue:ceiling_round](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/ceiling_square.svg)| hue:ceiling_square |
+| ![hue:ceiling_square](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/ceiling_square.svg)| hue:ceiling_square |
 | ![hue:pendant_long](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/pendant_long.svg)| hue:pendant_long |
 | ![hue:pendant_round](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/pendant_round.svg)| hue:pendant_round |
 | ![hue:play_bar](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/play_bar.svg)| hue:play_bar |
