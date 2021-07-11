@@ -37,11 +37,11 @@ entities:
 ```
 
 ### Icon set
-![icon_preview](https://github.com/arallsopp/hass-hue-icons/docs/hue_icons.png)
+![icon_preview](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/hue_icons.png)
 
 
 ### Sample Dash (with view icons and state color applied)
-![lovelace_example](https://github.com/arallsopp/hass-hue-icons/docs/lovelace_example.png)
+![lovelace_example](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/lovelace_example.png)
 
 ### Troubleshooting:
 If you cannot see the new icons, or you get an empty box where you're expecting an icon, flush your network cache. 
