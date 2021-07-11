@@ -44,7 +44,7 @@ function update_script($script_file,$hue_icons,$custom_icons){
 
 
     echo '<pre>' . $script . '</pre>';
-    //file_put_contents($script_file,$script);
+    file_put_contents($script_file,$script);
 }
 
 function update_readme($readme_file,$hue_icons,$custom_icons){
