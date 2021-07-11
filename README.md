@@ -56,11 +56,13 @@ Icons modelled upon the Hue iOS app for personal use
 | ![hue:ceiling_square](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/ceiling_square.svg)| hue:ceiling_square |
 | ![hue:desk_lamp](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/desk_lamp.svg)| hue:desk_lamp |
 | ![hue:device_dimmer](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/device_dimmer.svg)| hue:device_dimmer |
+| ![hue:dimmer_switch](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/dimmer_switch.svg)| hue:dimmer_switch |
 | ![hue:double_spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/double_spot.svg)| hue:double_spot |
 | ![hue:downstairs](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/downstairs.svg)| hue:downstairs |
 | ![hue:floor_lantern](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/floor_lantern.svg)| hue:floor_lantern |
 | ![hue:floor_shade](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/floor_shade.svg)| hue:floor_shade |
 | ![hue:floor_spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/floor_spot.svg)| hue:floor_spot |
+| ![hue:outdoor_motion_sensor](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/outdoor_motion_sensor.svg)| hue:outdoor_motion_sensor |
 | ![hue:pendant_long](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/pendant_long.svg)| hue:pendant_long |
 | ![hue:pendant_round](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/pendant_round.svg)| hue:pendant_round |
 | ![hue:play_bar](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/play_bar.svg)| hue:play_bar |
