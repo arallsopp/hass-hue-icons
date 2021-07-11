@@ -36,9 +36,6 @@ entities:
     icon: hue:wall_spot
 ```
 
-### Icon set
-![icon_preview](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/hue_icons.png)
-
 ### Hue Icons
 
 Icons modelled upon the Hue iOS app for personal use
