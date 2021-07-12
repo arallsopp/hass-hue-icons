@@ -97,6 +97,14 @@ Icons modelled upon the Hue iOS app for personal use
 | ![hue:room_office](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/room_office.svg)| hue:room_office |
 | ![hue:room_other](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/room_other.svg)| hue:room_other |
 | ![hue:room_outdoors](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/room_outdoors.svg)| hue:room_outdoors |
+| ![hue:room_pool](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/room_pool.svg)| hue:room_pool |
+| ![hue:room_porch](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/room_porch.svg)| hue:room_porch |
+| ![hue:room_recreation](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/room_recreation.svg)| hue:room_recreation |
+| ![hue:room_stairs](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/room_stairs.svg)| hue:room_stairs |
+| ![hue:room_storage](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/room_storage.svg)| hue:room_storage |
+| ![hue:room_studio](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/room_studio.svg)| hue:room_studio |
+| ![hue:room_terrace](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/room_terrace.svg)| hue:room_terrace |
+| ![hue:room_toilet](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/room_toilet.svg)| hue:room_toilet |
 | ![hue:single_spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/single_spot.svg)| hue:single_spot |
 | ![hue:table_shade](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/table_shade.svg)| hue:table_shade |
 | ![hue:table_wash](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/table_wash.svg)| hue:table_wash |
