@@ -34,6 +34,7 @@ function update_script($script_file,$hue_icons,$custom_icons){
     $script = preg_replace($re, $subst, $script);
 
 
+    echo '<hr/><em>Script</em>';
     echo '<pre>' . $script . '</pre>';
     file_put_contents($script_file,$script);
 }
@@ -62,12 +63,13 @@ function update_readme($readme_file,$hue_icons,$custom_icons){
     $subst .= PHP_EOL . PHP_EOL . '[//]: # (End Custom Icons)';
     $readme = preg_replace($re, $subst, $readme);
 
+    echo '<hr/><em>README.md</em>';
     echo '<pre>' . $readme . '</pre>';
     file_put_contents($readme_file,$readme);
 }
 
-function read_files($path) {
-    echo 'reading ' . $path;
+function read_files($path,$debug = false) {
+    echo 'reading <em>' . $path . '</em>';
     $items = [];
 
     $files = glob($path . '*.svg');
@@ -87,10 +89,23 @@ function read_files($path) {
             $item->name = $name;
             $item->content = $matches[0][1];
 
-            var_dump($item);
+            if($debug){
+                var_dump($item);
+            }
             array_push($items, $item);
         }
     }
+    echo ' found <em>' . sizeof($items) . '</em> icons</br>';
     return $items;
 }
 
+?>
+<style>
+    body{
+        font-family: monospace;
+    }
+    em{
+        font-style: normal;
+        color:red;
+    }
+</style>
