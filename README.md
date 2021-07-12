@@ -124,6 +124,7 @@ Icons designed by author
 | ![hue:amaze](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/amaze.svg)| hue:amaze |
 | ![hue:pendant_long_up](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pendant_long_up.svg)| hue:pendant_long_up |
 | ![hue:wall_flood](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall_flood.svg)| hue:wall_flood |
+| ![hue:wall_fuzo](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall_fuzo.svg)| hue:wall_fuzo |
 
 [//]: # (End Custom Icons) 
 
