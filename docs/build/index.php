@@ -1,14 +1,5 @@
 <?php
-//todo: iterate svgs folder.
-//read the line I want
-//add it to the readme table
-//add it to the js
-
-
-// read svgs
-// write to docs
-// write to js
-
+// Run this to regenerate the documentation and script from svgs in the svg and custom_svg folders
 
 ini_set('display_errors','on');
 
