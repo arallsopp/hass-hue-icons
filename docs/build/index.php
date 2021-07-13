@@ -6,12 +6,25 @@ ini_set('display_errors','on');
 $readme_file = '../../README.md';
 $script_file = '../../dist/hass-hue-icons.js';
 
+
+echo 'Version:' . find_version($script_file) . '<hr/>';
+
 $hue_icons = read_files('../svgs/');
 $custom_icons = read_files('../custom_svgs/');
 update_readme($readme_file,$hue_icons,$custom_icons);
 update_script($script_file,$hue_icons,$custom_icons);
 
 
+function find_version($script_file){
+
+    $script = file_get_contents($script_file);
+    $re = '/%c HASS-HUE-ICONS  \\\\n%c  Version (.*)`/m';
+
+    preg_match_all($re, $script, $matches, PREG_SET_ORDER, 0);
+
+    // Print the entire match result
+    return $matches[0][1];
+}
 
 function update_script($script_file,$hue_icons,$custom_icons){
     $script = file_get_contents($script_file);
