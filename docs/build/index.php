@@ -1,3 +1,8 @@
+<html>
+    <head>
+        <title>Build script</title>
+    </head>
+<body>
 <?php
 // Run this to regenerate the documentation and script from svgs in the svg and custom_svg folders
 
@@ -5,14 +10,18 @@ ini_set('display_errors','on');
 
 $readme_file = '../../README.md';
 $script_file = '../../dist/hass-hue-icons.js';
+$version = isset($_GET['v']) ? $_GET['v'] : null;
 
 
-echo 'Version:' . find_version($script_file) . '<hr/>';
+echo 'Was version:' . find_version($script_file) . '<hr/>';
+if(!is_null($version)){
+    echo 'New version:' . $version . '<hr/>';
+}
 
 $hue_icons = read_files('../svgs/');
 $custom_icons = read_files('../custom_svgs/');
 update_readme($readme_file,$hue_icons,$custom_icons);
-update_script($script_file,$hue_icons,$custom_icons);
+update_script($script_file,$hue_icons,$custom_icons,$version);
 
 
 function find_version($script_file){
@@ -26,7 +35,7 @@ function find_version($script_file){
     return $matches[0][1];
 }
 
-function update_script($script_file,$hue_icons,$custom_icons){
+function update_script($script_file,$hue_icons,$custom_icons,$version = null){
     $script = file_get_contents($script_file);
 
     $re = '/const HUE_ICONS_MAP = {.*?};/s';
@@ -46,6 +55,12 @@ function update_script($script_file,$hue_icons,$custom_icons){
     $subst .= PHP_EOL . '};';
     $script = preg_replace($re, $subst, $script);
 
+    if(!is_null($version)){
+        //write the version tag to the script
+        $re = '/HASS-HUE-ICONS  \\\\n%c  Version [0-9]+[.][0-9]+[.][0-9]+/m';
+        $subst = 'HASS-HUE-ICONS  \n%c  Version ' . $version;
+        $script = preg_replace($re, $subst, $script);
+    }
 
     echo '<hr/><em>Script</em>';
     echo '<pre>' . $script . '</pre>';
@@ -55,24 +70,35 @@ function update_script($script_file,$hue_icons,$custom_icons){
 function update_readme($readme_file,$hue_icons,$custom_icons){
     $readme = file_get_contents($readme_file);
 
-    $subst = '(Start Hue Icons)' . PHP_EOL . PHP_EOL . '| Icon | Name ' . PHP_EOL . '| :--- | :--- |';
+    $subst = '(Start Hue Icons)' . PHP_EOL . PHP_EOL . '| Icon | Name | Icon | Name ' . PHP_EOL . '| :--- | :--- | :--- | :--- |' ;
+    $new_row = true;
 
     //do the hue icons
-    $re = '/\(Start Hue Icons\).*\(End Hue Icons\)/s';
     foreach ($hue_icons as $icon){
-        $subst .=  PHP_EOL . '| ![hue:' . $icon->name . '](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/' . $icon->name . '.svg)| hue:' . $icon->name . ' |';
+        $subst .=  ($new_row ? PHP_EOL . '|' : '') . ' ![hue:' . $icon->name . '](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/' . $icon->name . '.svg)| hue:' . $icon->name . ' |';
+        $new_row = !$new_row;
     }
+    $re = '/\(Start Hue Icons\).*\(End Hue Icons\)/s';
     $subst .= PHP_EOL . PHP_EOL . '[//]: # (End Hue Icons)';
     $readme = preg_replace($re, $subst, $readme);
+    if(!$new_row){
+        $subst .= '| |';
+    }
 
 
-    $subst = '(Start Custom Icons)' . PHP_EOL . PHP_EOL . '| Icon | Name ' . PHP_EOL . '| :--- | :--- |';
+    $subst = '(Start Custom Icons)' . PHP_EOL . PHP_EOL . '| Icon | Name | Icon | Name ' . PHP_EOL . '| :--- | :--- | :--- | :--- |' ;
+    $new_row = true;
 
     //do the custom icons
-    $re = '/\(Start Custom Icons\).*\(End Custom Icons\)/s';
     foreach ($custom_icons as $icon){
-        $subst .=  PHP_EOL . '| ![hue:' . $icon->name . '](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/' . $icon->name . '.svg)| hue:' . $icon->name . ' |';
+        $subst .=  ($new_row ? PHP_EOL . '|' : '') . ' ![hue:' . $icon->name . '](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/' . $icon->name . '.svg)| hue:' . $icon->name . ' |';
+        $new_row = !$new_row;
     }
+    if(!$new_row){
+        $subst .= '| |';
+    }
+
+    $re = '/\(Start Custom Icons\).*\(End Custom Icons\)/s';
     $subst .= PHP_EOL . PHP_EOL . '[//]: # (End Custom Icons)';
     $readme = preg_replace($re, $subst, $readme);
 
@@ -122,3 +148,5 @@ function read_files($path,$debug = false) {
         color:red;
     }
 </style>
+</body>
+</html>
