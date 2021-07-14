@@ -1,9 +1,9 @@
 ---
 name: Feature request (except custom icons)
-about: Suggest an idea for this project
+about: Suggest an idea for hass-hue-icons
 title: ''
-labels: ''
-assignees: ''
+labels: enhancement
+assignees: arallsopp
 
 ---
 

@@ -2,8 +2,8 @@
 name: Custom Icon request
 about: Request a custom icon for hass-hue-icons
 title: ''
-labels: ''
-assignees: ''
+labels: icon request
+assignees: arallsopp
 
 ---
 
