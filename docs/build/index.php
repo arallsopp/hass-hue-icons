@@ -10,18 +10,27 @@ ini_set('display_errors','on');
 
 $readme_file = '../../README.md';
 $script_file = '../../dist/hass-hue-icons.js';
-$version = isset($_GET['v']) ? $_GET['v'] : null;
+$new_version = isset($_GET['v']) ? $_GET['v'] : null;
+$version = find_version($script_file);
 
 
-echo 'Was version:' . find_version($script_file) . '<hr/>';
-if(!is_null($version)){
-    echo 'New version:' . $version . '<hr/>';
+// handle versioning
+$version_components = explode('.',$version);
+echo 'Was version:' . $version;
+if(!is_null($new_version)){
+    echo '<br/>This version:' . $new_version;
+    $version_components = explode('.',$new_version);
 }
+
+$version_components[2] = intval($version_components[2]) + 1;
+$incremented_version = join('.',$version_components);
+echo '<br/><a href="?v=' . $incremented_version  . '">Increment to version ' . $incremented_version . '</a><hr/>';
+
 
 $hue_icons = read_files('../svgs/');
 $custom_icons = read_files('../custom_svgs/');
 update_readme($readme_file,$hue_icons,$custom_icons);
-update_script($script_file,$hue_icons,$custom_icons,$version);
+update_script($script_file,$hue_icons,$custom_icons,$new_version);
 
 
 function find_version($script_file){
