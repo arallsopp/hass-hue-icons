@@ -1,6 +1,7 @@
 # hass-hue-icons
 
-Vector based icon pack for Home Assistant, inspired by the Hue icons. For personal use only.
+Vector based icon pack for Home Assistant, inspired by the Hue icons. For personal use only. 
+Includes custom vectors for hue fixtures that were created for this repo, alone.
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
 
@@ -115,7 +116,7 @@ Icons modelled upon the Hue iOS app for personal use
 
 [//]: # (End Hue Icons) 
 
-Icons designed by author
+Icons designed by author for specific hue fixtures. 
 
 [//]: # (Start Custom Icons)
 
