@@ -1,0 +1,19 @@
+---
+name: Custom Icon request
+about: Request a custom icon for hass-hue-icons
+title: ''
+labels: ''
+assignees: ''
+
+---
+
+_If there is a specific hue fixture or bulb that you want an icon for, let me know and I will try to create it for you and add it to this pack._
+
+**What is the specific model of hue fixture/bulb that you want an icon for**
+A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+
+**Provide a URL that points to an image of this fixture/bulb**
+Preferably Philips' photography, as they use a consistent angle.
+
+**Additional context**
+Add any other context for your icon request here.
