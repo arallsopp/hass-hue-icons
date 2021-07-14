@@ -36,7 +36,7 @@ type: entities
 entities:
   - entity: light.my_wall_light
     name: My Wall Light
-    icon: hue:wall_spot
+    icon: hue:wall-spot
 ```
 
 ### Hue Icons
