@@ -100,6 +100,9 @@ Icons designed by author for specific hue fixtures.
 
 [//]: # (End Custom Icons) 
 
+Your light not there? Let me know what's missing by raising a [Custom Icon Request](https://github.com/arallsopp/hass-hue-icons/issues/new?assignees=arallsopp&labels=icon+request&template=custom-icon-request.md&title=).
+
+
 ### Sample Dash 
 With view icons and state color applied. Play bars are offline.
 ![lovelace_example](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/examples/lovelace_example.png)
