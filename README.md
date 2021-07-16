@@ -102,6 +102,7 @@ Icons designed by author for specific hue fixtures.
 
 [//]: # (End Custom Icons) 
 
+### Icon Requests?
 Your light not there? Let me know what's missing by raising a [Custom Icon Request](https://github.com/arallsopp/hass-hue-icons/issues/new?assignees=arallsopp&labels=icon+request&template=custom-icon-request.md&title=).
 
 
@@ -114,6 +115,9 @@ With view icons and state color applied. Play bars are offline.
 Prior to v1.0.9, the icons glyphs were identified with underscores rather than dashes. 
 For standards adhesion with HomeAssistant, the preferred names are now dash separated, eg. `hue:wall-spot`.
 To maintain backwards compatibility, all old names still work, so `hue:wall-spot` and `hue:wall_spot` can be used interchangeably.
+
+### Discussion:
+There's a thread over at the [home assistant forums](https://community.home-assistant.io/t/created-custom-colorizable-hue-icons-as-a-lovelace-resource) that tracks this repo.
 
 ### Troubleshooting:
 If you cannot see the new icons, or you get an empty box where you're expecting an icon, flush your network cache. 
