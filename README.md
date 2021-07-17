@@ -91,6 +91,8 @@ Icons designed by author for specific hue fixtures.
 | Icon | Name | Icon | Name 
 | :--- | :--- | :--- | :--- |
 | ![hue:amarant](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/amarant.svg)| hue:amarant | ![hue:amaze](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/amaze.svg)| hue:amaze |
+| ![hue:beyond-down](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/beyond-down.svg)| hue:beyond-down | ![hue:beyond-solid](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/beyond-solid.svg)| hue:beyond-solid |
+| ![hue:beyond-up](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/beyond-up.svg)| hue:beyond-up | ![hue:beyond](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/beyond.svg)| hue:beyond |
 | ![hue:bulb-filament-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-filament-alt.svg)| hue:bulb-filament-alt | ![hue:centris-three](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/centris-three.svg)| hue:centris-three |
 | ![hue:centris-two](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/centris-two.svg)| hue:centris-two | ![hue:centris](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/centris.svg)| hue:centris |
 | ![hue:lily-xl](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily-xl.svg)| hue:lily-xl | ![hue:pendant-long-up](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pendant-long-up.svg)| hue:pendant-long-up |
