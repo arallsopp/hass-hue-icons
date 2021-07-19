@@ -321,7 +321,7 @@ if (!window.frontendVersion || window.frontendVersion < 20200519.0) {
 }
 
 console.info(
-    `%c HASS-HUE-ICONS  \n%c  Version 1.0.30    `,
+    `%c HASS-HUE-ICONS  \n%c  Version 1.0.31    `,
     "color: orange; font-weight: bold; background: black",
     "color: white; font-weight: bold; background: dimgray",
 );
