@@ -3,9 +3,20 @@
 Vector based icon pack for Home Assistant, inspired by the Hue icons. For personal use only. 
 Includes custom vectors for hue fixtures that were created for this repo, alone.
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
+[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
 
 ## Installation
+
+Hass-hue-icons has been accepted into the [Home Assistant Community Store (HACS)](https://hacs.xyz). 
+
+### HACS (Recommended):
+This is the recommended way to install hass-hue-icons. Hass-hue-icons is a default repository for HACS. To install:
+
+- Load HACS (installation instructions are [here](https://hacs.xyz/docs/installation/installation/).
+- Select 'Frontend' to see the list of front end plugins and repositories.
+- Click the '+ Explore & Add repositories' button.
+- Type 'hass hue icons' into the search bar and click the row returned.
+- Click 'Install this repository in HACS' from the resulting dialog. 
 
 ### Manual:
 - Copy `dist/hass-hue-icons.js` into your `config/www` folder.
@@ -13,15 +24,6 @@ Includes custom vectors for hue fixtures that were created for this repo, alone.
 - set url as `/local/hass-hue-icons.js` and Resource Type as `Javascript Module`.
 - Save, restart Home Assistant.
 
-### HACS:
-Hass-hue-icons is a custom repository for HACS. To install:
-
-- Go to HACS, Frontend.
-- Click the three dots
-- Choose custom repositories
-- For the custom repository URL, choose https://github.com/arallsopp/hass-hue-icons
-- For the category, choose Lovelace
-- Click Add.
 
 ## Usage
 - In your entity editor, specify an icon as `hue:icon-name` 
@@ -38,6 +40,8 @@ entities:
     name: My Wall Light
     icon: hue:wall-spot
 ```
+
+## Icons
 
 ### Hue Icons
 
@@ -84,7 +88,8 @@ Icons modelled upon the Hue iOS app for personal use
 
 [//]: # (End Hue Icons) 
 
-Icons designed by author for specific hue fixtures. 
+### User Requested Hue Icons
+hass-hue-icons includes several icons designed by author for specific hue fixtures that aren't represented by the 'official' icon set. 
 
 [//]: # (Start Custom Icons)
 
