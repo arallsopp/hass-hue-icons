@@ -5,7 +5,7 @@ Includes custom vectors for hue fixtures that were created for this repo, alone.
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
 
-## Installation
+## <a name="installation"></a>Installation
 
 Hass-hue-icons has been accepted into the [Home Assistant Community Store (HACS)](https://hacs.xyz). 
 
@@ -17,11 +17,24 @@ This is the recommended way to install hass-hue-icons. Hass-hue-icons is a defau
 - Click the '+ Explore & Add repositories' button.
 - Type 'hass hue icons' into the search bar and click the row returned.
 - Click 'Install this repository in HACS' from the resulting dialog. 
+- Add the following to your configuration.yaml, save and restart HA.
+```
+frontend:
+  extra_module_url:
+    - /hacsfiles/hass-hue-icons/hass-hue-icons.js
+```
 
 ### Manual:
 - Copy `dist/hass-hue-icons.js` into your `config/www` folder.
 - Go to Configuration -> Lovelace Dashboards -> Resources -> Add Resource
 - set url as `/local/hass-hue-icons.js` and Resource Type as `Javascript Module`.
+- Add the following to your configuration.yaml, save and restart HA.
+```
+frontend:
+  extra_module_url:
+    - /local/hass-hue-icons.js
+```
+
 - Save, restart Home Assistant.
 
 
@@ -136,8 +149,15 @@ To maintain backwards compatibility, all old names still work, so `hue:wall-spot
 ### Discussion:
 There's a thread over at the [home assistant forums](https://community.home-assistant.io/t/created-custom-colorizable-hue-icons-as-a-lovelace-resource) that tracks this repo.
 
-### Troubleshooting:
+## Troubleshooting:
+
+### Can't ever see the icons?
 If you cannot see the new icons, or you get an empty box where you're expecting an icon, flush your network cache. 
 
+### Icons don't show on first load of the dash?
+Did you add the frontend extra_module_url in your configuration.yaml? See the [installation section](#installation) for details.
+
+ 
 # Thanks and Props
 @hulkhaugen and @thomasloven for the technique.
+@ludeeus for the installation guidance.
