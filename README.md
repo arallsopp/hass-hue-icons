@@ -103,7 +103,7 @@ hass-hue-icons includes 69 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons) 
 
 ### User Requested Hue Icons
-hass-hue-icons includes 57 custom icons designed by author for specific hue fixtures that aren't represented by the 'official' icon set. 
+hass-hue-icons includes 59 custom icons designed by author for specific hue fixtures that aren't represented by the 'official' icon set. 
 
 [//]: # (Start Custom Icons)
 
@@ -116,6 +116,7 @@ hass-hue-icons includes 57 custom icons designed by author for specific hue fixt
 | ![hue:bulb-group-filament-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-filament-alt.svg)| hue:bulb-group-filament-alt | ![hue:bulb-group-filament-candle](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-filament-candle.svg)| hue:bulb-group-filament-candle |
 | ![hue:bulb-group-filament-filament-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-filament-filament-alt.svg)| hue:bulb-group-filament-filament-alt | ![hue:bulb-group-filament-spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-filament-spot.svg)| hue:bulb-group-filament-spot |
 | ![hue:bulb-group-filament-sultan](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-filament-sultan.svg)| hue:bulb-group-filament-sultan | ![hue:bulb-group-filament](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-filament.svg)| hue:bulb-group-filament |
+| ![hue:bulb-group-lightstrip-v](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-lightstrip-v.svg)| hue:bulb-group-lightstrip-v | ![hue:bulb-group-lightstrip](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-lightstrip.svg)| hue:bulb-group-lightstrip |
 | ![hue:bulb-group-spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-spot.svg)| hue:bulb-group-spot | ![hue:button](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/button.svg)| hue:button |
 | ![hue:ceiling-fair](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-fair.svg)| hue:ceiling-fair | ![hue:ceiling-rect](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-rect.svg)| hue:ceiling-rect |
 | ![hue:ceiling-still](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-still.svg)| hue:ceiling-still | ![hue:centris-three](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/centris-three.svg)| hue:centris-three |
