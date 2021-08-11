@@ -1,7 +1,8 @@
 <svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 24 24"
-  height="24px"
-  width="24px">
-  <path d="M15.1,8l0.1,14l-4.4,0.7l-1.8-0.2v-14l3.7-0.8l0,0l0.2-6.4l0.6-0.1l1.8,0.2L15.1,8z"/>
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    height="24px"
+    width="24px">
+    <path d="M15.1,11.2l0.1,11L10.7,23l-1.8-0.2V11.9l3.7-0.8l0,0l1.1-9.9l0.6-0.1l1.8,0.2L15.1,11.2z"/>
 </svg>
+
