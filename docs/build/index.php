@@ -111,6 +111,19 @@ function update_readme($readme_file,$hue_icons,$custom_icons){
     $subst .= PHP_EOL . PHP_EOL . '[//]: # (End Custom Icons)';
     $readme = preg_replace($re, $subst, $readme);
 
+    // update the icon counts
+    $re = '/(hass-hue-icons includes) (\d+) (Hue icons)/';
+    $subst = '$1 ' . sizeof($hue_icons) . ' $3';
+    $readme = preg_replace($re, $subst, $readme, 1);
+
+    // update the icon counts
+    $re = '/(hass-hue-icons includes) (\d+) (custom icons)/';
+    $subst = '$1 ' . sizeof($custom_icons) . ' $3';
+    $readme = preg_replace($re, $subst, $readme, 1);
+
+
+
+
     echo '<hr/><em>README.md</em>';
     echo '<pre>' . $readme . '</pre>';
     file_put_contents($readme_file,$readme);
