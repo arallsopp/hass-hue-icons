@@ -104,7 +104,7 @@ hass-hue-icons includes 69 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons) 
 
 ### User Requested Hue Icons
-hass-hue-icons includes 65 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. 
+hass-hue-icons includes 67 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. 
 
 [//]: # (Start Custom Icons)
 
@@ -123,6 +123,7 @@ hass-hue-icons includes 65 custom icons designed by the author for specific hue 
 | ![hue:ceiling-fair](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-fair.svg)| hue:ceiling-fair | ![hue:ceiling-rect](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-rect.svg)| hue:ceiling-rect |
 | ![hue:ceiling-still](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-still.svg)| hue:ceiling-still | ![hue:centris-three](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/centris-three.svg)| hue:centris-three |
 | ![hue:centris-two](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/centris-two.svg)| hue:centris-two | ![hue:centris](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/centris.svg)| hue:centris |
+| ![hue:centura-round](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/centura-round.svg)| hue:centura-round | ![hue:centura](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/centura.svg)| hue:centura |
 | ![hue:daylo-wall](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/daylo-wall.svg)| hue:daylo-wall | ![hue:gradient-lightstrip-wrap](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/gradient-lightstrip-wrap.svg)| hue:gradient-lightstrip-wrap |
 | ![hue:gradient-lightstrip](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/gradient-lightstrip.svg)| hue:gradient-lightstrip | ![hue:liane](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/liane.svg)| hue:liane |
 | ![hue:lightstrip-tv-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lightstrip-tv-alt.svg)| hue:lightstrip-tv-alt | ![hue:lightstrip-tv](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lightstrip-tv.svg)| hue:lightstrip-tv |
