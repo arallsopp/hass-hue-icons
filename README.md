@@ -104,7 +104,7 @@ hass-hue-icons includes 69 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons) 
 
 ### User Requested Hue Icons
-hass-hue-icons includes 70 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. 
+hass-hue-icons includes 72 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. 
 
 [//]: # (Start Custom Icons)
 
@@ -135,6 +135,7 @@ hass-hue-icons includes 70 custom icons designed by the author for specific hue 
 | ![hue:plug-uk](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/plug-uk.svg)| hue:plug-uk | ![hue:sana](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/sana.svg)| hue:sana |
 | ![hue:signe](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/signe.svg)| hue:signe | ![hue:socket-eu](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/socket-eu.svg)| hue:socket-eu |
 | ![hue:socket-uk](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/socket-uk.svg)| hue:socket-uk | ![hue:socket-us](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/socket-us.svg)| hue:socket-us |
+| ![hue:sync-box-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/sync-box-alt.svg)| hue:sync-box-alt | ![hue:sync-box](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/sync-box.svg)| hue:sync-box |
 | ![hue:tap](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/tap.svg)| hue:tap | ![hue:wall-appear](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-appear.svg)| hue:wall-appear |
 | ![hue:wall-attract](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-attract.svg)| hue:wall-attract | ![hue:wall-econic-lantern-base](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-econic-lantern-base.svg)| hue:wall-econic-lantern-base |
 | ![hue:wall-econic-lantern-top](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-econic-lantern-top.svg)| hue:wall-econic-lantern-top | ![hue:wall-econic-lantern](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-econic-lantern.svg)| hue:wall-econic-lantern |
