@@ -198,6 +198,9 @@ Did you add the frontend extra_module_url in your configuration.yaml? See the [i
 @hulkhaugen and @thomasloven for the technique.
 @ludeeus for the installation guidance.
 
+## Stargazers
+[![Stargazers repo roster for @arallsopp/hass-hue-icons](https://reporoster.com/stars/arallsopp/hass-hue-icons)](https://github.com/arallsopp/hass-hue-icons/stargazers)
+
 ---
 
 ###License
