@@ -196,13 +196,16 @@ If you cannot see the new icons, or you get an empty box where you're expecting 
 Did you add the frontend extra_module_url in your configuration.yaml? See the [installation section](#installation) for details.
 
  
-# Thanks and Props
+## Thanks and Props
 @hulkhaugen and @thomasloven for the technique.
 @ludeeus for the installation guidance.
 
+### Stargazers
+[![Stargazers repo roster for @arallsopp/hass-hue-icons](https://reporoster.com/stars/arallsopp/hass-hue-icons)](https://github.com/arallsopp/hass-hue-icons/stargazers)
+
 ---
 
-###License
+### License
 
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
