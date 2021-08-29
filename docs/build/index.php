@@ -26,12 +26,29 @@ $version_components[2] = intval($version_components[2]) + 1;
 $incremented_version = join('.',$version_components);
 echo '<br/><a href="?v=' . $incremented_version  . '">Increment to version ' . $incremented_version . '</a><hr/>';
 
+get_latest_icons_for_comment('../custom_svgs/');
 
 $hue_icons = read_files('../svgs/');
 $custom_icons = read_files('../custom_svgs/');
 update_readme($readme_file,$hue_icons,$custom_icons);
 update_script($script_file,$hue_icons,$custom_icons,$new_version);
 
+
+function get_latest_icons_for_comment($path,$limit = 5){
+    $files = glob($path . '*.svg');
+    $count = 0;
+    usort($files, function($a, $b) {
+        return filemtime($b) - filemtime($a);
+    });
+
+    foreach ($files as $file){
+        if($count++ > $limit) return;
+
+        echo '<pre>| Icon | Name |' . PHP_EOL . '| :--- | :--- |' . PHP_EOL .
+             '| ![hue:' . basename($file,'.svg') . '](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/' . basename($file) . ')| hue:' . basename($file,'.svg') . '|' . PHP_EOL .  PHP_EOL . '</pre>';
+
+    }
+}
 
 function find_version($script_file){
 
