@@ -111,7 +111,7 @@ hass-hue-icons includes 69 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons) 
 
 ### User Requested Hue Icons
-hass-hue-icons includes 104 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. 
+hass-hue-icons includes 106 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. 
 
 [//]: # (Start Custom Icons)
 
@@ -147,6 +147,7 @@ hass-hue-icons includes 104 custom icons designed by the author for specific hue
 | ![hue:friends-of-hue-arke-round](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/friends-of-hue-arke-round.svg)| hue:friends-of-hue-arke-round | ![hue:friends-of-hue-arke](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/friends-of-hue-arke.svg)| hue:friends-of-hue-arke |
 | ![hue:friends-of-hue-eikon](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/friends-of-hue-eikon.svg)| hue:friends-of-hue-eikon | ![hue:friends-of-hue-senic](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/friends-of-hue-senic.svg)| hue:friends-of-hue-senic |
 | ![hue:gradient-lightstrip-wrap](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/gradient-lightstrip-wrap.svg)| hue:gradient-lightstrip-wrap | ![hue:gradient-lightstrip](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/gradient-lightstrip.svg)| hue:gradient-lightstrip |
+| ![hue:gradient-tube-long](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/gradient-tube-long.svg)| hue:gradient-tube-long | ![hue:gradient-tube-short](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/gradient-tube-short.svg)| hue:gradient-tube-short |
 | ![hue:liane](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/liane.svg)| hue:liane | ![hue:lightstrip-tv-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lightstrip-tv-alt.svg)| hue:lightstrip-tv-alt |
 | ![hue:lightstrip-tv](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lightstrip-tv.svg)| hue:lightstrip-tv | ![hue:lightstrip-wrap](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lightstrip-wrap.svg)| hue:lightstrip-wrap |
 | ![hue:lily-xl](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily-xl.svg)| hue:lily-xl | ![hue:pedestal-econic](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pedestal-econic.svg)| hue:pedestal-econic |
