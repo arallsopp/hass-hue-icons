@@ -111,7 +111,7 @@ hass-hue-icons includes 69 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons) 
 
 ### User Requested Hue Icons
-hass-hue-icons includes 106 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. 
+hass-hue-icons includes 108 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. 
 
 [//]: # (Start Custom Icons)
 
@@ -157,6 +157,7 @@ hass-hue-icons includes 106 custom icons designed by the author for specific hue
 | ![hue:play-bar-two](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-two.svg)| hue:play-bar-two | ![hue:play-bar-v-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-v-alt.svg)| hue:play-bar-v-alt |
 | ![hue:play-bar-v](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-v.svg)| hue:play-bar-v | ![hue:plug-eu](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/plug-eu.svg)| hue:plug-eu |
 | ![hue:plug-uk](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/plug-uk.svg)| hue:plug-uk | ![hue:sana](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/sana.svg)| hue:sana |
+| ![hue:signe-gradient-floor](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/signe-gradient-floor.svg)| hue:signe-gradient-floor | ![hue:signe-gradient-table](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/signe-gradient-table.svg)| hue:signe-gradient-table |
 | ![hue:signe](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/signe.svg)| hue:signe | ![hue:socket-eu](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/socket-eu.svg)| hue:socket-eu |
 | ![hue:socket-uk](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/socket-uk.svg)| hue:socket-uk | ![hue:socket-us](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/socket-us.svg)| hue:socket-us |
 | ![hue:sync-box-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/sync-box-alt.svg)| hue:sync-box-alt | ![hue:sync-box](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/sync-box.svg)| hue:sync-box |
