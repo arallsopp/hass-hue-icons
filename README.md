@@ -1,7 +1,7 @@
 # hass-hue-icons
 
 Additional vector icons for Home Assistant, to better represent Philips Hue bulbs and fixtures. 
-Inspired by the Hue icons in the iOS app, and for personal use only, this repo also includes custom vectors for Hue 
+Inspired by the Hue icons in the iOS app, and for personal use only, this repo also features custom vectors created specifically by the author for Hue 
 fixtures and groups that aren't represented by the 'official' icon set.
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
@@ -180,7 +180,7 @@ hass-hue-icons includes 117 custom icons designed by the author for specific hue
 [//]: # (End Custom Icons) 
 
 ### Icon Requests?
-Your light not there? Let me know what's missing by raising a [Custom Icon Request](https://github.com/arallsopp/hass-hue-icons/issues/new?assignees=arallsopp&labels=icon+request&template=custom-icon-request.md&title=).
+Your light not there? Let me know what's missing by raising a [Custom Icon Request](https://github.com/arallsopp/hass-hue-icons/issues/new?assignees=arallsopp&labels=icon+request&template=custom-icon-request.md&title=Icon%20Request%20%5Bname%20of%20fixture%5D).
 
 
 ### Sample Dash 
@@ -206,8 +206,9 @@ Did you add the frontend extra_module_url in your configuration.yaml? See the [i
 
  
 ## Thanks and Props
-@hulkhaugen and @thomasloven for the technique.
-@ludeeus for the installation guidance.
+- @hulkhaugen and @thomasloven for the technique.
+- @ludeeus for the installation guidance.
+- Everyone who has helped make this repo so broad by raising an [Icon Request](https://github.com/arallsopp/hass-hue-icons/issues/new?assignees=arallsopp&labels=icon+request&template=custom-icon-request.md&title=Icon%20Request%20%5Bname%20of%20fixture%5D).
 
 ### Stargazers
 [![Stargazers repo roster for @arallsopp/hass-hue-icons](https://reporoster.com/stars/arallsopp/hass-hue-icons)](https://github.com/arallsopp/hass-hue-icons/stargazers)
