@@ -111,7 +111,7 @@ hass-hue-icons includes 69 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons) 
 
 ### User Requested Hue Icons
-hass-hue-icons includes 117 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. 
+hass-hue-icons includes 119 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. 
 
 [//]: # (Start Custom Icons)
 
@@ -131,7 +131,8 @@ hass-hue-icons includes 117 custom icons designed by the author for specific hue
 | ![hue:bulb-group-filament-sultan](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-filament-sultan.svg)| hue:bulb-group-filament-sultan | ![hue:bulb-group-filament](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-filament.svg)| hue:bulb-group-filament |
 | ![hue:bulb-group-lightstrip-v](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-lightstrip-v.svg)| hue:bulb-group-lightstrip-v | ![hue:bulb-group-lightstrip](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-lightstrip.svg)| hue:bulb-group-lightstrip |
 | ![hue:bulb-group-spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-spot.svg)| hue:bulb-group-spot | ![hue:bulb-group-sultan-lightstrip-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-sultan-lightstrip-off.svg)| hue:bulb-group-sultan-lightstrip-off |
-| ![hue:bulb-group-sultan-lightstrip](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-sultan-lightstrip.svg)| hue:bulb-group-sultan-lightstrip | ![hue:bulb-par-38](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-par-38.svg)| hue:bulb-par-38 |
+| ![hue:bulb-group-sultan-lightstrip](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-sultan-lightstrip.svg)| hue:bulb-group-sultan-lightstrip | ![hue:bulb-group-sultan-spot-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-sultan-spot-off.svg)| hue:bulb-group-sultan-spot-off |
+| ![hue:bulb-group-sultan-spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-sultan-spot.svg)| hue:bulb-group-sultan-spot | ![hue:bulb-par-38](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-par-38.svg)| hue:bulb-par-38 |
 | ![hue:button](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/button.svg)| hue:button | ![hue:ceiling-buratto-four](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-buratto-four.svg)| hue:ceiling-buratto-four |
 | ![hue:ceiling-buratto-three](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-buratto-three.svg)| hue:ceiling-buratto-three | ![hue:ceiling-buratto-two](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-buratto-two.svg)| hue:ceiling-buratto-two |
 | ![hue:ceiling-buratto](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-buratto.svg)| hue:ceiling-buratto | ![hue:ceiling-cher-semiflush](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-cher-semiflush.svg)| hue:ceiling-cher-semiflush |
