@@ -216,8 +216,15 @@ Did you add the frontend extra_module_url in your configuration.yaml? See the [i
 
 ---
 
+## Want to use these icons on your physical wall switches and push buttons? 
+www.unikkontakt.dk has been given rights to use the custom hass-hue icons in their icon database, allowing you to create unique, beautiful and functional overprinted switches that reflect your smart home.
+
+Ønsker du at bruge disse ikoner på dine fysiske kontakter og trykknapper? 
+www.unikkontakt.dk er blevet tildelt rettigheder til at bruge custom hass-hue ikonerne i deres ikon-database, som gør det muligt for dig at designe unikke, flotte og funktionelle kontakter med printede ikoner, som matcher dit smart home.
+
 ### License
 
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 I do this for fun and to give back to the community without charge. You may remix, tweak, and build upon this work non-commercially, as long as you credit the original author and license your new creations under identical terms. 
+
