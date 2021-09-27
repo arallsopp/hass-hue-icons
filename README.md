@@ -111,7 +111,7 @@ hass-hue-icons includes 69 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons) 
 
 ### User Requested Hue Icons
-hass-hue-icons includes 138 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
+hass-hue-icons includes 139 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
 
 [//]: # (Start Custom Icons)
 
@@ -181,11 +181,12 @@ hass-hue-icons includes 138 custom icons designed by the author for specific hue
 | ![hue:wall-econic-lantern](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-econic-lantern.svg)| hue:wall-econic-lantern | ![hue:wall-econic](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-econic.svg)| hue:wall-econic |
 | ![hue:wall-flood](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-flood.svg)| hue:wall-flood | ![hue:wall-fuzo-h](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-fuzo-h.svg)| hue:wall-fuzo-h |
 | ![hue:wall-fuzo](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-fuzo.svg)| hue:wall-fuzo | ![hue:wall-impress-narrow](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-impress-narrow.svg)| hue:wall-impress-narrow |
-| ![hue:wall-impress](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-impress.svg)| hue:wall-impress | ![hue:wall-lucca-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-lucca-alt.svg)| hue:wall-lucca-alt |
-| ![hue:wall-lucca](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-lucca.svg)| hue:wall-lucca | ![hue:wall-nyro](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-nyro.svg)| hue:wall-nyro |
-| ![hue:wall-resonate](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-resonate.svg)| hue:wall-resonate | ![hue:wall-tuar](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-tuar.svg)| hue:wall-tuar |
-| ![hue:wall-turaco](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-turaco.svg)| hue:wall-turaco | ![hue:wellner-solid](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wellner-solid.svg)| hue:wellner-solid |
-| ![hue:wellner](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wellner.svg)| hue:wellner | ![hue:wellness](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wellness.svg)| hue:wellness |
+| ![hue:wall-impress](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-impress.svg)| hue:wall-impress | ![hue:wall-lucca-alt-below](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-lucca-alt-below.svg)| hue:wall-lucca-alt-below |
+| ![hue:wall-lucca-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-lucca-alt.svg)| hue:wall-lucca-alt | ![hue:wall-lucca](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-lucca.svg)| hue:wall-lucca |
+| ![hue:wall-nyro](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-nyro.svg)| hue:wall-nyro | ![hue:wall-resonate](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-resonate.svg)| hue:wall-resonate |
+| ![hue:wall-tuar](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-tuar.svg)| hue:wall-tuar | ![hue:wall-turaco](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wall-turaco.svg)| hue:wall-turaco |
+| ![hue:wellner-solid](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wellner-solid.svg)| hue:wellner-solid | ![hue:wellner](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wellner.svg)| hue:wellner |
+| ![hue:wellness](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/wellness.svg)| hue:wellness || |
 
 [//]: # (End Custom Icons) 
 
