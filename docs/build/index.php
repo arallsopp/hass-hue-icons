@@ -171,7 +171,7 @@ function read_files($path,$debug = false) {
                 var_dump($item);
             }
 
-            $optimised_output = '<svg viewBox="0 0 24 24" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg"><title>hue:' . $item->name . '</title><desc>Source: https://github.com/arallsopp/hass-hue-icons</desc><path d="' . $item->content . '"/></svg>';
+            $optimised_output = '<svg viewBox="0 0 24 24" height="24px" width="24px" fill="#44739e" xmlns="http://www.w3.org/2000/svg"><title>hue:' . $item->name . '</title><desc>Source: https://github.com/arallsopp/hass-hue-icons</desc><path d="' . $item->content . '"/></svg>';
             if($content !== $optimised_output){
                 file_put_contents($file,$optimised_output);
             }
