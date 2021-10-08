@@ -111,7 +111,7 @@ hass-hue-icons includes 69 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons) 
 
 ### User Requested Hue Icons
-hass-hue-icons includes 145 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
+hass-hue-icons includes 147 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
 
 [//]: # (Start Custom Icons)
 
@@ -166,6 +166,7 @@ hass-hue-icons includes 145 custom icons designed by the author for specific hue
 | ![hue:lily](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily.svg)| hue:lily | ![hue:pedestal-econic](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pedestal-econic.svg)| hue:pedestal-econic |
 | ![hue:pendant-being](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pendant-being.svg)| hue:pendant-being | ![hue:pendant-cher](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pendant-cher.svg)| hue:pendant-cher |
 | ![hue:pendant-long-up](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pendant-long-up.svg)| hue:pendant-long-up | ![hue:pendant-muscari](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pendant-muscari.svg)| hue:pendant-muscari |
+| ![hue:phoenix-pendant](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/phoenix-pendant.svg)| hue:phoenix-pendant | ![hue:phoenix-semiflush](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/phoenix-semiflush.svg)| hue:phoenix-semiflush |
 | ![hue:pillar-impress-short](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pillar-impress-short.svg)| hue:pillar-impress-short | ![hue:pillar-impress](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pillar-impress.svg)| hue:pillar-impress |
 | ![hue:pillar-nyro](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pillar-nyro.svg)| hue:pillar-nyro | ![hue:pillar-spot-double](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pillar-spot-double.svg)| hue:pillar-spot-double |
 | ![hue:pillar-spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pillar-spot.svg)| hue:pillar-spot | ![hue:pillar-tuar](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pillar-tuar.svg)| hue:pillar-tuar |
