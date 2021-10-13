@@ -111,7 +111,7 @@ hass-hue-icons includes 69 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons) 
 
 ### User Requested Hue Icons
-hass-hue-icons includes 149 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
+hass-hue-icons includes 153 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
 
 [//]: # (Start Custom Icons)
 
@@ -175,7 +175,9 @@ hass-hue-icons includes 149 custom icons designed by the author for specific hue
 | ![hue:play-bar-v-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-v-alt.svg)| hue:play-bar-v-alt | ![hue:play-bar-v-two-in](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-v-two-in.svg)| hue:play-bar-v-two-in |
 | ![hue:play-bar-v-two-out](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-v-two-out.svg)| hue:play-bar-v-two-out | ![hue:play-bar-v-two](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-v-two.svg)| hue:play-bar-v-two |
 | ![hue:play-bar-v](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-v.svg)| hue:play-bar-v | ![hue:plug-eu](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/plug-eu.svg)| hue:plug-eu |
-| ![hue:plug-uk](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/plug-uk.svg)| hue:plug-uk | ![hue:sana-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/sana-alt.svg)| hue:sana-alt |
+| ![hue:plug-uk](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/plug-uk.svg)| hue:plug-uk | ![hue:retrotouch-foh-black-chrome](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/retrotouch-foh-black-chrome.svg)| hue:retrotouch-foh-black-chrome |
+| ![hue:retrotouch-foh-black-plain](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/retrotouch-foh-black-plain.svg)| hue:retrotouch-foh-black-plain | ![hue:retrotouch-foh-white-chrome](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/retrotouch-foh-white-chrome.svg)| hue:retrotouch-foh-white-chrome |
+| ![hue:retrotouch-foh-white-plain](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/retrotouch-foh-white-plain.svg)| hue:retrotouch-foh-white-plain | ![hue:sana-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/sana-alt.svg)| hue:sana-alt |
 | ![hue:sana](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/sana.svg)| hue:sana | ![hue:signe-gradient-floor](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/signe-gradient-floor.svg)| hue:signe-gradient-floor |
 | ![hue:signe-gradient-table](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/signe-gradient-table.svg)| hue:signe-gradient-table | ![hue:signe](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/signe.svg)| hue:signe |
 | ![hue:socket-eu](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/socket-eu.svg)| hue:socket-eu | ![hue:socket-uk](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/socket-uk.svg)| hue:socket-uk |
