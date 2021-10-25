@@ -684,9 +684,11 @@ async function getIcon(name) {
   return { path: HUE_ICONS_MAP[name.replace(/_/g,'-')] }; //backwards compatible with underscore glyphs
 }
 
-
-window.customIconsets = window.customIconsets || {};
-window.customIconsets["hue"] = getIcon;
+async function getIconList() {
+  return HUE_ICONS_MAP.keys(icons);
+}
+window.customIcons = window.customIcons || {};
+window.customIcons["hue"] = { getIcon, getIconList };
 
 if (!window.frontendVersion || window.frontendVersion < 20200519.0) {
   // ha-iconset-svg (Up to Home Assistant 0.109):
