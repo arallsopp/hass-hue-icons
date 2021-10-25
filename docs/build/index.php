@@ -26,10 +26,20 @@ $version_components[2] = intval($version_components[2]) + 1;
 $incremented_version = join('.',$version_components);
 echo '<br/><a href="?v=' . $incremented_version  . '">Increment to version ' . $incremented_version . '</a><hr/>';
 
-get_latest_icons_for_comment('../custom_svgs/');
+
+get_latest_icons_for_comment('../custom_svgs/',5);
 
 $hue_icons = read_files('../svgs/');
 $custom_icons = read_files('../custom_svgs/');
+
+echo '<p><b>RELEASE NOTES</b><br/>Thanks for the suggestion. As always, feel free to raise an [icon request](https://github.com/arallsopp/hass-hue-icons/issues/new/choose) for any other hue fixtures or combinations you\'re missing.</p>';
+echo '<p><b>FEATURE REQUEST NOTES</b>
+      <br/>Thanks. Its in release [v.' . $new_version . '](https://github.com/arallsopp/hass-hue-icons/releases/tag/v.' . $new_version .').
+      <br/>### Want to help the community?
+      <br/>If you like what you see and want to help others discover this repo, please consider giving it a free star. Every one of the ' . sizeof($custom_icons) . ' custom icons has been driven by a community request just like yours.
+      <br/>### Want to get involved?
+      <br/>Its always good to see these icons being used. If you\'re proud of your dash, why not share a screenshot in the [forum thread](https://community.home-assistant.io/t/created-custom-colorizable-hue-icons-as-a-lovelace-resource)?</p>';
+
 update_readme($readme_file,$hue_icons,$custom_icons);
 update_script($script_file,$hue_icons,$custom_icons,$new_version);
 
@@ -147,7 +157,7 @@ function update_readme($readme_file,$hue_icons,$custom_icons){
 }
 
 function read_files($path,$debug = false) {
-    echo 'reading <em>' . $path . '</em>';
+    if($debug) echo 'reading <em>' . $path . '</em>';
     $items = [];
 
     $files = glob($path . '*.svg');
@@ -179,7 +189,7 @@ function read_files($path,$debug = false) {
             array_push($items, $item);
         }
     }
-    echo ' found <em>' . sizeof($items) . '</em> icons</br>';
+    if($debug) echo ' found <em>' . sizeof($items) . '</em> icons</br>';
     return $items;
 }
 
