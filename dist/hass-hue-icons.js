@@ -690,11 +690,10 @@ async function getIcon(name) {
   return { path: HUE_ICONS_MAP[name.replace(/_/g,'-')] }; //backwards compatible with underscore glyphs
 }
 
+
 async function getIconList() {
   return HUE_ICONS_MAP.keys(icons);
 }
-window.customIcons = window.customIcons || {};
-window.customIcons["hue"] = { getIcon, getIconList };
 
 if (!window.frontendVersion || window.frontendVersion < 20200519.0) {
   // ha-iconset-svg (Up to Home Assistant 0.109):
@@ -713,7 +712,16 @@ if (!window.frontendVersion || window.frontendVersion < 20200519.0) {
 
   iconset.innerHTML = `<svg><defs>${iconsetHTML}</defs></svg>`;
   document.body.appendChild(iconset);
+}else if (window.frontendVersion <= 20211007.1){
+  // new enough to support customIconsets
+  window.customIconsets = window.customIconsets || {};
+  window.customIconsets["hue"] = getIcon;
+}else{
+  // new enough to support getIcon and getIconlist
+  window.customIcons = window.customIcons || {};
+  window.customIcons["hue"] = { getIcon, getIconList };
 }
+
 
 console.info(
     `%c HASS-HUE-ICONS  \n%c  Version 1.0.100    `,
