@@ -692,7 +692,7 @@ async function getIcon(name) {
 
 
 async function getIconList() {
-  return HUE_ICONS_MAP.keys(icons);
+  return HUE_ICONS_MAP.keys(icons).map(icon => ({name: icon}));
 }
 
 if (!window.frontendVersion || window.frontendVersion < 20200519.0) {
