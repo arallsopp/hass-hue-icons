@@ -712,7 +712,7 @@ if (!window.frontendVersion || window.frontendVersion < 20200519.0) {
 
   iconset.innerHTML = `<svg><defs>${iconsetHTML}</defs></svg>`;
   document.body.appendChild(iconset);
-}else if (window.frontendVersion <= 20211007.1){
+}else if (window.frontendVersion <= 20211027.0){
   // new enough to support customIconsets
   window.customIconsets = window.customIconsets || {};
   window.customIconsets["hue"] = getIcon;
