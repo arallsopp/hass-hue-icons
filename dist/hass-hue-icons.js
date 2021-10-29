@@ -695,6 +695,8 @@ async function getIconList() {
   return HUE_ICONS_MAP.keys(icons).map(icon => ({name: icon}));
 }
 
+let hue_icons_mode = 'legacy';
+
 if (!window.frontendVersion || window.frontendVersion < 20200519.0) {
   // ha-iconset-svg (Up to Home Assistant 0.109):
   const iconset = document.createElement("ha-iconset-svg");
@@ -714,17 +716,19 @@ if (!window.frontendVersion || window.frontendVersion < 20200519.0) {
   document.body.appendChild(iconset);
 }else if (window.frontendVersion <= 20211027.0){
   // new enough to support customIconsets
+  hue_icons_mode = 'modern';
   window.customIconsets = window.customIconsets || {};
   window.customIconsets["hue"] = getIcon;
 }else{
   // new enough to support getIcon and getIconlist
+  hue_icons_mode = 'picker';
   window.customIcons = window.customIcons || {};
   window.customIcons["hue"] = { getIcon, getIconList };
 }
 
 
 console.info(
-    `%c HASS-HUE-ICONS  \n%c  Version 1.0.100    `,
+    `%c HASS-HUE-ICONS           \n%c Version 1.0.100 [` + hue_icons_mode + `] `,
     "color: orange; font-weight: bold; background: black",
     "color: white; font-weight: bold; background: dimgray",
 );

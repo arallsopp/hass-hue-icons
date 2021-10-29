@@ -64,7 +64,8 @@ function get_latest_icons_for_comment($path,$limit = 5){
 function find_version($script_file){
 
     $script = file_get_contents($script_file);
-    $re = '/%c HASS-HUE-ICONS  \\\\n%c  Version (.*)`/m';
+    $re = '/HASS-HUE-ICONS\s+\\\\n%c Version (.*) \[/m';
+
 
     preg_match_all($re, $script, $matches, PREG_SET_ORDER, 0);
 
