@@ -66,7 +66,6 @@ function find_version($script_file){
     $script = file_get_contents($script_file);
     $re = '/HASS-HUE-ICONS\s+\\\\n%c Version (.*) \[/m';
 
-
     preg_match_all($re, $script, $matches, PREG_SET_ORDER, 0);
 
     // Print the entire match result
@@ -94,9 +93,11 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
     $script = preg_replace($re, $subst, $script);
 
     if(!is_null($version)){
+        xdebug_break();
+
         //write the version tag to the script
-        $re = '/HASS-HUE-ICONS  \\\\n%c  Version [0-9]+[.][0-9]+[.][0-9]+/m';
-        $subst = 'HASS-HUE-ICONS  \n%c  Version ' . $version;
+        $re = '/HASS-HUE-ICONS\s+\\\\n%c Version [\d+]\.[\d+]\.[\d+]/m';
+        $subst = 'HASS-HUE-ICONS' . str_repeat(' ',(14 - strlen($version))) . '\n%c Version ' . $version;
         $script = preg_replace($re, $subst, $script);
     }
 
@@ -149,9 +150,6 @@ function update_readme($readme_file,$hue_icons,$custom_icons){
     $re = '/(hass-hue-icons includes) (\d+) (custom icons)/';
     $subst = '$1 ' . sizeof($custom_icons) . ' $3';
     $readme = preg_replace($re, $subst, $readme, 1);
-
-
-
 
     echo '<hr/><em>README.md</em>';
     echo '<pre>' . $readme . '</pre>';
