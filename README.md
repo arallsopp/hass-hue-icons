@@ -111,7 +111,7 @@ hass-hue-icons includes 69 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons) 
 
 ### User Requested Hue Icons
-hass-hue-icons includes 159 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
+hass-hue-icons includes 161 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
 
 [//]: # (Start Custom Icons)
 
@@ -168,7 +168,8 @@ hass-hue-icons includes 159 custom icons designed by the author for specific hue
 | ![hue:liane](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/liane.svg)| hue:liane | ![hue:lightstrip-tv-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lightstrip-tv-alt.svg)| hue:lightstrip-tv-alt |
 | ![hue:lightstrip-tv](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lightstrip-tv.svg)| hue:lightstrip-tv | ![hue:lightstrip-wrap](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lightstrip-wrap.svg)| hue:lightstrip-wrap |
 | ![hue:lily-two](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily-two.svg)| hue:lily-two | ![hue:lily-xl](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily-xl.svg)| hue:lily-xl |
-| ![hue:lily](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily.svg)| hue:lily | ![hue:pedestal-econic](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pedestal-econic.svg)| hue:pedestal-econic |
+| ![hue:lily](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily.svg)| hue:lily | ![hue:logo-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/logo-alt.svg)| hue:logo-alt |
+| ![hue:logo](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/logo.svg)| hue:logo | ![hue:pedestal-econic](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pedestal-econic.svg)| hue:pedestal-econic |
 | ![hue:pendant-being](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pendant-being.svg)| hue:pendant-being | ![hue:pendant-cher](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pendant-cher.svg)| hue:pendant-cher |
 | ![hue:pendant-long-up](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pendant-long-up.svg)| hue:pendant-long-up | ![hue:pendant-muscari](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pendant-muscari.svg)| hue:pendant-muscari |
 | ![hue:phoenix-pendant](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/phoenix-pendant.svg)| hue:phoenix-pendant | ![hue:phoenix-plafond](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/phoenix-plafond.svg)| hue:phoenix-plafond |
