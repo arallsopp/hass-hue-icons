@@ -26,11 +26,11 @@ $version_components[2] = intval($version_components[2]) + 1;
 $incremented_version = join('.',$version_components);
 echo '<br/><a href="?v=' . $incremented_version  . '">Increment to version ' . $incremented_version . '</a><hr/>';
 
-
 get_latest_icons_for_comment('../custom_svgs/',5);
 
 $hue_icons = read_files('../svgs/');
 $custom_icons = read_files('../custom_svgs/');
+
 
 echo '<p><b>RELEASE NOTES</b><br/>Thanks for the suggestion. As always, feel free to raise an [icon request](https://github.com/arallsopp/hass-hue-icons/issues/new/choose) for any other hue fixtures or combinations you\'re missing.</p>';
 echo '<p><b>FEATURE REQUEST NOTES</b>
@@ -39,6 +39,7 @@ echo '<p><b>FEATURE REQUEST NOTES</b>
       <br/>If you like what you see and want to help others discover this repo, please consider giving it a free star. Every one of the ' . sizeof($custom_icons) . ' custom icons has been driven by a community request just like yours.
       <br/>### Want to get involved?
       <br/>Its always good to see these icons being used. If you\'re proud of your dash, why not share a screenshot in the [forum thread](https://community.home-assistant.io/t/created-custom-colorizable-hue-icons-as-a-lovelace-resource)?</p>';
+
 
 update_readme($readme_file,$hue_icons,$custom_icons);
 update_script($script_file,$hue_icons,$custom_icons,$new_version);
@@ -63,7 +64,7 @@ function get_latest_icons_for_comment($path,$limit = 5){
 function find_version($script_file){
 
     $script = file_get_contents($script_file);
-    $re = '/%c HASS-HUE-ICONS  \\\\n%c  Version (.*)`/m';
+    $re = '/HASS-HUE-ICONS\s+\\\\n%c Version (.*) \[/m';
 
     preg_match_all($re, $script, $matches, PREG_SET_ORDER, 0);
 
@@ -92,9 +93,11 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
     $script = preg_replace($re, $subst, $script);
 
     if(!is_null($version)){
+        xdebug_break();
+
         //write the version tag to the script
-        $re = '/HASS-HUE-ICONS  \\\\n%c  Version [0-9]+[.][0-9]+[.][0-9]+/m';
-        $subst = 'HASS-HUE-ICONS  \n%c  Version ' . $version;
+        $re = '/HASS-HUE-ICONS\s+\\\\n%c Version [\d+]\.[\d+]\.[\d+]/m';
+        $subst = 'HASS-HUE-ICONS' . str_repeat(' ',(14 - strlen($version))) . '\n%c Version ' . $version;
         $script = preg_replace($re, $subst, $script);
     }
 
@@ -147,9 +150,6 @@ function update_readme($readme_file,$hue_icons,$custom_icons){
     $re = '/(hass-hue-icons includes) (\d+) (custom icons)/';
     $subst = '$1 ' . sizeof($custom_icons) . ' $3';
     $readme = preg_replace($re, $subst, $readme, 1);
-
-
-
 
     echo '<hr/><em>README.md</em>';
     echo '<pre>' . $readme . '</pre>';
