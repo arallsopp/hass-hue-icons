@@ -698,7 +698,7 @@ async function getIcon(name) {
 
 
 async function getIconList() {
-    return HUE_ICONS_MAP.keys(icons).map(icon => ({name: icon}));
+    return Object.keys(HUE_ICONS_MAP).map(icon => ({name: icon}));
 }
 
 let hue_icons_mode = 'legacy';
