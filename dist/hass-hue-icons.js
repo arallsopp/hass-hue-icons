@@ -717,7 +717,7 @@ if (!window.frontendVersion || window.frontendVersion <= 20211027.0){
 
 
 console.info(
-    `%c HASS-HUE-ICONS         \n%c Version 1.1.0 [` + hue_icons_mode + `] `,
+    `%c HASS-HUE-ICONS         \n%c Version 1.1.2 [` + hue_icons_mode + `] `,
     "color: orange; font-weight: bold; background: black",
     "color: white; font-weight: bold; background: dimgray",
 );
