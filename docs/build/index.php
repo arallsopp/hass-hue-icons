@@ -73,17 +73,20 @@ function find_version($script_file){
 }
 
 function update_script($script_file,$hue_icons,$custom_icons,$version = null){
+
     $script = file_get_contents($script_file);
 
     $re = '/const HUE_ICONS_MAP = {.*?};/s';
     $subst = 'const HUE_ICONS_MAP = {' . PHP_EOL;
 
+
+    // combine the two objects
+    $full_set = array_merge($hue_icons,$custom_icons);
+    usort($full_set, function($a, $b) {return strcmp($a->name, $b->name);});
+
     //do the hue icons
-    foreach ($hue_icons as $icon){
-        $subst .=  PHP_EOL . '  "' . $icon->name . '":' . PHP_EOL . '    "' . $icon->content . '", ' . PHP_EOL;
-    }
-    foreach ($custom_icons as $icon){
-        $subst .=  PHP_EOL . '  "' . $icon->name . '":' . PHP_EOL . '    "' . $icon->content . '", ' . PHP_EOL;
+    foreach ($full_set   as $icon) {
+        $subst .= PHP_EOL . '  "' . $icon->name . '":' . PHP_EOL . '    "' . $icon->content . '", ' . PHP_EOL;
     }
 
     //lose the last comma
