@@ -96,7 +96,7 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
     $script = preg_replace($re, $subst, $script);
 
     if(!is_null($version)){
-        xdebug_break();
+        //xdebug_break();
 
         //write the version tag to the script
         $re = '/HASS-HUE-ICONS\s+\\\\n%c Version [\d+]\.[\d+]\.[\d+]/m';
