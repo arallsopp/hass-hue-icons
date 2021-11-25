@@ -1,7 +1,7 @@
 <html>
-    <head>
-        <title>Build script</title>
-    </head>
+<head>
+    <title>Build script</title>
+</head>
 <body>
 <?php
 // Run this to regenerate the documentation and script from svgs in the svg and custom_svg folders
@@ -12,7 +12,6 @@ $readme_file = '../../README.md';
 $script_file = '../../dist/hass-hue-icons.js';
 $new_version = isset($_GET['v']) ? $_GET['v'] : null;
 $version = find_version($script_file);
-
 
 // handle versioning
 $version_components = explode('.',$version);
@@ -56,7 +55,7 @@ function get_latest_icons_for_comment($path,$limit = 5){
         if($count++ > $limit) return;
 
         echo '<pre>| Icon | Name |' . PHP_EOL . '| :--- | :--- |' . PHP_EOL .
-             '| ![hue:' . basename($file,'.svg') . '](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/' . basename($file) . ')| hue:' . basename($file,'.svg') . '|' . PHP_EOL .  PHP_EOL . '</pre>';
+            '| ![hue:' . basename($file,'.svg') . '](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/' . basename($file) . ')| hue:' . basename($file,'.svg') . '|' . PHP_EOL .  PHP_EOL . '</pre>';
 
     }
 }
@@ -96,12 +95,10 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
     $script = preg_replace($re, $subst, $script);
 
     if(!is_null($version)){
-        //xdebug_break();
-
         //write the version tag to the script
         $re = '/HASS-HUE-ICONS\s+\\\\n%c Version [\d+]\.[\d+]\.[\d+]/m';
         $subst = 'HASS-HUE-ICONS' . str_repeat(' ',(14 - strlen($version))) . '\n%c Version ' . $version;
-        $script = preg_replace($re, $subst, $script);
+        $script = preg_replace($re, $subst, $script); //this is not PHP8 safe!
     }
 
     echo '<hr/><em>Script</em>';
