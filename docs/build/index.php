@@ -35,7 +35,7 @@ echo '<p><b>RELEASE NOTES</b><br/>Thanks for the suggestion. As always, feel fre
 echo '<p><b>FEATURE REQUEST NOTES</b>
       <br/>Thanks. Its in release [v.' . $new_version . '](https://github.com/arallsopp/hass-hue-icons/releases/tag/v.' . $new_version .').
       <br/>### Want to help the community?
-      <br/>If you like what you see and want to help others discover this repo, please consider giving it a free star. Every one of the ' . sizeof($custom_icons) . ' custom icons has been driven by a community request just like yours.
+      <br/>If you like what you see and want to help others discover this repo, please consider giving it a free star. Every one of the ' . sizeof($custom_icons) . ' custom icons has been driven by a community request just like yours, and stars help people find this repo.
       <br/>### Want to get involved?
       <br/>Its always good to see these icons being used. If you\'re proud of your dash, why not share a screenshot in the [forum thread](https://community.home-assistant.io/t/created-custom-colorizable-hue-icons-as-a-lovelace-resource)?</p>';
 
@@ -96,9 +96,9 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
 
     if(!is_null($version)){
         //write the version tag to the script
-        $re = '/HASS-HUE-ICONS\s+\\\\n%c Version [\d+]\.[\d+]\.[\d+]/m';
-        $subst = 'HASS-HUE-ICONS' . str_repeat(' ',(14 - strlen($version))) . '\n%c Version ' . $version;
-        $script = preg_replace($re, $subst, $script); //this is not PHP8 safe!
+        $re = '/HASS-HUE-ICONS\s+\\\\n%c Version [\d]+\.[\d]+\.[\d]+/m';
+        $subst = 'HASS-HUE-ICONS' . str_repeat(' ',(15 - strlen($version))) . '\n%c Version ' . $version;
+        $script = preg_replace($re, $subst, $script);
     }
 
     echo '<hr/><em>Script</em>';
