@@ -111,7 +111,7 @@ hass-hue-icons includes 69 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons) 
 
 ### User Requested Hue Icons
-hass-hue-icons includes 183 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
+hass-hue-icons includes 185 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
 
 [//]: # (Start Custom Icons)
 
@@ -146,6 +146,7 @@ hass-hue-icons includes 183 custom icons designed by the author for specific hue
 | ![hue:bulb-sultan-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-sultan-off.svg)| hue:bulb-sultan-off | ![hue:button](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/button.svg)| hue:button |
 | ![hue:ceiling-aurelle-circle](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-aurelle-circle.svg)| hue:ceiling-aurelle-circle | ![hue:ceiling-aurelle-rect](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-aurelle-rect.svg)| hue:ceiling-aurelle-rect |
 | ![hue:ceiling-aurelle](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-aurelle.svg)| hue:ceiling-aurelle | ![hue:ceiling-being](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-being.svg)| hue:ceiling-being |
+| ![hue:ceiling-beyond-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-beyond-alt.svg)| hue:ceiling-beyond-alt | ![hue:ceiling-beyond](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-beyond.svg)| hue:ceiling-beyond |
 | ![hue:ceiling-buckram-three](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-buckram-three.svg)| hue:ceiling-buckram-three | ![hue:ceiling-buckram-two](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-buckram-two.svg)| hue:ceiling-buckram-two |
 | ![hue:ceiling-buckram](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-buckram.svg)| hue:ceiling-buckram | ![hue:ceiling-buratto-four](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-buratto-four.svg)| hue:ceiling-buratto-four |
 | ![hue:ceiling-buratto-three](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-buratto-three.svg)| hue:ceiling-buratto-three | ![hue:ceiling-buratto-two](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-buratto-two.svg)| hue:ceiling-buratto-two |
