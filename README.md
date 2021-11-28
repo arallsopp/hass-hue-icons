@@ -66,13 +66,14 @@ entities:
 
 ### Hue Icons
 
-hass-hue-icons includes 69 Hue icons modelled upon the Hue iOS app for personal use
+hass-hue-icons includes 71 Hue icons modelled upon the Hue iOS app for personal use
 
 [//]: # (Start Hue Icons)
 
 | Icon | Name | Icon | Name 
 | :--- | :--- | :--- | :--- |
 | ![hue:bloom](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/bloom.svg)| hue:bloom | ![hue:bollard](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/bollard.svg)| hue:bollard |
+| ![hue:bridge-v1](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/bridge-v1.svg)| hue:bridge-v1 | ![hue:bridge-v2](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/bridge-v2.svg)| hue:bridge-v2 |
 | ![hue:bulb-candle](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/bulb-candle.svg)| hue:bulb-candle | ![hue:bulb-classic](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/bulb-classic.svg)| hue:bulb-classic |
 | ![hue:bulb-filament](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/bulb-filament.svg)| hue:bulb-filament | ![hue:bulb-flood](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/bulb-flood.svg)| hue:bulb-flood |
 | ![hue:bulb-group](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/bulb-group.svg)| hue:bulb-group | ![hue:bulb-spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/bulb-spot.svg)| hue:bulb-spot |
