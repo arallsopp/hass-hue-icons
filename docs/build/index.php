@@ -63,7 +63,7 @@ function get_latest_icons_for_comment($path,$limit = 5){
 function find_version($script_file){
 
     $script = file_get_contents($script_file);
-    $re = '/HASS-HUE-ICONS\s+\\\\n%c Version (.*) \[/m';
+    $re = '/HASS-HUE-ICONS\s+\\\\n%c Version (.*) /m';
 
     preg_match_all($re, $script, $matches, PREG_SET_ORDER, 0);
 
@@ -84,12 +84,12 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
     usort($full_set, function($a, $b) {return strcmp($a->name, $b->name);});
 
     //do the hue icons
-    foreach ($full_set   as $icon) {
-        $subst .= PHP_EOL . '  "' . $icon->name . '":' . PHP_EOL . '    "' . $icon->content . '", ' . PHP_EOL;
+    foreach ($full_set as $icon) {
+        $subst .= PHP_EOL . '  "' . $icon->name . '":{' . PHP_EOL . '    path:"' . $icon->content . '", ' . PHP_EOL . '    keywords: ["light"]' . PHP_EOL . '  },';
     }
 
     //lose the last comma
-    $subst = substr($subst,0,strlen($subst)-3);
+    $subst = substr($subst,0,strlen($subst)-1);
 
     $subst .= PHP_EOL . '};';
     $script = preg_replace($re, $subst, $script);
