@@ -234,6 +234,8 @@ If you cannot see the new icons, or you get an empty box where you're expecting 
 ### Icons don't show on first load of the dash?
 Did you add the frontend extra_module_url in your configuration.yaml? See the [installation section](#installation) for details.
 
+## OpenHASP user?
+I periodically update a ttf font file in a zip at [font/hass-hue-icons-ttf.zip](font/hass-hue-icons-ttf.zip). Thanks to @nagyrobi for the suggestion.
  
 ## Thanks and Props
 - @hulkhaugen and @thomasloven for the technique.
