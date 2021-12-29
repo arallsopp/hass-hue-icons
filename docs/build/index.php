@@ -83,9 +83,18 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
     $full_set = array_merge($hue_icons,$custom_icons);
     usort($full_set, function($a, $b) {return strcmp($a->name, $b->name);});
 
-    //do the hue icons
+    // read in the aliases
+    $aliases = json_decode(file_get_contents('aliases.json'));
+
+    //output all icons
     foreach ($full_set as $icon) {
-        $subst .= PHP_EOL . '  "' . $icon->name . '":{' . PHP_EOL . '    path:"' . $icon->content . '", ' . PHP_EOL . '    keywords: ["light"]' . PHP_EOL . '  },';
+        //see if it has an alias
+        if(!isset($aliases->aliases->{$icon->name})){
+            $aliases->aliases->{$icon->name} = ['light'];
+        }
+        $icon_aliases = $aliases->aliases->{$icon->name};
+        $icon_aliases_as_array_vals = sprintf('"%s"', implode('","', $icon_aliases ) );
+        $subst .= PHP_EOL . '  "' . $icon->name . '":{' . PHP_EOL . '    path:"' . $icon->content . '", ' . PHP_EOL . '    keywords: [' . $icon_aliases_as_array_vals . ']' . PHP_EOL . '  },';
     }
 
     //lose the last comma
