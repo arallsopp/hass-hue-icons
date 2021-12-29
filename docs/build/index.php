@@ -72,6 +72,7 @@ function find_version($script_file){
 }
 
 function update_script($script_file,$hue_icons,$custom_icons,$version = null){
+    $entity_table = '<table>';
 
     $script = file_get_contents($script_file);
 
@@ -83,7 +84,7 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
     $full_set = array_merge($hue_icons,$custom_icons);
     usort($full_set, function($a, $b) {return strcmp($a->name, $b->name);});
 
-    // read in the aliases
+    // read in the meta data for aliases
     $meta = json_decode(file_get_contents('meta.json'));
 
     //output all icons
@@ -95,6 +96,9 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
         $icon_aliases = $meta->aliases->{$icon->name};
         $icon_aliases_as_array_vals = sprintf('"%s"', implode('","', $icon_aliases ) );
         $subst .= PHP_EOL . '  "' . $icon->name . '":{' . PHP_EOL . '    path:"' . $icon->content . '", ' . PHP_EOL . '    keywords: [' . $icon_aliases_as_array_vals . ']' . PHP_EOL . '  },';
+
+        //update entity table
+        $entity_table .= '<tr><td><img src="../' . (file_exists( '../svgs/' . $icon->name . '.svg') ? 'svgs/'  : 'custom_svgs/') . $icon->name . '.svg"</td><th>' . $icon->name . '</th><td>' . $icon_aliases_as_array_vals . '</td></tr>';
     }
 
     //lose the last comma
@@ -114,6 +118,9 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
     echo '<pre>' . $script . '</pre>';
     file_put_contents($script_file,$script);
     file_put_contents('meta.json',json_encode($meta,JSON_PRETTY_PRINT));
+
+    echo '<h2>Entity Table</h2>';
+    echo $entity_table;
 }
 
 function update_readme($readme_file,$hue_icons,$custom_icons){
@@ -206,7 +213,6 @@ function read_files($path,$debug = false) {
     if($debug) echo ' found <em>' . sizeof($items) . '</em> icons</br>';
     return $items;
 }
-
 ?>
 <style>
     body{
