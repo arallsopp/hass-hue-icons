@@ -21,28 +21,39 @@
             "pendant"
         ],
         "amarant": [
-            "light"
+            "light",
+            "floor"
         ],
         "amaze-alt": [
-            "light"
+            "light",
+            "ceiling",
+            "pendant"
         ],
         "aura": [
-            "light"
+            "light",
+            "floor",
+            "table"
         ],
         "aura-group": [
-            "light"
+            "light",
+            "floor",
+            "table"
         ],
         "beyond": [
-            "light"
+            "light",
+            "floor"
         ],
         "beyond-down": [
-            "light"
+            "light",
+            "floor"
         ],
         "beyond-solid": [
-            "light"
+            "light",
+            "floor"
         ],
         "beyond-up": [
-            "light"
+            "light",
+            "floor"
         ],
         "bloom": [
             "light",
@@ -100,10 +111,13 @@
         ],
         "bulb-group-bollard": [
             "light",
-            "calla"
+            "calla",
+            "exterior"
         ],
         "bulb-group-bollard-3": [
-            "light"
+            "light",
+            "calla",
+            "exterior"
         ],
         "bulb-group-candle": [
             "light"
@@ -160,10 +174,12 @@
             "light"
         ],
         "bulb-group-lightstrip": [
-            "light"
+            "light",
+            "led"
         ],
         "bulb-group-lightstrip-v": [
-            "light"
+            "light",
+            "led"
         ],
         "bulb-group-pillar-impress": [
             "light"
@@ -262,13 +278,15 @@
             "light"
         ],
         "ceiling-explore": [
-            "light"
+            "light",
+            "pendant"
         ],
         "ceiling-fair": [
             "light"
         ],
         "ceiling-fair-semiflush": [
-            "light"
+            "light",
+            "pendant"
         ],
         "ceiling-flourish": [
             "light"
@@ -280,22 +298,28 @@
             "light"
         ],
         "ceiling-fugato-four": [
-            "light"
+            "light",
+            "spot"
         ],
         "ceiling-fugato-four-alt": [
-            "light"
+            "light",
+            "spot"
         ],
         "ceiling-fugato-three": [
-            "light"
+            "light",
+            "spot"
         ],
         "ceiling-fugato-three-alt": [
-            "light"
+            "light",
+            "spot"
         ],
         "ceiling-fugato-two": [
-            "light"
+            "light",
+            "spot"
         ],
         "ceiling-fugato-two-alt": [
-            "light"
+            "light",
+            "spot"
         ],
         "ceiling-infuse": [
             "light"

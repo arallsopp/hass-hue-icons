@@ -72,7 +72,7 @@ function find_version($script_file){
 }
 
 function update_script($script_file,$hue_icons,$custom_icons,$version = null){
-    $entity_table = '<table>';
+    $entity_table = '<table border="1">';
 
     $script = file_get_contents($script_file);
 
@@ -98,7 +98,9 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
         $subst .= PHP_EOL . '  "' . $icon->name . '":{' . PHP_EOL . '    path:"' . $icon->content . '", ' . PHP_EOL . '    keywords: [' . $icon_aliases_as_array_vals . ']' . PHP_EOL . '  },';
 
         //update entity table
-        $entity_table .= '<tr><td><img src="../' . (file_exists( '../svgs/' . $icon->name . '.svg') ? 'svgs/'  : 'custom_svgs/') . $icon->name . '.svg"</td><th>' . $icon->name . '</th><td>' . $icon_aliases_as_array_vals . '</td></tr>';
+        xdebug_break();
+
+        $entity_table .= '<tr' . ($icon_aliases_as_array_vals == '"light"' ? ' style="background:#f3d1d1"' : '') . '><td><img src="../' . (file_exists( '../svgs/' . $icon->name . '.svg') ? 'svgs/'  : 'custom_svgs/') . $icon->name . '.svg"</td><th>' . $icon->name . '</th><td>' . $icon_aliases_as_array_vals . '</td></tr>';
     }
 
     //lose the last comma
@@ -120,7 +122,7 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
     file_put_contents('meta.json',json_encode($meta,JSON_PRETTY_PRINT));
 
     echo '<h2>Entity Table</h2>';
-    echo $entity_table;
+    echo $entity_table . '</table>';
 }
 
 function update_readme($readme_file,$hue_icons,$custom_icons){
