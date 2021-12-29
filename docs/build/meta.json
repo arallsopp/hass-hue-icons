@@ -45,19 +45,24 @@
             "light"
         ],
         "bloom": [
-            "light"
+            "light",
+            "floor",
+            "table"
         ],
         "bloom-group": [
-            "light"
+            "light",
+            "floor",
+            "table"
         ],
         "bollard": [
-            "light"
+            "light",
+            "calla"
         ],
         "bridge-v1": [
-            "light"
+            "infrastructure"
         ],
         "bridge-v2": [
-            "light"
+            "infrastructure"
         ],
         "bulb-candle": [
             "light"
@@ -84,7 +89,8 @@
             "light"
         ],
         "bulb-flood": [
-            "light"
+            "light",
+            "par38"
         ],
         "bulb-golfball-e14": [
             "light"
@@ -93,7 +99,8 @@
             "light"
         ],
         "bulb-group-bollard": [
-            "light"
+            "light",
+            "calla"
         ],
         "bulb-group-bollard-3": [
             "light"
@@ -201,7 +208,9 @@
             "light"
         ],
         "button": [
-            "light"
+            "light",
+            "switch",
+            "wall"
         ],
         "ceiling-aurelle": [
             "light"
@@ -222,25 +231,32 @@
             "light"
         ],
         "ceiling-buckram": [
-            "light"
+            "light",
+            "spot"
         ],
         "ceiling-buckram-three": [
-            "light"
+            "light",
+            "spot"
         ],
         "ceiling-buckram-two": [
-            "light"
+            "light",
+            "spot"
         ],
         "ceiling-buratto": [
-            "light"
+            "light",
+            "spot"
         ],
         "ceiling-buratto-four": [
-            "light"
+            "light",
+            "spot"
         ],
         "ceiling-buratto-three": [
-            "light"
+            "light",
+            "spot"
         ],
         "ceiling-buratto-two": [
-            "light"
+            "light",
+            "spot"
         ],
         "ceiling-cher-semiflush": [
             "light"
@@ -336,10 +352,14 @@
             "light"
         ],
         "ensis": [
-            "light"
+            "light",
+            "ceiling",
+            "pendant"
         ],
         "ensis-up": [
-            "light"
+            "light",
+            "ceiling",
+            "pendant"
         ],
         "floor-lantern": [
             "light"
@@ -357,19 +377,27 @@
             "light"
         ],
         "flourish": [
-            "light"
+            "light",
+            "table",
+            "floor"
         ],
         "flourish-alt": [
-            "light"
+            "light",
+            "table",
+            "floor"
         ],
         "friends-of-hue-20042LEDSWACDMG-BLRFR": [
-            "light"
+            "light",
+            "wall",
+            "exterior"
         ],
         "friends-of-hue-arke": [
-            "light"
+            "light",
+            "switch"
         ],
         "friends-of-hue-arke-round": [
-            "light"
+            "light",
+            "switch"
         ],
         "friends-of-hue-eikon": [
             "light"
@@ -387,16 +415,20 @@
             "light"
         ],
         "friends-of-hue-retrotouch-black-chrome": [
-            "light"
+            "light",
+            "switch"
         ],
         "friends-of-hue-retrotouch-black-plain": [
-            "light"
+            "light",
+            "switch"
         ],
         "friends-of-hue-retrotouch-white-chrome": [
-            "light"
+            "light",
+            "switch"
         ],
         "friends-of-hue-retrotouch-white-plain": [
-            "light"
+            "light",
+            "switch"
         ],
         "friends-of-hue-senic": [
             "light"
@@ -411,10 +443,12 @@
             "light"
         ],
         "gradient-lightstrip": [
-            "light"
+            "light",
+            "led"
         ],
         "gradient-lightstrip-wrap": [
-            "light"
+            "light",
+            "led"
         ],
         "gradient-tube-long": [
             "light"
@@ -429,67 +463,91 @@
             "light"
         ],
         "lightstrip": [
-            "light"
+            "light",
+            "led"
         ],
         "lightstrip-off": [
-            "light"
+            "light",
+            "led"
         ],
         "lightstrip-tv": [
-            "light"
+            "light",
+            "led"
         ],
         "lightstrip-tv-alt": [
-            "light"
+            "light",
+            "led"
         ],
         "lightstrip-tv-off": [
-            "light"
+            "light",
+            "led"
         ],
         "lightstrip-wrap": [
-            "light"
+            "light",
+            "led"
         ],
         "lily": [
-            "light"
+            "light",
+            "exterior",
+            "spot"
         ],
         "lily-two": [
-            "light"
+            "light",
+            "exterior",
+            "spot"
         ],
         "lily-xl": [
-            "light"
+            "light",
+            "exterior",
+            "spot"
         ],
         "logo": [
-            "light"
+            "philips"
         ],
         "logo-alt": [
-            "light"
+            "philips"
         ],
         "motion-sensor": [
-            "light"
+            "light",
+            "pir"
         ],
         "outdoor-motion-sensor": [
-            "light"
+            "light",
+            "pir",
+            "exterior"
         ],
         "pedestal-econic": [
-            "light"
+            "light",
+            "exterior",
+            "bollard"
         ],
         "pendant-being": [
-            "light"
+            "light",
+            "ceiling"
         ],
         "pendant-cher": [
-            "light"
+            "light",
+            "ceiling"
         ],
         "pendant-long": [
-            "light"
+            "light",
+            "ceiling"
         ],
         "pendant-long-up": [
-            "light"
+            "light",
+            "ceiling"
         ],
         "pendant-muscari": [
-            "light"
+            "light",
+            "ceiling"
         ],
         "pendant-round": [
-            "light"
+            "light",
+            "ceiling"
         ],
         "phoenix-pendant": [
-            "light"
+            "light",
+            "ceiling"
         ],
         "phoenix-plafond": [
             "light"
@@ -501,13 +559,19 @@
             "light"
         ],
         "pillar-impress": [
-            "light"
+            "light",
+            "exterior",
+            "bollard"
         ],
         "pillar-impress-short": [
-            "light"
+            "light",
+            "exterior",
+            "bollard"
         ],
         "pillar-nyro": [
-            "light"
+            "light",
+            "exterior",
+            "bollard"
         ],
         "pillar-spot": [
             "light"
@@ -516,7 +580,9 @@
             "light"
         ],
         "pillar-tuar": [
-            "light"
+            "light",
+            "exterior",
+            "bollard"
         ],
         "play-bar": [
             "light"
