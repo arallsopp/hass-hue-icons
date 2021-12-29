@@ -1,0 +1,8 @@
+{
+    "aliases": {
+        "adore": ["light","wall","bathroom"],
+        "adore-alt": ["light","wall","bathroom"],
+        "adore-mirror": ["light","wall","bathroom"],
+        "amaze": ["light","ceiling","pendant"]
+    }
+}
