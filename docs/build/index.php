@@ -113,6 +113,7 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
     echo '<hr/><em>Script</em>';
     echo '<pre>' . $script . '</pre>';
     file_put_contents($script_file,$script);
+    file_put_contents('aliases.json',json_encode($aliases,JSON_PRETTY_PRINT));
 }
 
 function update_readme($readme_file,$hue_icons,$custom_icons){
