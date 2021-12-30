@@ -63,7 +63,7 @@ function get_latest_icons_for_comment($path,$limit = 5){
 function find_version($script_file){
 
     $script = file_get_contents($script_file);
-    $re = '/HASS-HUE-ICONS\s+\\\\n%c Version (.*) \[/m';
+    $re = '/HASS-HUE-ICONS\s+\\\\n%c Version (.*) /m';
 
     preg_match_all($re, $script, $matches, PREG_SET_ORDER, 0);
 
@@ -72,6 +72,7 @@ function find_version($script_file){
 }
 
 function update_script($script_file,$hue_icons,$custom_icons,$version = null){
+    $entity_table = '<table border="1">';
 
     $script = file_get_contents($script_file);
 
@@ -83,13 +84,27 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
     $full_set = array_merge($hue_icons,$custom_icons);
     usort($full_set, function($a, $b) {return strcmp($a->name, $b->name);});
 
-    //do the hue icons
-    foreach ($full_set   as $icon) {
-        $subst .= PHP_EOL . '  "' . $icon->name . '":' . PHP_EOL . '    "' . $icon->content . '", ' . PHP_EOL;
+    // read in the meta data for aliases
+    $meta = json_decode(file_get_contents('meta.json'));
+
+    //output all icons
+    foreach ($full_set as $icon) {
+        //see if it has an alias
+        if(!isset($meta->aliases->{$icon->name})){
+            $meta->aliases->{$icon->name} = ['light'];
+        }
+        $icon_aliases = $meta->aliases->{$icon->name};
+        $icon_aliases_as_array_vals = sprintf('"%s"', implode('","', $icon_aliases ) );
+        $subst .= PHP_EOL . '  "' . $icon->name . '":{' . PHP_EOL . '    path:"' . $icon->content . '", ' . PHP_EOL . '    keywords: [' . $icon_aliases_as_array_vals . ']' . PHP_EOL . '  },';
+
+        //update entity table
+        xdebug_break();
+
+        $entity_table .= '<tr' . ($icon_aliases_as_array_vals == '"light"' ? ' style="background:#f3d1d1"' : '') . '><td><img src="../' . (file_exists( '../svgs/' . $icon->name . '.svg') ? 'svgs/'  : 'custom_svgs/') . $icon->name . '.svg"</td><th>' . $icon->name . '</th><td>' . $icon_aliases_as_array_vals . '</td></tr>';
     }
 
     //lose the last comma
-    $subst = substr($subst,0,strlen($subst)-3);
+    $subst = substr($subst,0,strlen($subst)-1);
 
     $subst .= PHP_EOL . '};';
     $script = preg_replace($re, $subst, $script);
@@ -104,6 +119,10 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
     echo '<hr/><em>Script</em>';
     echo '<pre>' . $script . '</pre>';
     file_put_contents($script_file,$script);
+    file_put_contents('meta.json',json_encode($meta,JSON_PRETTY_PRINT));
+
+    echo '<h2>Entity Table</h2>';
+    echo $entity_table . '</table>';
 }
 
 function update_readme($readme_file,$hue_icons,$custom_icons){
@@ -196,7 +215,6 @@ function read_files($path,$debug = false) {
     if($debug) echo ' found <em>' . sizeof($items) . '</em> icons</br>';
     return $items;
 }
-
 ?>
 <style>
     body{
