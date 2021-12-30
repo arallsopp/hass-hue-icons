@@ -1001,6 +1001,29 @@
         "wellness": [
             "light",
             "table"
+        ],
+        "bulb-filament-alt-hung": [
+            "light"
+        ],
+        "bulb-group-candle-lightstrip": [
+            "light"
+        ],
+        "bulb-group-filament-alt-filament-hung": [
+            "light"
+        ],
+        "bulb-group-filament-alt-hung": [
+            "light"
+        ],
+        "bulb-group-filament-filament-alt-hung": [
+            "light"
+        ],
+        "friends-of-hue-rigel": [
+            "light",
+            "ceiling",
+            "pendant"
+        ],
+        "wall-switch-module": [
+            "switch"
         ]
     }
 }
