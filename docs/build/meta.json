@@ -123,10 +123,13 @@
             "light"
         ],
         "bulb-group-ceiling-round": [
-            "light"
+            "light",
+            "aurelle"
         ],
         "bulb-group-ceiling-square": [
-            "light"
+            "light",
+            "aurelle",
+            "surimu"
         ],
         "bulb-group-centura": [
             "light",
@@ -214,7 +217,8 @@
             "light"
         ],
         "bulb-par-38": [
-            "light"
+            "light",
+            "flood"
         ],
         "bulb-spot": [
             "light"
@@ -234,13 +238,15 @@
             "wall"
         ],
         "ceiling-aurelle": [
-            "light"
+            "light",
+            "panel"
         ],
         "ceiling-aurelle-circle": [
             "light"
         ],
         "ceiling-aurelle-rect": [
-            "light"
+            "light",
+            "panel"
         ],
         "ceiling-being": [
             "light"
@@ -334,19 +340,26 @@
             "light"
         ],
         "ceiling-rect": [
-            "light"
+            "light",
+            "panel",
+            "aurelle",
+            "surimu"
         ],
         "ceiling-round": [
             "light"
         ],
         "ceiling-square": [
-            "light"
+            "light",
+            "panel",
+            "aurelle",
+            "surimu"
         ],
         "ceiling-still": [
             "light"
         ],
         "ceiling-surimu": [
-            "light"
+            "light",
+            "panel"
         ],
         "centris": [
             "light",
@@ -365,15 +378,18 @@
         ],
         "centura": [
             "light",
-            "ceiling"
+            "ceiling",
+            "spot"
         ],
         "centura-round": [
             "light",
-            "ceiling"
+            "ceiling",
+            "spot"
         ],
         "centura-two": [
             "light",
-            "ceiling"
+            "ceiling",
+            "spot"
         ],
         "daylo-wall": [
             "light"
@@ -390,7 +406,7 @@
             "light"
         ],
         "downstairs": [
-            "light"
+            "area"
         ],
         "ensis": [
             "light",
@@ -692,120 +708,149 @@
             "light"
         ],
         "room-attic": [
-            "light"
+            "light",
+            "area"
         ],
         "room-balcony": [
+            "area",
             "light",
             "bannister"
         ],
         "room-bathroom": [
+            "area",
             "shower"
         ],
         "room-bbq": [
+            "area",
             "barbecue"
         ],
         "room-bedroom": [
+            "area",
             "double"
         ],
         "room-carport": [
-            "light",
+            "area",
             "garage"
         ],
         "room-closet": [
-            "light"
+            "area"
         ],
         "room-computer": [
-            "light"
+            "area"
         ],
         "room-dining": [
-            "light"
+            "area"
         ],
         "room-driveway": [
-            "light"
+            "area"
         ],
         "room-front-door": [
-            "light"
+            "area"
         ],
         "room-games": [
-            "light",
+            "area",
             "xbox",
             "console"
         ],
         "room-garage": [
-            "light"
+            "area",
+            "tools",
+            "config"
         ],
         "room-guestroom": [
             "single",
-            "bed"
+            "bed",
+            "area"
         ],
         "room-gym": [
+            "area",
             "exercise",
             "weights"
         ],
         "room-hallway": [
-            "coat"
+            "coat",
+            "area"
         ],
         "room-kids": [
-            "light",
+            "area",
             "toy",
             "bear"
         ],
         "room-kitchen": [
+            "area",
             "cook"
         ],
         "room-laundry": [
+            "area",
             "washing",
             "utility"
         ],
         "room-living": [
-            "light"
+            "area",
+            "sofa",
+            "settee",
+            "lounge"
         ],
         "room-lounge": [
-            "light"
+            "area",
+            "settee",
+            "chaise"
         ],
         "room-nursery": [
             "toys",
-            "rocking"
+            "rocking",
+            "area"
         ],
         "room-office": [
             "work",
-            "chair"
+            "chair",
+            "area"
         ],
         "room-other": [
-            "door"
+            "door",
+            "area"
         ],
         "room-outdoors": [
             "trees",
-            "garden"
+            "garden",
+            "area"
         ],
         "room-pool": [
-            "swim"
+            "swim",
+            "area"
         ],
         "room-porch": [
-            "rocking"
+            "rocking",
+            "area"
         ],
         "room-recreation": [
             "games",
             "ping",
-            "toys"
+            "toys",
+            "area"
         ],
         "room-stairs": [
             "upstairs",
-            "basement"
+            "basement",
+            "area"
         ],
         "room-storage": [
             "box",
-            "filing"
+            "filing",
+            "area"
         ],
         "room-studio": [
             "paint",
-            "easel"
+            "easel",
+            "area"
         ],
         "room-terrace": [
-            "picnic"
+            "picnic",
+            "area"
         ],
         "room-toilet": [
-            "wc"
+            "wc",
+            "area"
         ],
         "sana": [
             "light"
