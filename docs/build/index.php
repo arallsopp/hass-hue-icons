@@ -98,8 +98,6 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
         $subst .= PHP_EOL . '  "' . $icon->name . '":{' . PHP_EOL . '    path:"' . $icon->content . '", ' . PHP_EOL . '    keywords: [' . $icon_aliases_as_array_vals . ']' . PHP_EOL . '  },';
 
         //update entity table
-        xdebug_break();
-
         $entity_table .= '<tr' . ($icon_aliases_as_array_vals == '"light"' ? ' style="background:#f3d1d1"' : '') . '><td><img src="../' . (file_exists( '../svgs/' . $icon->name . '.svg') ? 'svgs/'  : 'custom_svgs/') . $icon->name . '.svg"</td><th>' . $icon->name . '</th><td>' . $icon_aliases_as_array_vals . '</td></tr>';
     }
 

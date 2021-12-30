@@ -67,7 +67,8 @@
         ],
         "bollard": [
             "light",
-            "calla"
+            "calla",
+            "exterior"
         ],
         "bridge-v1": [
             "infrastructure"
