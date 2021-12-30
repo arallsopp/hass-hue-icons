@@ -220,11 +220,13 @@ hass-hue-icons includes 192 custom icons designed by the author for specific hue
 ### Icon Requests?
 Your light not there? Let me know what's missing by raising a [Custom Icon Request](https://github.com/arallsopp/hass-hue-icons/issues/new?assignees=arallsopp&labels=icon+request&template=custom-icon-request.md&title=Icon%20Request%20%5Bname%20of%20fixture%5D).
 
-
 ### Sample Dash 
 With view icons and state color applied. Play bars are offline.
 ![lovelace_example](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/examples/lovelace_example.png)
 
+### Finding Icons
+Hass Hue Icons uses the new 'keywords' functionality to help you find specific fixtures. Try searching for 'pendant' or 'switch'. 
+ 
 ### Discussion:
 There's a thread over at the [home assistant forums](https://community.home-assistant.io/t/created-custom-colorizable-hue-icons-as-a-lovelace-resource) that tracks this repo.
 
