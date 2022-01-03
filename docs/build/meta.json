@@ -1026,6 +1026,14 @@
         ],
         "wall-switch-module": [
             "switch"
+        ],
+        "pillar-turaco-short": [
+            "light",
+            "exterior"
+        ],
+        "pillar-turaco-tall": [
+            "light",
+            "exterior"
         ]
     }
 }

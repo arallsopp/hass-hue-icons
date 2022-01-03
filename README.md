@@ -112,7 +112,7 @@ hass-hue-icons includes 71 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons) 
 
 ### User Requested Hue Icons
-hass-hue-icons includes 192 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
+hass-hue-icons includes 194 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
 
 [//]: # (Start Custom Icons)
 
@@ -192,7 +192,8 @@ hass-hue-icons includes 192 custom icons designed by the author for specific hue
 | ![hue:phoenix-table](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/phoenix-table.svg)| hue:phoenix-table | ![hue:pillar-impress-short](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pillar-impress-short.svg)| hue:pillar-impress-short |
 | ![hue:pillar-impress](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pillar-impress.svg)| hue:pillar-impress | ![hue:pillar-nyro](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pillar-nyro.svg)| hue:pillar-nyro |
 | ![hue:pillar-spot-double](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pillar-spot-double.svg)| hue:pillar-spot-double | ![hue:pillar-spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pillar-spot.svg)| hue:pillar-spot |
-| ![hue:pillar-tuar](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pillar-tuar.svg)| hue:pillar-tuar | ![hue:play-bar-three](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-three.svg)| hue:play-bar-three |
+| ![hue:pillar-tuar](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pillar-tuar.svg)| hue:pillar-tuar | ![hue:pillar-turaco-short](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pillar-turaco-short.svg)| hue:pillar-turaco-short |
+| ![hue:pillar-turaco-tall](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pillar-turaco-tall.svg)| hue:pillar-turaco-tall | ![hue:play-bar-three](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-three.svg)| hue:play-bar-three |
 | ![hue:play-bar-two](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-two.svg)| hue:play-bar-two | ![hue:play-bar-v-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-v-alt.svg)| hue:play-bar-v-alt |
 | ![hue:play-bar-v-two-in](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-v-two-in.svg)| hue:play-bar-v-two-in | ![hue:play-bar-v-two-out](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-v-two-out.svg)| hue:play-bar-v-two-out |
 | ![hue:play-bar-v-two](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-v-two.svg)| hue:play-bar-v-two | ![hue:play-bar-v](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/play-bar-v.svg)| hue:play-bar-v |
