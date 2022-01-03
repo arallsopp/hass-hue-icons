@@ -1095,7 +1095,7 @@ window.customIconsets["hue"] = getIcon;
 
 
 console.info(
-    `%c HASS-HUE-ICONS          \n%c Version 1.2.1 `,
+    `%c HASS-HUE-ICONS          \n%c Version 1.2.1 DEBUGGER `,
     "color: orange; font-weight: bold; background: black",
     "color: white; font-weight: bold; background: dimgray"
 );
