@@ -1063,7 +1063,9 @@ const HUE_ICONS_MAP = {
 };
 
 async function getIcon(name) {
-  let new_name;
+    console.info('called getIcon for ', name);
+
+    let new_name;
 
   if (!(name in HUE_ICONS_MAP)) {
     // try swapping the '_' for a '-'
@@ -1079,6 +1081,7 @@ async function getIcon(name) {
   return {path: HUE_ICONS_MAP[name].path};
 }
 async function getIconList() {
+  console.info('called getIconList()');
   return Object.entries(HUE_ICONS_MAP).map(([icon, content]) => ({
     name: icon,
     keywords: content.keywords,
