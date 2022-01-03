@@ -1,74 +1,78 @@
 {
     "aliases": {
         "adore": [
+            "bathroom",
             "light",
-            "wall",
-            "bathroom"
+            "wall"
         ],
         "adore-alt": [
+            "bathroom",
             "light",
-            "wall",
-            "bathroom"
+            "wall"
         ],
         "adore-mirror": [
+            "bathroom",
             "light",
-            "wall",
-            "bathroom"
-        ],
-        "amaze": [
-            "light",
-            "ceiling",
-            "pendant"
+            "wall"
         ],
         "amarant": [
+            "floor",
+            "light"
+        ],
+        "amaze": [
+            "ceiling",
             "light",
-            "floor"
+            "pendant"
         ],
         "amaze-alt": [
-            "light",
             "ceiling",
+            "light",
             "pendant"
         ],
         "aura": [
-            "light",
             "floor",
+            "light",
             "table"
         ],
         "aura-group": [
-            "light",
             "floor",
+            "light",
             "table"
         ],
         "beyond": [
-            "light",
-            "floor"
+            "floor",
+            "lamp",
+            "light"
         ],
         "beyond-down": [
-            "light",
-            "floor"
+            "floor",
+            "lamp",
+            "light"
         ],
         "beyond-solid": [
-            "light",
-            "floor"
+            "floor",
+            "lamp",
+            "light"
         ],
         "beyond-up": [
-            "light",
-            "floor"
+            "floor",
+            "lamp",
+            "light"
         ],
         "bloom": [
-            "light",
             "floor",
+            "light",
             "table"
         ],
         "bloom-group": [
-            "light",
             "floor",
+            "light",
             "table"
         ],
         "bollard": [
-            "light",
             "calla",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "bridge-v1": [
             "infrastructure"
@@ -77,7 +81,8 @@
             "infrastructure"
         ],
         "bulb-candle": [
-            "light"
+            "light",
+            "retro"
         ],
         "bulb-classic": [
             "light"
@@ -89,16 +94,24 @@
             "light"
         ],
         "bulb-filament": [
-            "light"
+            "light",
+            "retro"
         ],
         "bulb-filament-alt": [
-            "light"
+            "light",
+            "retro"
+        ],
+        "bulb-filament-alt-hung": [
+            "light",
+            "retro"
         ],
         "bulb-filament-candle": [
-            "light"
+            "light",
+            "retro"
         ],
         "bulb-filament-hung": [
-            "light"
+            "light",
+            "retro"
         ],
         "bulb-flood": [
             "light",
@@ -112,34 +125,38 @@
             "sultan"
         ],
         "bulb-group-bollard": [
-            "light",
             "calla",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "bulb-group-bollard-3": [
-            "light",
             "calla",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "bulb-group-candle": [
+            "light",
+            "retro"
+        ],
+        "bulb-group-candle-lightstrip": [
             "light"
         ],
         "bulb-group-ceiling-round": [
-            "light",
-            "aurelle"
+            "aurelle",
+            "light"
         ],
         "bulb-group-ceiling-square": [
-            "light",
             "aurelle",
+            "light",
             "surimu"
         ],
         "bulb-group-centura": [
-            "light",
-            "ceiling"
+            "ceiling",
+            "light"
         ],
         "bulb-group-centura-round": [
-            "light",
-            "ceiling"
+            "ceiling",
+            "light"
         ],
         "bulb-group-classic": [
             "light"
@@ -148,22 +165,38 @@
             "light"
         ],
         "bulb-group-filament": [
-            "light"
+            "light",
+            "retro"
         ],
         "bulb-group-filament-alt": [
+            "light",
+            "retro"
+        ],
+        "bulb-group-filament-alt-filament-hung": [
             "light"
+        ],
+        "bulb-group-filament-alt-hung": [
+            "light",
+            "retro"
         ],
         "bulb-group-filament-candle": [
-            "light"
+            "light",
+            "retro"
         ],
         "bulb-group-filament-filament-alt": [
-            "light"
+            "light",
+            "retro"
+        ],
+        "bulb-group-filament-filament-alt-hung": [
+            "light",
+            "retro"
         ],
         "bulb-group-filament-go": [
             "light"
         ],
         "bulb-group-filament-hung": [
-            "light"
+            "light",
+            "retro"
         ],
         "bulb-group-filament-spot": [
             "light"
@@ -181,24 +214,24 @@
             "light"
         ],
         "bulb-group-lightstrip": [
-            "light",
-            "led"
+            "led",
+            "light"
         ],
         "bulb-group-lightstrip-v": [
-            "light",
-            "led"
+            "led",
+            "light"
         ],
         "bulb-group-pillar-impress": [
-            "light",
-            "bollard"
+            "bollard",
+            "light"
         ],
         "bulb-group-pillar-impress-3": [
-            "light",
-            "bollard"
+            "bollard",
+            "light"
         ],
         "bulb-group-pillar-impress-short": [
-            "light",
-            "bollard"
+            "bollard",
+            "light"
         ],
         "bulb-group-spot": [
             "light"
@@ -219,8 +252,8 @@
             "light"
         ],
         "bulb-par-38": [
-            "light",
-            "flood"
+            "flood",
+            "light"
         ],
         "bulb-spot": [
             "light"
@@ -288,8 +321,8 @@
             "spot"
         ],
         "ceiling-cher-semiflush": [
-            "light",
-            "ceiling"
+            "ceiling",
+            "light"
         ],
         "ceiling-explore": [
             "light",
@@ -342,18 +375,18 @@
             "light"
         ],
         "ceiling-rect": [
+            "aurelle",
             "light",
             "panel",
-            "aurelle",
             "surimu"
         ],
         "ceiling-round": [
             "light"
         ],
         "ceiling-square": [
+            "aurelle",
             "light",
             "panel",
-            "aurelle",
             "surimu"
         ],
         "ceiling-still": [
@@ -364,33 +397,33 @@
             "panel"
         ],
         "centris": [
-            "light",
             "ceiling",
+            "light",
             "spot"
         ],
         "centris-three": [
-            "light",
             "ceiling",
+            "light",
             "spot"
         ],
         "centris-two": [
-            "light",
             "ceiling",
+            "light",
             "spot"
         ],
         "centura": [
-            "light",
             "ceiling",
+            "light",
             "spot"
         ],
         "centura-round": [
-            "light",
             "ceiling",
+            "light",
             "spot"
         ],
         "centura-two": [
-            "light",
             "ceiling",
+            "light",
             "spot"
         ],
         "daylo-wall": [
@@ -411,50 +444,54 @@
             "area"
         ],
         "ensis": [
-            "light",
             "ceiling",
+            "light",
             "pendant"
         ],
         "ensis-up": [
-            "light",
             "ceiling",
+            "light",
             "pendant"
         ],
         "floor-lantern": [
-            "light",
+            "bollard",
             "exterior",
-            "bollard"
+            "lamp",
+            "light"
         ],
         "floor-lantern-group": [
-            "light",
+            "bollard",
             "exterior",
-            "bollard"
+            "lamp",
+            "light"
         ],
         "floor-lantern-off": [
-            "light",
+            "bollard",
             "exterior",
-            "bollard"
+            "lamp",
+            "light"
         ],
         "floor-shade": [
+            "lamp",
             "light"
         ],
         "floor-spot": [
             "light"
         ],
         "flourish": [
+            "floor",
             "light",
-            "table",
-            "floor"
+            "table"
         ],
         "flourish-alt": [
+            "floor",
             "light",
-            "table",
-            "floor"
+            "table"
         ],
         "friends-of-hue-20042LEDSWACDMG-BLRFR": [
+            "exterior",
             "light",
-            "wall",
-            "exterior"
+            "wall"
         ],
         "friends-of-hue-arke": [
             "light",
@@ -477,12 +514,12 @@
             "wall"
         ],
         "friends-of-hue-iq-flush": [
-            "light",
-            "ceiling"
+            "ceiling",
+            "light"
         ],
         "friends-of-hue-iq-pendant": [
-            "light",
-            "ceiling"
+            "ceiling",
+            "light"
         ],
         "friends-of-hue-retrotouch-black-chrome": [
             "light",
@@ -500,32 +537,37 @@
             "light",
             "switch"
         ],
+        "friends-of-hue-rigel": [
+            "ceiling",
+            "light",
+            "pendant"
+        ],
         "friends-of-hue-senic": [
             "light",
             "switch"
         ],
         "go": [
-            "light",
             "floor",
+            "light",
             "table"
         ],
         "go-group": [
-            "light",
             "floor",
+            "light",
             "table"
         ],
         "go-off": [
-            "light",
             "floor",
+            "light",
             "table"
         ],
         "gradient-lightstrip": [
-            "light",
-            "led"
+            "led",
+            "light"
         ],
         "gradient-lightstrip-wrap": [
-            "light",
-            "led"
+            "led",
+            "light"
         ],
         "gradient-tube-long": [
             "light"
@@ -534,52 +576,52 @@
             "light"
         ],
         "iris": [
-            "light",
             "floor",
+            "light",
             "table"
         ],
         "liane": [
-            "light",
             "floor",
+            "light",
             "table"
         ],
         "lightstrip": [
-            "light",
-            "led"
+            "led",
+            "light"
         ],
         "lightstrip-off": [
-            "light",
-            "led"
+            "led",
+            "light"
         ],
         "lightstrip-tv": [
-            "light",
-            "led"
+            "led",
+            "light"
         ],
         "lightstrip-tv-alt": [
-            "light",
-            "led"
+            "led",
+            "light"
         ],
         "lightstrip-tv-off": [
-            "light",
-            "led"
+            "led",
+            "light"
         ],
         "lightstrip-wrap": [
-            "light",
-            "led"
+            "led",
+            "light"
         ],
         "lily": [
-            "light",
             "exterior",
+            "light",
             "spot"
         ],
         "lily-two": [
-            "light",
             "exterior",
+            "light",
             "spot"
         ],
         "lily-xl": [
-            "light",
             "exterior",
+            "light",
             "spot"
         ],
         "logo": [
@@ -593,68 +635,70 @@
             "pir"
         ],
         "outdoor-motion-sensor": [
+            "exterior",
             "light",
-            "pir",
-            "exterior"
+            "pir"
         ],
         "pedestal-econic": [
-            "light",
+            "bollard",
             "exterior",
-            "bollard"
+            "lamp",
+            "light"
         ],
         "pendant-being": [
-            "light",
-            "ceiling"
+            "ceiling",
+            "light"
         ],
         "pendant-cher": [
-            "light",
-            "ceiling"
+            "ceiling",
+            "light"
         ],
         "pendant-long": [
-            "light",
-            "ceiling"
+            "ceiling",
+            "light"
         ],
         "pendant-long-up": [
-            "light",
-            "ceiling"
+            "ceiling",
+            "light"
         ],
         "pendant-muscari": [
-            "light",
-            "ceiling"
+            "ceiling",
+            "light"
         ],
         "pendant-round": [
-            "light",
-            "ceiling"
+            "ceiling",
+            "light"
         ],
         "phoenix-pendant": [
-            "light",
-            "ceiling"
+            "ceiling",
+            "light"
         ],
         "phoenix-plafond": [
-            "light",
-            "ceiling"
+            "ceiling",
+            "light"
         ],
         "phoenix-semiflush": [
-            "light",
-            "ceiling"
+            "ceiling",
+            "light"
         ],
         "phoenix-table": [
+            "lamp",
             "light"
         ],
         "pillar-impress": [
-            "light",
+            "bollard",
             "exterior",
-            "bollard"
+            "light"
         ],
         "pillar-impress-short": [
-            "light",
+            "bollard",
             "exterior",
-            "bollard"
+            "light"
         ],
         "pillar-nyro": [
-            "light",
+            "bollard",
             "exterior",
-            "bollard"
+            "light"
         ],
         "pillar-spot": [
             "light"
@@ -663,9 +707,18 @@
             "light"
         ],
         "pillar-tuar": [
-            "light",
+            "bollard",
             "exterior",
-            "bollard"
+            "lamp",
+            "light"
+        ],
+        "pillar-turaco-short": [
+            "exterior",
+            "light"
+        ],
+        "pillar-turaco-tall": [
+            "exterior",
+            "light"
         ],
         "play-bar": [
             "light"
@@ -692,16 +745,16 @@
             "light"
         ],
         "plug": [
-            "light",
-            "infrastructure"
+            "infrastructure",
+            "light"
         ],
         "plug-eu": [
-            "light",
-            "infrastructure"
+            "infrastructure",
+            "light"
         ],
         "plug-uk": [
-            "light",
-            "infrastructure"
+            "infrastructure",
+            "light"
         ],
         "recessed-ceiling": [
             "light"
@@ -710,13 +763,13 @@
             "light"
         ],
         "room-attic": [
-            "light",
-            "area"
+            "area",
+            "light"
         ],
         "room-balcony": [
             "area",
-            "light",
-            "bannister"
+            "bannister",
+            "light"
         ],
         "room-bathroom": [
             "area",
@@ -751,18 +804,18 @@
         ],
         "room-games": [
             "area",
-            "xbox",
-            "console"
+            "console",
+            "xbox"
         ],
         "room-garage": [
             "area",
-            "tools",
-            "config"
+            "config",
+            "tools"
         ],
         "room-guestroom": [
-            "single",
+            "area",
             "bed",
-            "area"
+            "single"
         ],
         "room-gym": [
             "area",
@@ -770,13 +823,13 @@
             "weights"
         ],
         "room-hallway": [
-            "coat",
-            "area"
+            "area",
+            "coat"
         ],
         "room-kids": [
             "area",
-            "toy",
-            "bear"
+            "bear",
+            "toy"
         ],
         "room-kitchen": [
             "area",
@@ -784,75 +837,75 @@
         ],
         "room-laundry": [
             "area",
-            "washing",
-            "utility"
+            "utility",
+            "washing"
         ],
         "room-living": [
             "area",
-            "sofa",
+            "lounge",
             "settee",
-            "lounge"
+            "sofa"
         ],
         "room-lounge": [
             "area",
-            "settee",
-            "chaise"
+            "chaise",
+            "settee"
         ],
         "room-nursery": [
-            "toys",
+            "area",
             "rocking",
-            "area"
+            "toys"
         ],
         "room-office": [
-            "work",
+            "area",
             "chair",
-            "area"
+            "work"
         ],
         "room-other": [
-            "door",
-            "area"
+            "area",
+            "door"
         ],
         "room-outdoors": [
-            "trees",
+            "area",
             "garden",
-            "area"
+            "trees"
         ],
         "room-pool": [
-            "swim",
-            "area"
+            "area",
+            "swim"
         ],
         "room-porch": [
-            "rocking",
-            "area"
+            "area",
+            "rocking"
         ],
         "room-recreation": [
+            "area",
             "games",
             "ping",
-            "toys",
-            "area"
+            "toys"
         ],
         "room-stairs": [
-            "upstairs",
+            "area",
             "basement",
-            "area"
+            "upstairs"
         ],
         "room-storage": [
+            "area",
             "box",
-            "filing",
-            "area"
+            "filing"
         ],
         "room-studio": [
-            "paint",
+            "area",
             "easel",
-            "area"
+            "paint"
         ],
         "room-terrace": [
-            "picnic",
-            "area"
+            "area",
+            "picnic"
         ],
         "room-toilet": [
-            "wc",
-            "area"
+            "area",
+            "wc"
         ],
         "sana": [
             "light"
@@ -870,30 +923,31 @@
             "light"
         ],
         "single-spot": [
-            "light",
-            "ceiling"
+            "ceiling",
+            "light"
         ],
         "socket-eu": [
-            "light",
-            "infrastructure"
+            "infrastructure",
+            "light"
         ],
         "socket-uk": [
-            "light",
-            "infrastructure"
+            "infrastructure",
+            "light"
         ],
         "socket-us": [
-            "light",
-            "infrastructure"
+            "infrastructure",
+            "light"
         ],
         "sync-box": [
-            "light",
-            "infrastructure"
+            "infrastructure",
+            "light"
         ],
         "sync-box-alt": [
-            "light",
-            "infrastructure"
+            "infrastructure",
+            "light"
         ],
         "table-shade": [
+            "lamp",
             "light"
         ],
         "table-wash": [
@@ -907,90 +961,94 @@
             "light"
         ],
         "wall-appear": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-appear-group": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-attract": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-econic": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-econic-lantern": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-econic-lantern-base": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-econic-lantern-top": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-flood": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-fuzo": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-fuzo-h": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-impress": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-impress-narrow": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-lantern": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-lucca": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-lucca-alt": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-lucca-alt-below": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-nyro": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-resonate": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-shade": [
+            "lamp",
             "light"
         ],
         "wall-spot": [
             "light"
         ],
+        "wall-switch-module": [
+            "switch"
+        ],
         "wall-tuar": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wall-turaco": [
-            "light",
-            "exterior"
+            "exterior",
+            "light"
         ],
         "wellner": [
             "light",
@@ -1003,37 +1061,6 @@
         "wellness": [
             "light",
             "table"
-        ],
-        "bulb-filament-alt-hung": [
-            "light"
-        ],
-        "bulb-group-candle-lightstrip": [
-            "light"
-        ],
-        "bulb-group-filament-alt-filament-hung": [
-            "light"
-        ],
-        "bulb-group-filament-alt-hung": [
-            "light"
-        ],
-        "bulb-group-filament-filament-alt-hung": [
-            "light"
-        ],
-        "friends-of-hue-rigel": [
-            "light",
-            "ceiling",
-            "pendant"
-        ],
-        "wall-switch-module": [
-            "switch"
-        ],
-        "pillar-turaco-short": [
-            "light",
-            "exterior"
-        ],
-        "pillar-turaco-tall": [
-            "light",
-            "exterior"
         ]
     }
 }

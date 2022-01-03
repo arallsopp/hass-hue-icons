@@ -117,10 +117,28 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
     echo '<hr/><em>Script</em>';
     echo '<pre>' . $script . '</pre>';
     file_put_contents($script_file,$script);
+    $meta = sort_the_meta($meta);
+
     file_put_contents('meta.json',json_encode($meta,JSON_PRETTY_PRINT));
 
     echo '<h2>Entity Table</h2>';
     echo $entity_table . '</table>';
+}
+
+function sort_the_meta($meta){
+    //sort the fixtures
+    $array_fixtures = (array) $meta->aliases;
+    ksort($array_fixtures);
+
+    $meta->aliases = (object) $array_fixtures;
+
+
+    foreach ($meta->aliases as $key => $value) {
+        sort($value);
+        $meta->aliases->$key = $value;
+    }
+
+    return $meta;
 }
 
 function update_readme($readme_file,$hue_icons,$custom_icons){
