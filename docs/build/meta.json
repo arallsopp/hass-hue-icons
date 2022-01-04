@@ -72,7 +72,8 @@
         "bollard": [
             "calla",
             "exterior",
-            "light"
+            "light",
+            "pillar"
         ],
         "bridge-v1": [
             "infrastructure"
@@ -631,12 +632,17 @@
             "philips"
         ],
         "motion-sensor": [
-            "light",
+            "pir"
+        ],
+        "motion-sensor-temperature": [
             "pir"
         ],
         "outdoor-motion-sensor": [
             "exterior",
-            "light",
+            "pir"
+        ],
+        "outdoor-motion-sensor-temperature": [
+            "exterior",
             "pir"
         ],
         "pedestal-econic": [
