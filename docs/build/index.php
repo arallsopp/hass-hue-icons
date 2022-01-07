@@ -109,8 +109,8 @@ function update_script($script_file,$hue_icons,$custom_icons,$version = null){
 
     if(!is_null($version)){
         //write the version tag to the script
-        $re = '/HASS-HUE-ICONS\s+\\\\n%c Version [\d]+\.[\d]+\.[\d]+/m';
-        $subst = 'HASS-HUE-ICONS' . str_repeat(' ',(15 - strlen($version))) . '\n%c Version ' . $version;
+        $re = '/HASS-HUE-ICONS\s+%c Version [\d]+\.[\d]+\.[\d]+/m';
+        $subst = 'HASS-HUE-ICONS %c Version ' . $version;
         $script = preg_replace($re, $subst, $script);
     }
 
