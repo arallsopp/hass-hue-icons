@@ -236,6 +236,10 @@
             "bollard",
             "light"
         ],
+        "bulb-group-pillar-turaco-short-tall": [
+            "exterior",
+            "light"
+        ],
         "bulb-group-spot": [
             "light"
         ],
