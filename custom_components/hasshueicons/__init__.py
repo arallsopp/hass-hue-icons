@@ -16,7 +16,8 @@ LOADER_PATH = f'custom_components/{DOMAIN}/main.js'
 ICONS_URL = f'/{DOMAIN}/icons'
 ICONLIST_URL = f'/{DOMAIN}/list'
 ICONS_PATH = f'custom_components/{DOMAIN}/data'
-
+CUSTOM_ICONS_URL = f'/{DOMAIN}/icons/my'
+CUSTOM_ICONS_PATH = 'my_icons/'
 
 
 class ListingView(HomeAssistantView):
@@ -56,6 +57,17 @@ async def async_setup(hass, config):
                 )
             )
 
+    hass.http.register_static_path(
+        CUSTOM_ICONS_URL,
+        hass.config.path(CUSTOM_ICONS_PATH),
+        True
+    )
+    hass.http.register_view(
+        ListingView(
+            ICONLIST_URL + "/my",
+            hass.config.path(CUSTOM_ICONS_PATH)
+        )
+    )
 
     return True
 

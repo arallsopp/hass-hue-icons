@@ -76,7 +76,12 @@ if (!("customIcons" in window)) {
 
 window.customIcons["hue"] = {
     getIcon: (iconName) => getIcon("svgs", iconName),
-    getIconList: () => getIconList("svgs"),
+    getIconList: () => getIconList("svgs")
+};
+window.customIcons["my"] = {
+    getIcon: (iconName) => getIcon("my", iconName),
+    getIconList: () => getIconList("my")
+
 };
 
 // Duotone patches
