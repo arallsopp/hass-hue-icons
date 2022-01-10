@@ -1,6 +1,6 @@
 {
     "domain": "hasshueicons",
-    "name": "Hass Hue Icons",
+    "name": "hasshueicons",
     "documentation": "https://github.com/arallsopp/hass-hue-icons",
     "dependencies": ["frontend", "http"],
     "codeowners": [],
