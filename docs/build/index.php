@@ -7,7 +7,8 @@
 // Run this to regenerate the documentation and script from svgs in the svg and custom_svg folders
 
 
-// got to refactor all of this. It needs to read in the icons, and the meta, and update main.js
+// got to refactor all of this. It needs to read in the icons, and the meta, and update main.js, and manifest.json.
+// maybe even minify the scripts.
 
 ini_set('display_errors','on');
 
