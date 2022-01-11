@@ -1,5 +1,5 @@
 {
-    "name": "Hass Hue Icons",
+    "name": "hasshueicons",
     "render_readme": true,
-    "content_in_root": false
+    "homeassistant": "2021.11.0b0"
 }

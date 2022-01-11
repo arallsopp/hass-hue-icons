@@ -18,33 +18,27 @@ fixtures and groups that aren't represented by the 'official' icon set.
 Hass-hue-icons has been accepted into the [Home Assistant Community Store (HACS)](https://hacs.xyz). 
 
 ### HACS (Recommended):
-This is the recommended way to install hass-hue-icons. Hass-hue-icons is a default repository for HACS. To install:
+This is the recommended way to install hass-hue-icons as an integration. Hass-hue-icons is a default repository for HACS. To install:
 
 - Load HACS (installation instructions are [here](https://hacs.xyz/docs/installation/installation/)).
-- Select 'Frontend' to see the list of front end plugins and repositories.
-- Click the '+ Explore & Add repositories' button.
-- Type 'hass hue icons' into the search bar and click the row returned.
-- Click 'Install this repository in HACS' from the resulting dialog. 
-- Add the following to your configuration.yaml, save and restart HA.
-```
-frontend:
-  extra_module_url:
-    - /hacsfiles/hass-hue-icons/hass-hue-icons.js
-```
+- Select `Integrations` to see the list of downloaded and new repositories.
+- Click the `+ Explore & Download repositories` button.
+- Type `hasshueicons` into the search bar and click the row returned.
+- Click `Install this repository in HACS` from the resulting dialog. 
+- Restart Home Assistant
+- Click this: [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=hasshueicons)  
+    - OR: Go to your integrations configuration, click Add Integration and find `hasshueicons`
+
 
 ### Manual:
-- Copy `dist/hass-hue-icons.js` into your `config/www` folder.
+- Copy the contents of `custom_components/hasshueicons` into a `<Home Assistant Config>/custom_components/hasshueicons` folder.
 - Go to Configuration -> Lovelace Dashboards -> Resources -> Add Resource
-- set url as `/local/hass-hue-icons.js` and Resource Type as `Javascript Module`.
-- Add the following to your configuration.yaml, save and restart HA.
-```
-frontend:
-  extra_module_url:
-    - /local/hass-hue-icons.js
-```
+- Restart Home Assistant
+  - Click this: [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=hasshueicons)  
+      - OR: Go to your integrations configuration, click Add Integration and find "hasshueicons"
 
-- Save, restart Home Assistant.
-
+## Removing old versions:
+- Prior to v.2.0.0, hass hue icons was delivered as a frontend plugin. This prevents access to local custom icons, and required maniuplating configuration.yaml to ensure loading. Please remove that version before installing this, along with any entry in configuration.yaml
 
 ## Usage
 - In your entity editor, specify an icon as `hue:icon-name` 
@@ -221,7 +215,13 @@ hass-hue-icons includes 198 custom icons designed by the author for specific hue
 [//]: # (End Custom Icons) 
 
 ### Icon Requests?
-Your light not there? Let me know what's missing by raising a [Custom Icon Request](https://github.com/arallsopp/hass-hue-icons/issues/new?assignees=arallsopp&labels=icon+request&template=custom-icon-request.md&title=Icon%20Request%20%5Bname%20of%20fixture%5D).
+Your light or bulb group not there? Let me know what's missing by raising a [Custom Icon Request](https://github.com/arallsopp/hass-hue-icons/issues/new?assignees=arallsopp&labels=icon+request&template=custom-icon-request.md&title=Icon%20Request%20%5Bname%20of%20fixture%5D). I accept icon requests for hue and friends of hue fixtures, bulbs, switches, and infrastructure.
+
+### Want to add your own non HUE svg icon?
+- If the icon you want isn't related to hue, its likely I won't add it to this repo. 
+- However, if you have an svg file you'd like to use, you can do this locally by adding it to 
+`<Home Assistant Config>/my_icons/`. You will have to create this directory before use.
+- Use your icon by typing `my:` into the icon chooser, followed by the filename without the extension 
 
 ### Sample Dash 
 With view icons and state color applied. Play bars are offline.
@@ -238,14 +238,11 @@ There's a thread over at the [home assistant forums](https://community.home-assi
 ### Can't ever see the icons?
 If you cannot see the new icons, or you get an empty box where you're expecting an icon, flush your network cache. 
 
-### Icons don't show on first load of the dash?
-Did you add the frontend extra_module_url in your configuration.yaml? See the [installation section](#installation) for details.
-
 ## OpenHASP user?
 I periodically update a ttf font file in a zip at [font/hass-hue-icons-ttf.zip](font/hass-hue-icons-ttf.zip). Thanks to @nagyrobi for the suggestion.
  
 ## Thanks and Props
-- @hulkhaugen and @thomasloven for the technique.
+- @hulkhaugen and @thomasloven for the techniques.
 - @ludeeus for the installation guidance.
 - Everyone who has helped make this repo so broad by raising an [Icon Request](https://github.com/arallsopp/hass-hue-icons/issues/new?assignees=arallsopp&labels=icon+request&template=custom-icon-request.md&title=Icon%20Request%20%5Bname%20of%20fixture%5D).
 
