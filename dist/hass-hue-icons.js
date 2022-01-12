@@ -1076,10 +1076,22 @@ const HUE_ICONS_MAP = {
     path:"M22.01367,14.89337,19.68945,3.157c-.01953-.438-.47754-2.62451-7.63916-2.67187C4.69775.42755,4.37549,3.03986,4.3667,3.26886L1.98926,15.29767a2.69246,2.69246,0,0,0,.52,2.2207,5.38574,5.38574,0,0,0,2.55865,1.70856,3.07247,3.07247,0,0,0,1.4289.74188s-.4964,3.57776,5.35809,3.56061c5.85443-.01709,5.61481-2.61908,5.82019-3.64618a3.597,3.597,0,0,0,1.5141-.83954l-.04163.01618a5.41426,5.41426,0,0,0,2.2323-1.62745A3.09533,3.09533,0,0,0,22.01367,14.89337Zm-1.45019,1.96C19.74805,17.90509,17.59961,19.158,12,19.158c-5.77441,0-7.8999-1.19922-8.66553-2.20605a1.69481,1.69481,0,0,1-.37842-1.39942L5.355,3.41534c.00293-.01953.35449-1.93066,6.48828-1.93066.06592,0,.1333,0,.2002.00049,5.20263.03418,6.564,1.27246,6.65576,1.791L21.041,15.11993A2.12322,2.12322,0,0,1,20.56348,16.85333Z", 
     keywords: ["light","table"]
   }
-};
+},
+      HHI_ICON_STORE = {};
 
-async function getIcon(name) {
-  let new_name;
+async function getIconList() {
+  return Object.entries(HUE_ICONS_MAP).map(([icon, content]) => ({
+    name: icon,
+    keywords: content.keywords,
+  }));
+}
+
+const preProcessIcon = async (name) => {
+  const viewBox = "0 0 24 24",
+        paths = {},
+        format = undefined;
+
+  let path, fullCode, new_name;
 
   if (!(name in HUE_ICONS_MAP)) {
     // try swapping the '_' for a '-'
@@ -1089,26 +1101,127 @@ async function getIcon(name) {
       return '';
     }else{
       console.log(`Aliased "${name}" with "${new_name}"`);
-      return {path: HUE_ICONS_MAP[new_name].path};
+      path = HUE_ICONS_MAP[new_name].path;
     }
+  }else{
+    path = HUE_ICONS_MAP[name].path;
   }
-  return {path: HUE_ICONS_MAP[name].path};
-}
-async function getIconList() {
-  return Object.entries(HUE_ICONS_MAP).map(([icon, content]) => ({
-    name: icon,
-    keywords: content.keywords,
-  }));
-}
+  fullCode = `<svg viewBox="${viewBox}" height="24px" width="24px" fill="#44739e" xmlns="http://www.w3.org/2000/svg"><path d="${path}"></path></svg>`;
+  return { viewBox, path, paths, format, fullCode };
+};
+
+const getIcon = (iconName) => {
+  return new Promise(async (resolve, reject) => {
+    const icon = `${iconName}`;
+    if (HHI_ICON_STORE[icon]) resolve(HHI_ICON_STORE[icon]);
+    HHI_ICON_STORE[icon] = preProcessIcon(iconName);
+    resolve(HHI_ICON_STORE[icon]);
+  });
+};
+
 window.customIcons = window.customIcons || {};
-window.customIcons["hue"] = { getIcon, getIconList };
+window.customIcons["hue"] = {
+  getIcon: (iconName) => getIcon(iconName),
+  getIconList: () => getIconList()
+};
 
 window.customIconsets = window.customIconsets || {};
-window.customIconsets["hue"] = getIcon;
+window.customIconsets["hue"] = {
+  getIcon: (iconName) => getIcon(iconName)
+};
 
+
+
+
+customElements.whenDefined("ha-icon").then(() => {
+  const HaIcon = customElements.get("ha-icon");
+  HaIcon.prototype._setCustomPath = async function (promise, requestedIcon) {
+    const icon = await promise;
+    if (requestedIcon !== this.icon) return;
+    this._path = icon.path;
+    this._viewBox = icon.viewBox;
+
+    await this.UpdateComplete;
+
+    const el = this.shadowRoot.querySelector("ha-svg-icon");
+    if (!el || !el.setPaths) {
+      return;
+    }
+    el.clearPaths();
+
+    el.setPaths(icon.paths);
+    if (icon.format) {
+      el.classList.add(...icon.format.split("-"));
+    }
+  };
+});
+
+customElements.whenDefined("ha-svg-icon").then(() => {
+  const HaSvgIcon = customElements.get("ha-svg-icon");
+
+  HaSvgIcon.prototype.clearPaths = async function () {
+    await this.updateComplete;
+
+    const svgRoot = this.shadowRoot.querySelector("svg");
+    while (svgRoot && svgRoot.children.length > 1)
+      svgRoot.removeChild(svgRoot.lastChild);
+
+    const svgGroup = this.shadowRoot.querySelector("g");
+    while (svgGroup && svgGroup.children.length > 1)
+      svgGroup.removeChild(svgGroup.lastChild);
+
+    while (this.shadowRoot.querySelector("style.hasshueicons")) {
+      const el = this.shadowRoot.querySelector("style.hasshueicons");
+      el.parentNode.removeChild(el);
+    }
+  };
+
+  HaSvgIcon.prototype.setPaths = async function (paths) {
+    await this.updateComplete;
+    if (paths == undefined || Object.keys(paths).length === 0) return;
+    const styleEl =
+        this.shadowRoot.querySelector("style.hasshueicons") ||
+        document.createElement("style");
+    styleEl.classList.add("hasshueicons");
+    styleEl.innerHTML = `
+      .secondary {
+        opacity: 0.4;
+      }
+      :host(.invert) .secondary {
+        opacity: 1;
+      }
+      :host(.invert) .primary {
+        opacity: 0.4;
+      }
+      :host(.color) .primary {
+        opacity: 1;
+      }
+      :host(.color) .secondary {
+        opacity: 1;
+      }
+      :host(.color:not(.invert)) .secondary {
+        fill: var(--icon-secondary-color, var(--disabled-text-color));
+      }
+      :host(.color.invert) .primary {
+        fill: var(--icon-secondary-color, var(--disabled-text-color));
+      }
+      path:not(.primary):not(.secondary) {
+        opacity: 0;
+      }
+      `;
+    this.shadowRoot.appendChild(styleEl);
+    const root = this.shadowRoot.querySelector("g");
+    for (const k in paths) {
+      const el = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      el.setAttribute("d", paths[k]);
+      el.classList.add(k);
+      root.appendChild(el);
+    }
+  };
+});
 
 console.info(
-    `%c HASS-HUE-ICONS %c Version 1.2.3 `,
+    `%c HASS-HUE-ICONS %c Version 2.0.0 `,
     "color: orange; font-weight: bold; background: black",
     "color: white; font-weight: bold; background: dimgray"
 );
