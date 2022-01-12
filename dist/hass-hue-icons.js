@@ -1221,7 +1221,7 @@ customElements.whenDefined("ha-svg-icon").then(() => {
 });
 
 console.info(
-    `%c HASS-HUE-ICONS %c Version 2.0.0 `,
+    `%c HASS-HUE-ICONS %c Version 1.2.3 BETA`,
     "color: orange; font-weight: bold; background: black",
     "color: white; font-weight: bold; background: dimgray"
 );
