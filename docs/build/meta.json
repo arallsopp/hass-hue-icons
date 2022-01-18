@@ -968,6 +968,11 @@
             "infrastructure",
             "light"
         ],
+        "struana": [
+            "bathroom",
+            "ceiling",
+            "light"
+        ],
         "sync-box": [
             "infrastructure",
             "light"
