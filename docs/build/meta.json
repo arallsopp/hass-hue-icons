@@ -675,11 +675,23 @@
             "ceiling",
             "light"
         ],
+        "pendant-devote-solid": [
+            "ceiling",
+            "light"
+        ],
         "pendant-devote-three": [
             "ceiling",
             "light"
         ],
+        "pendant-devote-three-solid": [
+            "ceiling",
+            "light"
+        ],
         "pendant-devote-two": [
+            "ceiling",
+            "light"
+        ],
+        "pendant-devote-two-solid": [
             "ceiling",
             "light"
         ],
