@@ -973,6 +973,11 @@
             "ceiling",
             "light"
         ],
+        "struana-alt": [
+            "bathroom",
+            "ceiling",
+            "light"
+        ],
         "sync-box": [
             "infrastructure",
             "light"
