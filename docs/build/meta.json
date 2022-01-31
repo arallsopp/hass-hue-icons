@@ -135,6 +135,10 @@
             "exterior",
             "light"
         ],
+        "bulb-group-bollard-wall-appear": [
+            "exterior",
+            "light"
+        ],
         "bulb-group-candle": [
             "light",
             "retro"
