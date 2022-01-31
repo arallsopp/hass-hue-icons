@@ -749,7 +749,19 @@
             "light"
         ],
         "pillar-spot": [
-            "light"
+            "exterior",
+            "light",
+            "wall"
+        ],
+        "pillar-spot-2": [
+            "exterior",
+            "light",
+            "wall"
+        ],
+        "pillar-spot-3": [
+            "exterior",
+            "light",
+            "wall"
         ],
         "pillar-spot-double": [
             "light"
