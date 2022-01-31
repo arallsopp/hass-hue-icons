@@ -224,6 +224,11 @@
             "led",
             "light"
         ],
+        "bulb-group-par-38": [
+            "exterior",
+            "flood",
+            "light"
+        ],
         "bulb-group-pillar-impress": [
             "bollard",
             "light"
@@ -259,6 +264,7 @@
             "light"
         ],
         "bulb-par-38": [
+            "exterior",
             "flood",
             "light"
         ],
