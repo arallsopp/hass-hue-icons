@@ -168,7 +168,25 @@
         "bulb-group-classic": [
             "light"
         ],
+        "bulb-group-classic-3": [
+            "light"
+        ],
+        "bulb-group-classic-3-alt": [
+            "light"
+        ],
         "bulb-group-classic-hung": [
+            "light"
+        ],
+        "bulb-group-classic-hung-3": [
+            "light"
+        ],
+        "bulb-group-classic-hung-3-alt": [
+            "light"
+        ],
+        "bulb-group-classic-hung-4": [
+            "light"
+        ],
+        "bulb-group-classic-hung-4-alt": [
             "light"
         ],
         "bulb-group-filament": [
