@@ -548,6 +548,12 @@
             "light",
             "switch"
         ],
+        "friends-of-hue-aurora-dimmer-switch": [
+            "light"
+        ],
+        "friends-of-hue-aurora-dimmer-switch-alt": [
+            "light"
+        ],
         "friends-of-hue-eikon": [
             "light",
             "switch"

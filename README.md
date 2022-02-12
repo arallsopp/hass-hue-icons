@@ -112,7 +112,7 @@ hass-hue-icons includes 71 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons) 
 
 ### User Requested Hue Icons
-hass-hue-icons includes 218 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
+hass-hue-icons includes 220 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
 
 [//]: # (Start Custom Icons)
 
@@ -177,6 +177,7 @@ hass-hue-icons includes 218 custom icons designed by the author for specific hue
 | ![hue:floor-lantern-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/floor-lantern-off.svg)| hue:floor-lantern-off | ![hue:flourish-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/flourish-alt.svg)| hue:flourish-alt |
 | ![hue:flourish](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/flourish.svg)| hue:flourish | ![hue:friends-of-hue-20042LEDSWACDMG-BLRFR](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/friends-of-hue-20042LEDSWACDMG-BLRFR.svg)| hue:friends-of-hue-20042LEDSWACDMG-BLRFR |
 | ![hue:friends-of-hue-arke-round](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/friends-of-hue-arke-round.svg)| hue:friends-of-hue-arke-round | ![hue:friends-of-hue-arke](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/friends-of-hue-arke.svg)| hue:friends-of-hue-arke |
+| ![hue:friends-of-hue-aurora-dimmer-switch-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/friends-of-hue-aurora-dimmer-switch-alt.svg)| hue:friends-of-hue-aurora-dimmer-switch-alt | ![hue:friends-of-hue-aurora-dimmer-switch](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/friends-of-hue-aurora-dimmer-switch.svg)| hue:friends-of-hue-aurora-dimmer-switch |
 | ![hue:friends-of-hue-eikon](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/friends-of-hue-eikon.svg)| hue:friends-of-hue-eikon | ![hue:friends-of-hue-flat-p-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/friends-of-hue-flat-p-alt.svg)| hue:friends-of-hue-flat-p-alt |
 | ![hue:friends-of-hue-flat-p](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/friends-of-hue-flat-p.svg)| hue:friends-of-hue-flat-p | ![hue:friends-of-hue-iq-flush](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/friends-of-hue-iq-flush.svg)| hue:friends-of-hue-iq-flush |
 | ![hue:friends-of-hue-iq-pendant](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/friends-of-hue-iq-pendant.svg)| hue:friends-of-hue-iq-pendant | ![hue:friends-of-hue-retrotouch-black-chrome](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/friends-of-hue-retrotouch-black-chrome.svg)| hue:friends-of-hue-retrotouch-black-chrome |
