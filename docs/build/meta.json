@@ -628,6 +628,10 @@
         "gradient-tube-short": [
             "light"
         ],
+        "home": [
+            "light",
+            "room"
+        ],
         "iris": [
             "floor",
             "light",
