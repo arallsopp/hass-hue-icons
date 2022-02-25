@@ -629,6 +629,7 @@
             "light"
         ],
         "home": [
+            "area",
             "light",
             "room"
         ],
@@ -861,6 +862,10 @@
             "light"
         ],
         "room-attic": [
+            "area",
+            "light"
+        ],
+        "room-attic-alt": [
             "area",
             "light"
         ],
