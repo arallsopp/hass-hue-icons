@@ -20,11 +20,10 @@ Hass-hue-icons has been accepted into the [Home Assistant Community Store (HACS)
 ### HACS (Recommended):
 This is the recommended way to install hass-hue-icons. Hass-hue-icons is a default repository for HACS. To install:
 
-- Load HACS (installation instructions are [here](https://hacs.xyz/docs/installation/installation/)).
-- Select 'Frontend' to see the list of front end plugins and repositories.
-- Click the '+ Explore & Add repositories' button.
-- Type 'hass hue icons' into the search bar and click the row returned.
-- Click 'Install this repository in HACS' from the resulting dialog. 
+- Open HACS (installation instructions are [here](https://hacs.xyz/docs/installation/installation/)).
+- Go to "Frontend" section
+- Click button with "+" icon
+- Search for "hass hue icons" and install it.
 - Add the following to your configuration.yaml, save and restart HA.
 ```
 frontend:
