@@ -291,6 +291,10 @@
         "bulb-group-sultan-spot-off": [
             "light"
         ],
+        "bulb-group-wall-nyro-flood": [
+            "exterior",
+            "light"
+        ],
         "bulb-par-38": [
             "exterior",
             "flood",
