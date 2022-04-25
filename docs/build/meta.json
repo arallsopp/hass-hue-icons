@@ -135,6 +135,11 @@
             "exterior",
             "light"
         ],
+        "bulb-group-bollard-3-off": [
+            "calla",
+            "exterior",
+            "light"
+        ],
         "bulb-group-bollard-wall-appear": [
             "exterior",
             "light"
@@ -362,6 +367,10 @@
             "spot"
         ],
         "ceiling-buratto-two": [
+            "light",
+            "spot"
+        ],
+        "ceiling-buratto-two-off": [
             "light",
             "spot"
         ],
