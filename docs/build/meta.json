@@ -587,6 +587,11 @@
             "ceiling",
             "light"
         ],
+        "friends-of-hue-marbul-suspended": [
+            "ceiling",
+            "light",
+            "pendant"
+        ],
         "friends-of-hue-retrotouch-black-chrome": [
             "light",
             "switch"
