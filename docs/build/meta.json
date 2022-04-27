@@ -300,6 +300,9 @@
             "exterior",
             "light"
         ],
+        "bulb-group-wall-nyro-flood-alt": [
+            "light"
+        ],
         "bulb-par-38": [
             "exterior",
             "flood",
@@ -1141,6 +1144,14 @@
             "light"
         ],
         "wall-impress-narrow": [
+            "exterior",
+            "light"
+        ],
+        "wall-impress-narrow-three": [
+            "exterior",
+            "light"
+        ],
+        "wall-impress-narrow-two": [
             "exterior",
             "light"
         ],
