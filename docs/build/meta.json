@@ -135,6 +135,11 @@
             "exterior",
             "light"
         ],
+        "bulb-group-bollard-3-off": [
+            "calla",
+            "exterior",
+            "light"
+        ],
         "bulb-group-bollard-wall-appear": [
             "exterior",
             "light"
@@ -365,6 +370,10 @@
             "light",
             "spot"
         ],
+        "ceiling-buratto-two-off": [
+            "light",
+            "spot"
+        ],
         "ceiling-cher-semiflush": [
             "ceiling",
             "light"
@@ -577,6 +586,11 @@
         "friends-of-hue-iq-pendant": [
             "ceiling",
             "light"
+        ],
+        "friends-of-hue-marbul-suspended": [
+            "ceiling",
+            "light",
+            "pendant"
         ],
         "friends-of-hue-retrotouch-black-chrome": [
             "light",
@@ -1127,6 +1141,14 @@
             "light"
         ],
         "wall-impress-narrow": [
+            "exterior",
+            "light"
+        ],
+        "wall-inara": [
+            "exterior",
+            "light"
+        ],
+        "wall-inara-alt": [
             "exterior",
             "light"
         ],
