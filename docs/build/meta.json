@@ -1144,6 +1144,14 @@
             "exterior",
             "light"
         ],
+        "wall-inara": [
+            "exterior",
+            "light"
+        ],
+        "wall-inara-alt": [
+            "exterior",
+            "light"
+        ],
         "wall-lantern": [
             "exterior",
             "light"
