@@ -60,6 +60,10 @@ function get_latest_icons_for_comment($path,$limit = 5){
     }
 }
 
+function check_single_path($icon_text){
+    $count = substr_count($icon_text,'path');
+    return ($count==1);
+}
 function find_version($script_file){
 
     $script = file_get_contents($script_file);
@@ -207,6 +211,12 @@ function read_files($path,$debug = false) {
             $content = file_get_contents($file);
             $re = '/(<path|<path class="st\d") d\s?=\s?"(.*)"\/>/mis';
             preg_match_all($re, $content, $matches, PREG_SET_ORDER, 0);
+
+            $ok_to_proceed = check_single_path($content);
+
+            if(!$ok_to_proceed){
+                die('Aborting: Multiple paths in ' . $name);
+            }
 
             if(sizeof($matches)) {
                 $item = new stdClass();
