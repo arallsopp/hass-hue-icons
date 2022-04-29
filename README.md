@@ -111,7 +111,7 @@ hass-hue-icons includes 72 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons) 
 
 ### User Requested Hue Icons
-hass-hue-icons includes 231 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
+hass-hue-icons includes 235 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request. 
 
 [//]: # (Start Custom Icons)
 
@@ -153,7 +153,9 @@ hass-hue-icons includes 231 custom icons designed by the author for specific hue
 | ![hue:bulb-group-sultan-spot](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-sultan-spot.svg)| hue:bulb-group-sultan-spot | ![hue:bulb-group-wall-nyro-flood-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-wall-nyro-flood-alt.svg)| hue:bulb-group-wall-nyro-flood-alt |
 | ![hue:bulb-group-wall-nyro-flood](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-group-wall-nyro-flood.svg)| hue:bulb-group-wall-nyro-flood | ![hue:bulb-par-38](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-par-38.svg)| hue:bulb-par-38 |
 | ![hue:bulb-spot-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-spot-off.svg)| hue:bulb-spot-off | ![hue:bulb-sultan-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-sultan-off.svg)| hue:bulb-sultan-off |
-| ![hue:button](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/button.svg)| hue:button | ![hue:ceiling-aurelle-circle](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-aurelle-circle.svg)| hue:ceiling-aurelle-circle |
+| ![hue:button](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/button.svg)| hue:button | ![hue:ceiling-adore-alt-flush](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-adore-alt-flush.svg)| hue:ceiling-adore-alt-flush |
+| ![hue:ceiling-adore-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-adore-alt.svg)| hue:ceiling-adore-alt | ![hue:ceiling-adore-flush](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-adore-flush.svg)| hue:ceiling-adore-flush |
+| ![hue:ceiling-adore](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-adore.svg)| hue:ceiling-adore | ![hue:ceiling-aurelle-circle](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-aurelle-circle.svg)| hue:ceiling-aurelle-circle |
 | ![hue:ceiling-aurelle-rect](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-aurelle-rect.svg)| hue:ceiling-aurelle-rect | ![hue:ceiling-aurelle](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-aurelle.svg)| hue:ceiling-aurelle |
 | ![hue:ceiling-being](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-being.svg)| hue:ceiling-being | ![hue:ceiling-beyond-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-beyond-alt.svg)| hue:ceiling-beyond-alt |
 | ![hue:ceiling-beyond](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-beyond.svg)| hue:ceiling-beyond | ![hue:ceiling-buckram-three](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/ceiling-buckram-three.svg)| hue:ceiling-buckram-three |

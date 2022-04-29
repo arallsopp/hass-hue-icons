@@ -325,6 +325,18 @@
             "switch",
             "wall"
         ],
+        "ceiling-adore": [
+            "light"
+        ],
+        "ceiling-adore-alt": [
+            "light"
+        ],
+        "ceiling-adore-alt-flush": [
+            "light"
+        ],
+        "ceiling-adore-flush": [
+            "light"
+        ],
         "ceiling-aurelle": [
             "light",
             "panel"
