@@ -151,6 +151,9 @@
         "bulb-group-candle-lightstrip": [
             "light"
         ],
+        "bulb-group-ceiling-flush-circular": [
+            "light"
+        ],
         "bulb-group-ceiling-round": [
             "aurelle",
             "devere",
@@ -453,6 +456,18 @@
             "devere",
             "enrave",
             "light"
+        ],
+        "ceiling-runner": [
+            "light",
+            "spot"
+        ],
+        "ceiling-runner-three": [
+            "light",
+            "spot"
+        ],
+        "ceiling-runner-two": [
+            "light",
+            "spot"
         ],
         "ceiling-square": [
             "aurelle",
@@ -1198,6 +1213,10 @@
         "wall-resonate": [
             "exterior",
             "light"
+        ],
+        "wall-runner": [
+            "light",
+            "spot"
         ],
         "wall-shade": [
             "lamp",
