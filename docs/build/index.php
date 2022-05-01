@@ -44,7 +44,7 @@ update_readme($readme_file,$hue_icons,$custom_icons);
 update_script($script_file,$hue_icons,$custom_icons,$new_version);
 
 
-function get_latest_icons_for_comment($path,$limit = 5){
+function get_latest_icons_for_comment($path,$limit = 10){
     $files = glob($path . '*.svg');
     $count = 0;
     usort($files, function($a, $b) {
