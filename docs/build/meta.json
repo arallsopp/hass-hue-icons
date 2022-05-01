@@ -10,6 +10,11 @@
             "light",
             "wall"
         ],
+        "adore-alt-off": [
+            "bathroom",
+            "light",
+            "wall"
+        ],
         "adore-mirror": [
             "bathroom",
             "light",
@@ -347,6 +352,13 @@
         "ceiling-aurelle-circle": [
             "light"
         ],
+        "ceiling-aurelle-circle-off": [
+            "light"
+        ],
+        "ceiling-aurelle-off": [
+            "light",
+            "panel"
+        ],
         "ceiling-aurelle-rect": [
             "light",
             "panel"
@@ -440,6 +452,10 @@
             "light",
             "spot"
         ],
+        "ceiling-fugato-two-off": [
+            "light",
+            "spot"
+        ],
         "ceiling-infuse": [
             "light"
         ],
@@ -465,7 +481,27 @@
             "light",
             "spot"
         ],
+        "ceiling-runner-three-bulb-one": [
+            "light",
+            "spot"
+        ],
+        "ceiling-runner-three-bulb-three": [
+            "light",
+            "spot"
+        ],
+        "ceiling-runner-three-bulb-two": [
+            "light",
+            "spot"
+        ],
         "ceiling-runner-two": [
+            "light",
+            "spot"
+        ],
+        "ceiling-runner-two-bulb-one": [
+            "light",
+            "spot"
+        ],
+        "ceiling-runner-two-bulb-two": [
             "light",
             "spot"
         ],
@@ -530,6 +566,9 @@
         "double-spot": [
             "light"
         ],
+        "double-spot-off": [
+            "light"
+        ],
         "downstairs": [
             "area"
         ],
@@ -565,7 +604,14 @@
             "lamp",
             "light"
         ],
+        "floor-shade-off": [
+            "lamp",
+            "light"
+        ],
         "floor-spot": [
+            "light"
+        ],
+        "floor-spot-off": [
             "light"
         ],
         "flourish": [
@@ -730,6 +776,11 @@
             "light",
             "spot"
         ],
+        "lily-two-off": [
+            "exterior",
+            "light",
+            "spot"
+        ],
         "lily-xl": [
             "exterior",
             "light",
@@ -766,6 +817,10 @@
             "light"
         ],
         "pendant-cher": [
+            "ceiling",
+            "light"
+        ],
+        "pendant-cher-off": [
             "ceiling",
             "light"
         ],
@@ -806,6 +861,10 @@
             "light"
         ],
         "pendant-round": [
+            "ceiling",
+            "light"
+        ],
+        "pendant-round-off": [
             "ceiling",
             "light"
         ],
@@ -873,6 +932,9 @@
             "light"
         ],
         "play-bar": [
+            "light"
+        ],
+        "play-bar-off": [
             "light"
         ],
         "play-bar-three": [
@@ -1223,6 +1285,9 @@
             "light"
         ],
         "wall-spot": [
+            "light"
+        ],
+        "wall-spot-off": [
             "light"
         ],
         "wall-switch-module": [
