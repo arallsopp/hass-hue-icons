@@ -527,12 +527,27 @@
             "light",
             "spot"
         ],
+        "centris-off": [
+            "ceiling",
+            "light",
+            "spot"
+        ],
         "centris-three": [
             "ceiling",
             "light",
             "spot"
         ],
+        "centris-three-off": [
+            "ceiling",
+            "light",
+            "spot"
+        ],
         "centris-two": [
+            "ceiling",
+            "light",
+            "spot"
+        ],
+        "centris-two-off": [
             "ceiling",
             "light",
             "spot"
@@ -620,6 +635,11 @@
             "table"
         ],
         "flourish-alt": [
+            "floor",
+            "light",
+            "table"
+        ],
+        "flourish-alt-off": [
             "floor",
             "light",
             "table"
@@ -966,6 +986,10 @@
             "infrastructure",
             "light"
         ],
+        "plug-group": [
+            "infrastructure",
+            "light"
+        ],
         "plug-uk": [
             "infrastructure",
             "light"
@@ -1309,7 +1333,15 @@
             "light",
             "table"
         ],
+        "wellner-solid-off": [
+            "light",
+            "table"
+        ],
         "wellness": [
+            "light",
+            "table"
+        ],
+        "wellness-off": [
             "light",
             "table"
         ]
