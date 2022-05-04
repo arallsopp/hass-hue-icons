@@ -1002,18 +1002,33 @@
         ],
         "room-attic": [
             "area",
-            "light"
+            "loft"
         ],
         "room-attic-alt": [
             "area",
-            "light"
+            "loft"
+        ],
+        "room-attic-alt-off": [
+            "area",
+            "loft"
+        ],
+        "room-attic-off": [
+            "area",
+            "loft"
         ],
         "room-balcony": [
             "area",
-            "bannister",
-            "light"
+            "bannister"
+        ],
+        "room-balcony-off": [
+            "area",
+            "bannister"
         ],
         "room-bathroom": [
+            "area",
+            "shower"
+        ],
+        "room-bathroom-off": [
             "area",
             "shower"
         ],
@@ -1021,7 +1036,15 @@
             "area",
             "barbecue"
         ],
+        "room-bbq-off": [
+            "area",
+            "barbecue"
+        ],
         "room-bedroom": [
+            "area",
+            "double"
+        ],
+        "room-bedroom-off": [
             "area",
             "double"
         ],
@@ -1029,22 +1052,52 @@
             "area",
             "garage"
         ],
+        "room-carport-off": [
+            "area",
+            "garage"
+        ],
         "room-closet": [
-            "area"
+            "area",
+            "cupboard"
+        ],
+        "room-closet-off": [
+            "area",
+            "cupboard"
         ],
         "room-computer": [
-            "area"
+            "area",
+            "pc"
+        ],
+        "room-computer-off": [
+            "area",
+            "pc"
         ],
         "room-dining": [
-            "area"
+            "area",
+            "food"
+        ],
+        "room-dining-off": [
+            "area",
+            "food"
         ],
         "room-driveway": [
+            "area"
+        ],
+        "room-driveway-off": [
             "area"
         ],
         "room-front-door": [
             "area"
         ],
+        "room-front-door-off": [
+            "area"
+        ],
         "room-games": [
+            "area",
+            "console",
+            "xbox"
+        ],
+        "room-games-off": [
             "area",
             "console",
             "xbox"
@@ -1054,7 +1107,17 @@
             "config",
             "tools"
         ],
+        "room-garage-off": [
+            "area",
+            "config",
+            "tools"
+        ],
         "room-guestroom": [
+            "area",
+            "bed",
+            "single"
+        ],
+        "room-guestroom-off": [
             "area",
             "bed",
             "single"
@@ -1064,7 +1127,16 @@
             "exercise",
             "weights"
         ],
+        "room-gym-off": [
+            "area",
+            "exercise",
+            "weights"
+        ],
         "room-hallway": [
+            "area",
+            "coat"
+        ],
+        "room-hallway-off": [
             "area",
             "coat"
         ],
@@ -1073,11 +1145,25 @@
             "bear",
             "toy"
         ],
+        "room-kids-off": [
+            "area",
+            "bear",
+            "toy"
+        ],
         "room-kitchen": [
             "area",
             "cook"
         ],
+        "room-kitchen-off": [
+            "area",
+            "cook"
+        ],
         "room-laundry": [
+            "area",
+            "utility",
+            "washing"
+        ],
+        "room-laundry-off": [
             "area",
             "utility",
             "washing"
@@ -1088,7 +1174,18 @@
             "settee",
             "sofa"
         ],
+        "room-living-off": [
+            "area",
+            "lounge",
+            "settee",
+            "sofa"
+        ],
         "room-lounge": [
+            "area",
+            "chaise",
+            "settee"
+        ],
+        "room-lounge-off": [
             "area",
             "chaise",
             "settee"
@@ -1098,7 +1195,17 @@
             "rocking",
             "toys"
         ],
+        "room-nursery-off": [
+            "area",
+            "rocking",
+            "toys"
+        ],
         "room-office": [
+            "area",
+            "chair",
+            "work"
+        ],
+        "room-office-off": [
             "area",
             "chair",
             "work"
@@ -1107,7 +1214,16 @@
             "area",
             "door"
         ],
+        "room-other-off": [
+            "area",
+            "door"
+        ],
         "room-outdoors": [
+            "area",
+            "garden",
+            "trees"
+        ],
+        "room-outdoors-off": [
             "area",
             "garden",
             "trees"
@@ -1116,11 +1232,25 @@
             "area",
             "swim"
         ],
+        "room-pool-off": [
+            "area",
+            "swim"
+        ],
         "room-porch": [
             "area",
             "rocking"
         ],
+        "room-porch-off": [
+            "area",
+            "rocking"
+        ],
         "room-recreation": [
+            "area",
+            "games",
+            "ping",
+            "toys"
+        ],
+        "room-recreation-off": [
             "area",
             "games",
             "ping",
@@ -1131,7 +1261,17 @@
             "basement",
             "upstairs"
         ],
+        "room-stairs-off": [
+            "area",
+            "basement",
+            "upstairs"
+        ],
         "room-storage": [
+            "area",
+            "box",
+            "filing"
+        ],
+        "room-storage-off": [
             "area",
             "box",
             "filing"
@@ -1141,11 +1281,24 @@
             "easel",
             "paint"
         ],
+        "room-studio-off": [
+            "area",
+            "easel",
+            "paint"
+        ],
         "room-terrace": [
             "area",
             "picnic"
         ],
+        "room-terrace-off": [
+            "area",
+            "picnic"
+        ],
         "room-toilet": [
+            "area",
+            "wc"
+        ],
+        "room-toilet-off": [
             "area",
             "wc"
         ],
