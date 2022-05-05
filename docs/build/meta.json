@@ -603,6 +603,13 @@
             "light",
             "pendant"
         ],
+        "entertainment-area": [
+            "music",
+            "room",
+            "spotify",
+            "sync",
+            "zone"
+        ],
         "floor-lantern": [
             "bollard",
             "exterior",
