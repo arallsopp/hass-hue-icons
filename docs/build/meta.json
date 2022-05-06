@@ -90,10 +90,25 @@
             "light",
             "retro"
         ],
+        "bulb-candle-hung": [
+            "light",
+            "retro"
+        ],
+        "bulb-candle-hung-off": [
+            "light",
+            "retro"
+        ],
+        "bulb-candle-off": [
+            "light",
+            "retro"
+        ],
         "bulb-classic": [
             "light"
         ],
         "bulb-classic-hung": [
+            "light"
+        ],
+        "bulb-classic-hung-off": [
             "light"
         ],
         "bulb-classic-off": [
@@ -116,6 +131,14 @@
             "retro"
         ],
         "bulb-filament-hung": [
+            "light",
+            "retro"
+        ],
+        "bulb-filament-hung-off": [
+            "light",
+            "retro"
+        ],
+        "bulb-filament-off": [
             "light",
             "retro"
         ],
@@ -965,31 +988,44 @@
             "light"
         ],
         "play-bar": [
-            "light"
+            "light",
+            "tv"
         ],
         "play-bar-off": [
-            "light"
+            "light",
+            "tv"
         ],
         "play-bar-three": [
-            "light"
+            "light",
+            "tv"
         ],
         "play-bar-two": [
-            "light"
+            "light",
+            "tv"
         ],
         "play-bar-v": [
-            "light"
+            "light",
+            "tv"
         ],
         "play-bar-v-alt": [
-            "light"
+            "light",
+            "tv"
+        ],
+        "play-bar-v-off": [
+            "light",
+            "tv"
         ],
         "play-bar-v-two": [
-            "light"
+            "light",
+            "tv"
         ],
         "play-bar-v-two-in": [
-            "light"
+            "light",
+            "tv"
         ],
         "play-bar-v-two-out": [
-            "light"
+            "light",
+            "tv"
         ],
         "plug": [
             "infrastructure",

@@ -25,7 +25,7 @@ $version_components[2] = intval($version_components[2]) + 1;
 $incremented_version = join('.',$version_components);
 echo '<br/><a href="?v=' . $incremented_version  . '">Increment to version ' . $incremented_version . '</a><hr/>';
 
-get_latest_icons_for_comment('../custom_svgs/',12);
+get_latest_icons_for_comment('../custom_svgs/',6);
 
 $hue_icons = read_files('../svgs/');
 $custom_icons = read_files('../custom_svgs/');
