@@ -989,42 +989,52 @@
         ],
         "play-bar": [
             "light",
+            "sync",
             "tv"
         ],
         "play-bar-off": [
             "light",
+            "sync",
             "tv"
         ],
         "play-bar-three": [
             "light",
+            "sync",
             "tv"
         ],
         "play-bar-two": [
             "light",
+            "sync",
             "tv"
         ],
         "play-bar-v": [
             "light",
+            "sync",
             "tv"
         ],
         "play-bar-v-alt": [
             "light",
+            "sync",
             "tv"
         ],
         "play-bar-v-off": [
             "light",
+            "sync",
             "tv"
         ],
         "play-bar-v-two": [
             "light",
+            "sync",
             "tv"
         ],
         "play-bar-v-two-in": [
             "light",
+            "sync",
             "tv"
         ],
         "play-bar-v-two-out": [
             "light",
+            "sync",
             "tv"
         ],
         "plug": [
@@ -1401,18 +1411,27 @@
             "light"
         ],
         "sync-high": [
+            "infrastructure",
             "light"
         ],
         "sync-intense": [
+            "infrastructure",
             "light"
         ],
         "sync-moderate": [
+            "infrastructure",
             "light"
         ],
         "sync-music": [
+            "infrastructure",
+            "light"
+        ],
+        "sync-music-alt": [
+            "infrastructure",
             "light"
         ],
         "sync-subtle": [
+            "infrastructure",
             "light"
         ],
         "table-shade": [
