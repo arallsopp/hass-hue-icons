@@ -1400,6 +1400,21 @@
             "infrastructure",
             "light"
         ],
+        "sync-high": [
+            "light"
+        ],
+        "sync-intense": [
+            "light"
+        ],
+        "sync-moderate": [
+            "light"
+        ],
+        "sync-music": [
+            "light"
+        ],
+        "sync-subtle": [
+            "light"
+        ],
         "table-shade": [
             "lamp",
             "light"
