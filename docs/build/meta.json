@@ -1045,11 +1045,31 @@
             "infrastructure",
             "light"
         ],
+        "plug-eu-alt": [
+            "infrastructure",
+            "light"
+        ],
+        "plug-eu-group": [
+            "infrastructure",
+            "light"
+        ],
+        "plug-eu-group-off": [
+            "infrastructure",
+            "light"
+        ],
+        "plug-eu-off": [
+            "infrastructure",
+            "light"
+        ],
         "plug-group": [
             "infrastructure",
             "light"
         ],
         "plug-uk": [
+            "infrastructure",
+            "light"
+        ],
+        "plug-us": [
             "infrastructure",
             "light"
         ],
