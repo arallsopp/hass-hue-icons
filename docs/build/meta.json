@@ -1149,6 +1149,18 @@
             "infrastructure",
             "light"
         ],
+        "plug-uk-group": [
+            "infrastructure",
+            "light"
+        ],
+        "plug-uk-group-off": [
+            "infrastructure",
+            "light"
+        ],
+        "plug-uk-off": [
+            "infrastructure",
+            "light"
+        ],
         "plug-us": [
             "infrastructure",
             "light"
@@ -1510,16 +1522,31 @@
             "infrastructure",
             "light"
         ],
+        "sync-box-alt-off": [
+            "light"
+        ],
+        "sync-box-off": [
+            "light"
+        ],
         "sync-high": [
             "infrastructure",
+            "light"
+        ],
+        "sync-high-off": [
             "light"
         ],
         "sync-intense": [
             "infrastructure",
             "light"
         ],
+        "sync-intense-off": [
+            "light"
+        ],
         "sync-moderate": [
             "infrastructure",
+            "light"
+        ],
+        "sync-moderate-off": [
             "light"
         ],
         "sync-music": [
@@ -1530,8 +1557,17 @@
             "infrastructure",
             "light"
         ],
+        "sync-music-alt-off": [
+            "light"
+        ],
+        "sync-music-off": [
+            "light"
+        ],
         "sync-subtle": [
             "infrastructure",
+            "light"
+        ],
+        "sync-subtle-off": [
             "light"
         ],
         "table-shade": [
