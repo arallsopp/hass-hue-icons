@@ -34,12 +34,32 @@
             "light",
             "pendant"
         ],
+        "amaze-alt-off": [
+            "ceiling",
+            "light",
+            "pendant"
+        ],
+        "amaze-off": [
+            "ceiling",
+            "light",
+            "pendant"
+        ],
         "aura": [
             "floor",
             "light",
             "table"
         ],
         "aura-group": [
+            "floor",
+            "light",
+            "table"
+        ],
+        "aura-group-off": [
+            "floor",
+            "light",
+            "table"
+        ],
+        "aura-off": [
             "floor",
             "light",
             "table"
@@ -54,12 +74,52 @@
             "lamp",
             "light"
         ],
+        "beyond-down-group": [
+            "floor",
+            "lamp",
+            "light"
+        ],
+        "beyond-down-group-off": [
+            "floor",
+            "lamp",
+            "light"
+        ],
+        "beyond-group": [
+            "floor",
+            "lamp",
+            "light"
+        ],
+        "beyond-group-off": [
+            "floor",
+            "lamp",
+            "light"
+        ],
         "beyond-solid": [
             "floor",
             "lamp",
             "light"
         ],
+        "beyond-solid-group": [
+            "floor",
+            "lamp",
+            "light"
+        ],
+        "beyond-solid-group-off": [
+            "floor",
+            "lamp",
+            "light"
+        ],
         "beyond-up": [
+            "floor",
+            "lamp",
+            "light"
+        ],
+        "beyond-up-group": [
+            "floor",
+            "lamp",
+            "light"
+        ],
+        "beyond-up-group-off": [
             "floor",
             "lamp",
             "light"
