@@ -25,7 +25,7 @@ $version_components[2] = intval($version_components[2]) + 1;
 $incremented_version = join('.',$version_components);
 echo '<br/><a href="?v=' . $incremented_version  . '">Increment to version ' . $incremented_version . '</a><hr/>';
 
-get_latest_icons_for_comment('../custom_svgs/',6);
+get_latest_icons_for_comment('../custom_svgs/',12);
 
 $hue_icons = read_files('../svgs/');
 $custom_icons = read_files('../custom_svgs/');
@@ -44,7 +44,7 @@ update_readme($readme_file,$hue_icons,$custom_icons);
 update_script($script_file,$hue_icons,$custom_icons,$new_version);
 
 
-function get_latest_icons_for_comment($path,$limit = 10){
+function get_latest_icons_for_comment($path,$limit = 12){
     $files = glob($path . '*.svg');
     $count = 0;
     usort($files, function($a, $b) {
@@ -62,7 +62,11 @@ function get_latest_icons_for_comment($path,$limit = 10){
 
 function check_single_path($icon_text){
     $count = substr_count($icon_text,'path');
-    return ($count==1);
+    if($count == 0){
+        $just_bloody_accept_it = true;
+    }
+    return (
+            $count == 1);
 }
 function find_version($script_file){
 

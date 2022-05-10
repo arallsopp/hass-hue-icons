@@ -84,12 +84,22 @@
             "lamp",
             "light"
         ],
+        "beyond-down-off": [
+            "floor",
+            "lamp",
+            "light"
+        ],
         "beyond-group": [
             "floor",
             "lamp",
             "light"
         ],
         "beyond-group-off": [
+            "floor",
+            "lamp",
+            "light"
+        ],
+        "beyond-off": [
             "floor",
             "lamp",
             "light"
@@ -109,6 +119,11 @@
             "lamp",
             "light"
         ],
+        "beyond-solid-off": [
+            "floor",
+            "lamp",
+            "light"
+        ],
         "beyond-up": [
             "floor",
             "lamp",
@@ -120,6 +135,11 @@
             "light"
         ],
         "beyond-up-group-off": [
+            "floor",
+            "lamp",
+            "light"
+        ],
+        "beyond-up-off": [
             "floor",
             "lamp",
             "light"
