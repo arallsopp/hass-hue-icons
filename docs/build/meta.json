@@ -846,6 +846,11 @@
             "light",
             "table"
         ],
+        "go-group-off": [
+            "floor",
+            "light",
+            "table"
+        ],
         "go-off": [
             "floor",
             "light",
