@@ -275,11 +275,14 @@
         ],
         "bulb-group-centura": [
             "ceiling",
-            "light"
+            "light",
+            "spot"
         ],
         "bulb-group-centura-round": [
             "ceiling",
-            "light"
+            "light",
+            "milliskin",
+            "spot"
         ],
         "bulb-group-classic": [
             "light"
@@ -511,6 +514,9 @@
             "ceiling",
             "light"
         ],
+        "ceiling-devere": [
+            "light"
+        ],
         "ceiling-explore": [
             "light",
             "pendant"
@@ -669,6 +675,7 @@
         "centura-round": [
             "ceiling",
             "light",
+            "milliskin",
             "spot"
         ],
         "centura-two": [
