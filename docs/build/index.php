@@ -211,7 +211,7 @@ function read_files($path,$debug = false) {
 // print.
     foreach ($files as $file) {
         $name = basename($file, '.svg');
-        if($name != 'blank' && $name != 'qr') {
+        if($name != 'blank') {
             $content = file_get_contents($file);
             $re = '/(<path|<path class="st\d") d\s?=\s?"(.*)"\/>/mis';
             preg_match_all($re, $content, $matches, PREG_SET_ORDER, 0);

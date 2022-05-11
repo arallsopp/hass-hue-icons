@@ -1183,6 +1183,9 @@
             "infrastructure",
             "light"
         ],
+        "qr": [
+            "info"
+        ],
         "recessed-ceiling": [
             "light"
         ],
