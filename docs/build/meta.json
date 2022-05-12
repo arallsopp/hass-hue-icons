@@ -875,6 +875,9 @@
             "light",
             "room"
         ],
+        "ikea-death-star": [
+            "light"
+        ],
         "iris": [
             "floor",
             "light",
@@ -1591,6 +1594,9 @@
         "sync-subtle-off": [
             "light"
         ],
+        "table-cylinder-lamp": [
+            "light"
+        ],
         "table-shade": [
             "lamp",
             "light"
@@ -1670,6 +1676,10 @@
             "light"
         ],
         "wall-lantern": [
+            "exterior",
+            "light"
+        ],
+        "wall-lantern-off": [
             "exterior",
             "light"
         ],
