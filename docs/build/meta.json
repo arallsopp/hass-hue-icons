@@ -952,6 +952,9 @@
         "motion-sensor-luminance-alt": [
             "pir"
         ],
+        "motion-sensor-movement": [
+            "pir"
+        ],
         "motion-sensor-temperature": [
             "pir"
         ],
