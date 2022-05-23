@@ -256,6 +256,10 @@
             "light",
             "retro"
         ],
+        "bulb-group-candle-filament-hung": [
+            "light",
+            "retro"
+        ],
         "bulb-group-candle-lightstrip": [
             "light"
         ],
@@ -398,6 +402,9 @@
         "bulb-group-sultan-go": [
             "light"
         ],
+        "bulb-group-sultan-hung": [
+            "light"
+        ],
         "bulb-group-sultan-lightstrip": [
             "light"
         ],
@@ -429,6 +436,9 @@
             "light"
         ],
         "bulb-sultan": [
+            "light"
+        ],
+        "bulb-sultan-hung": [
             "light"
         ],
         "bulb-sultan-off": [
@@ -682,6 +692,12 @@
             "ceiling",
             "light",
             "spot"
+        ],
+        "cooker-hood-curve": [
+            "light"
+        ],
+        "cooker-hood-trapezoid": [
+            "light"
         ],
         "daylo-wall": [
             "light"
