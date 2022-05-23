@@ -444,6 +444,9 @@
         "bulb-spot": [
             "light"
         ],
+        "bulb-spot-hung": [
+            "light"
+        ],
         "bulb-spot-off": [
             "light"
         ],
