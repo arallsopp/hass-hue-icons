@@ -12,6 +12,8 @@ fixtures and groups that aren't represented by the 'official' icon set.
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+[![Man Hours](https://img.shields.io/endpoint?url=https%3A%2F%2Fmh.jessemillar.com%2Fhours%3Frepo%3Dhttps%3A%2F%2Fgithub.com%2Farallsopp%2Fhass-hue-icons.git)](https://jessemillar.com/r/man-hours)
+
 
 ## <a name="installation"></a>Installation
 
