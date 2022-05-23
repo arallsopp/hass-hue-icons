@@ -409,6 +409,11 @@
             "light"
         ],
         "bulb-group-spot": [
+            "gu10",
+            "light"
+        ],
+        "bulb-group-spot-hung": [
+            "gu10",
             "light"
         ],
         "bulb-group-sultan-go": [
@@ -442,12 +447,15 @@
             "light"
         ],
         "bulb-spot": [
+            "gu10",
             "light"
         ],
         "bulb-spot-hung": [
+            "gu10",
             "light"
         ],
         "bulb-spot-off": [
+            "gu10",
             "light"
         ],
         "bulb-sultan": [
