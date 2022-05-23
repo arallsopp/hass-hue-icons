@@ -166,6 +166,12 @@
         "bridge-v2": [
             "infrastructure"
         ],
+        "bulb-br30": [
+            "light"
+        ],
+        "bulb-br30-hung": [
+            "light"
+        ],
         "bulb-candle": [
             "light",
             "retro"
@@ -250,6 +256,12 @@
         ],
         "bulb-group-bollard-wall-appear": [
             "exterior",
+            "light"
+        ],
+        "bulb-group-br30": [
+            "light"
+        ],
+        "bulb-group-br30-hung": [
             "light"
         ],
         "bulb-group-candle": [
