@@ -116,6 +116,11 @@ class IconLibrary{
 
             //update entity table
             $entity_table .= '<tr' . ($icon_aliases_as_array_vals == '"light"' ? ' style="background:#f3d1d1"' : '') . '><td><img src="../' . (file_exists( '../svgs/' . $icon->name . '.svg') ? 'svgs/'  : 'custom_svgs/') . $icon->name . '.svg"</td><th>' . $icon->name . '</th><td>' . $icon_aliases_as_array_vals . '</td></tr>';
+
+            //todo: update the object here so that you have the meta?
+            //even better, make it build the properties logically, then spit out the file system changes, etc.
+
+
         }
 
         //lose the last comma
