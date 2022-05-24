@@ -1,8 +1,3 @@
-<html>
-<head>
-    <title>Build script</title>
-</head>
-<body>
 <?php
 // Run this to regenerate the documentation and script from svgs in the svg and custom_svg folders
 
@@ -55,18 +50,19 @@ class IconLibrary{
 
 
     public function get_latest_icons_for_comment($path,$limit = 12){
-        $this->output_string_latest_icons = '';
+        $this->output_string_latest_icons = '| Icon | Name |' . PHP_EOL . '| :--- | :--- |' . PHP_EOL;
         $files = glob($path . '*.svg');
         $count = 0;
         usort($files, function($a, $b) {
             return filemtime($b) - filemtime($a);
         });
 
+
         foreach ($files as $file){
             if($count++ > $limit) return;
 
-            $this->output_string_latest_icons .= '<pre>| Icon | Name |' . PHP_EOL . '| :--- | :--- |' . PHP_EOL .
-                '| ![hue:' . basename($file,'.svg') . '](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/' . basename($file) . ')| hue:' . basename($file,'.svg') . '|' . PHP_EOL .  PHP_EOL . '</pre>';
+            $this->output_string_latest_icons .=
+                '| ![hue:' . basename($file,'.svg') . '](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/' . basename($file) . ')| hue:' . basename($file,'.svg') . '|' . PHP_EOL;
         }
     }
 
@@ -121,7 +117,6 @@ class IconLibrary{
 
             //todo: update the object here so that you have the meta?
             //even better, make it build the properties logically, then spit out the file system changes, etc.
-
 
         }
 
@@ -267,11 +262,25 @@ $myIconLibrary = new IconLibrary();
 $myIconLibrary->setReadmeFile('../../README.md');
 $myIconLibrary->setScriptFile('../../dist/hass-hue-icons.js');
 $myIconLibrary->setNewVersion(isset($_GET['v']) ? $_GET['v'] : null);
-
 $myIconLibrary->find_version();
+$version_components = explode('.',$myIconLibrary->version);
+?>
+
+<html>
+<head>
+    <title>Build script</title>
+    <style>
+        textarea{
+            width:100%;
+            height:200px;
+            overflow-y:auto;
+            font-size:10px;
+        }
+    </style>
+</head>
+<body><?php
 
 // handle versioning
-$version_components = explode('.',$myIconLibrary->version);
 echo 'Was version:' . $myIconLibrary->version;
 if(!is_null($myIconLibrary->new_version)){
     echo '<br/>This version:' . $myIconLibrary->new_version;
@@ -282,19 +291,20 @@ $version_components[2] = intval($version_components[2]) + 1;
 $incremented_version = join('.',$version_components);
 echo '<br/><a href="?v=' . $incremented_version  . '">Increment to version ' . $incremented_version . '</a><hr/>';
 
-$myIconLibrary->get_latest_icons_for_comment('../custom_svgs/',12);
-echo $myIconLibrary->output_string_latest_icons;
+$limit = 12;
+$myIconLibrary->get_latest_icons_for_comment('../custom_svgs/',$limit);
+echo '<strong>' . $limit . ' LATEST ICONS</strong><br/><textarea>' . $myIconLibrary->output_string_latest_icons . '</textarea>';
 
 $myIconLibrary->default_icon_set = $myIconLibrary->read_files('../svgs/');
 $myIconLibrary->custom_icon_set = $myIconLibrary->read_files('../custom_svgs/');
 
-echo '<p><b>RELEASE NOTES</b><br/>Thanks for the suggestion. As always, feel free to raise an [icon request](https://github.com/arallsopp/hass-hue-icons/issues/new/choose) for any other hue fixtures or combinations you\'re missing.</p>';
-echo '<p><b>FEATURE REQUEST NOTES</b>
-      <br/>Thanks. Its in release [v.' . $myIconLibrary->new_version . '](https://github.com/arallsopp/hass-hue-icons/releases/tag/v.' . $myIconLibrary->new_version .').
-      <br/>### Want to help the community?
-      <br/>If you like what you see and want to help others discover this repo, please consider giving it a free star. Every one of the ' . sizeof($myIconLibrary->custom_icon_set) . ' custom icons has been driven by a community request just like yours, and stars help people find this repo.
-      <br/>### Want to get involved?
-      <br/>Its always good to see these icons being used. If you\'re proud of your dash, why not share a screenshot in the [forum thread](https://community.home-assistant.io/t/created-custom-colorizable-hue-icons-as-a-lovelace-resource)?</p>';
+echo '<p><b>RELEASE NOTES</b><br/><textarea style="height:40px">Thanks for the suggestion. As always, feel free to raise an [icon request](https://github.com/arallsopp/hass-hue-icons/issues/new/choose) for any other hue fixtures or combinations you\'re missing.</textarea></p>';
+echo '<p><b>FEATURE REQUEST NOTES</b><br/>
+      <textarea>Thanks. Its in release [v.' . $myIconLibrary->new_version . '](https://github.com/arallsopp/hass-hue-icons/releases/tag/v.' . $myIconLibrary->new_version .').' . PHP_EOL .
+      '### Want to help the community?' . PHP_EOL .
+      'If you like what you see and want to help others discover this repo, please consider giving it a free star. Every one of the ' . sizeof($myIconLibrary->custom_icon_set) . ' custom icons has been driven by a community request just like yours, and stars help people find this repo.' . PHP_EOL .
+      '### Want to get involved?' . PHP_EOL .
+      'Its always good to see these icons being used. If you\'re proud of your dash, why not share a screenshot in the [forum thread](https://community.home-assistant.io/t/created-custom-colorizable-hue-icons-as-a-lovelace-resource)?</textarea></p>';
 
 
 echo $myIconLibrary->update_readme();
