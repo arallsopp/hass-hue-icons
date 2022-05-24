@@ -201,6 +201,7 @@
             "light"
         ],
         "bulb-filament": [
+            "g40",
             "light",
             "retro"
         ],
@@ -229,14 +230,17 @@
             "retro"
         ],
         "bulb-filament-hung": [
+            "g40",
             "light",
             "retro"
         ],
         "bulb-filament-hung-off": [
+            "g40",
             "light",
             "retro"
         ],
         "bulb-filament-off": [
+            "g40",
             "light",
             "retro"
         ],
@@ -248,6 +252,7 @@
             "light"
         ],
         "bulb-group": [
+            "e26",
             "light",
             "sultan"
         ],
@@ -432,6 +437,7 @@
             "light"
         ],
         "bulb-group-sultan-hung": [
+            "e26",
             "light"
         ],
         "bulb-group-sultan-lightstrip": [
@@ -471,12 +477,15 @@
             "light"
         ],
         "bulb-sultan": [
+            "e26",
             "light"
         ],
         "bulb-sultan-hung": [
+            "e26",
             "light"
         ],
         "bulb-sultan-off": [
+            "e26",
             "light"
         ],
         "button": [
