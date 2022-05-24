@@ -113,7 +113,7 @@ hass-hue-icons includes 72 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons)
 
 ### User Requested Hue Icons
-hass-hue-icons includes 361 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request.
+hass-hue-icons includes 363 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request.
 
 [//]: # (Start Custom Icons)
 
@@ -138,6 +138,7 @@ hass-hue-icons includes 361 custom icons designed by the author for specific hue
 | ![hue:bulb-candle-hung-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-candle-hung-off.svg)| hue:bulb-candle-hung-off | ![hue:bulb-candle-hung](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-candle-hung.svg)| hue:bulb-candle-hung |
 | ![hue:bulb-candle-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-candle-off.svg)| hue:bulb-candle-off | ![hue:bulb-classic-hung-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-classic-hung-off.svg)| hue:bulb-classic-hung-off |
 | ![hue:bulb-classic-hung](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-classic-hung.svg)| hue:bulb-classic-hung | ![hue:bulb-classic-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-classic-off.svg)| hue:bulb-classic-off |
+| ![hue:bulb-filament-a19-hung](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-filament-a19-hung.svg)| hue:bulb-filament-a19-hung | ![hue:bulb-filament-a19](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-filament-a19.svg)| hue:bulb-filament-a19 |
 | ![hue:bulb-filament-alt-hung](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-filament-alt-hung.svg)| hue:bulb-filament-alt-hung | ![hue:bulb-filament-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-filament-alt.svg)| hue:bulb-filament-alt |
 | ![hue:bulb-filament-candle](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-filament-candle.svg)| hue:bulb-filament-candle | ![hue:bulb-filament-hung-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-filament-hung-off.svg)| hue:bulb-filament-hung-off |
 | ![hue:bulb-filament-hung](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-filament-hung.svg)| hue:bulb-filament-hung | ![hue:bulb-filament-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/bulb-filament-off.svg)| hue:bulb-filament-off |

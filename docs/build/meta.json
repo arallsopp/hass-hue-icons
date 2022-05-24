@@ -204,6 +204,12 @@
             "light",
             "retro"
         ],
+        "bulb-filament-a19": [
+            "light","retro","e26"
+        ],
+        "bulb-filament-a19-hung": [
+            "light","retro","e26"
+        ],
         "bulb-filament-alt": [
             "light",
             "retro"
