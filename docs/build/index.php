@@ -20,10 +20,12 @@ class HassHueIcon{
     }
 }
 class IconLibrary{
-    public $default_icons;
-    public $custom_icons;
-    public $readme_file;
-    public $script_file;
+    public $default_icon_set;
+    public $custom_icon_set;
+    public $readme_file_path;
+    public $readme_file_contents;
+    public $script_file_path;
+    public $script_file_contents;
     public $new_version;
     public $version;
     public $output_string_latest_icons = '';
@@ -31,17 +33,17 @@ class IconLibrary{
     public function __construct(){}
 
     /**
-     * @param mixed $readme_file
+     * @param mixed $readme_file_path
      */
-    public function setReadmeFile($readme_file): void{
-        $this->readme_file = $readme_file;
+    public function setReadmeFile($readme_file_path): void{
+        $this->readme_file_path = $readme_file_path;
     }
 
     /**
-     * @param mixed $script_file
+     * @param mixed script_file_path
      */
-    public function setScriptFile($script_file): void{
-        $this->script_file = $script_file;
+    public function setScriptFile($script_file_path): void{
+        $this->script_file_path = $script_file_path;
     }
 
     /**
@@ -78,10 +80,10 @@ class IconLibrary{
 
     public function find_version(){
 
-        $script = file_get_contents($this->script_file);
+        $this->script_file_contents = file_get_contents($this->script_file_path);
         $re = '/HASS-HUE-ICONS\s+%c Version (.*) /m';
 
-        preg_match_all($re, $script, $matches, PREG_SET_ORDER, 0);
+        preg_match_all($re, $this->script_file_contents, $matches, PREG_SET_ORDER, 0);
 
         // Print the entire match result
         $this->version = $matches[0][1];
@@ -91,14 +93,14 @@ class IconLibrary{
         $return_string = '';
         $entity_table = '<table border="1">';
 
-        $script = file_get_contents($this->script_file);
+        $this->$this->script_file_contents = file_get_contents($this->script_file_path);
 
         $re = '/const HUE_ICONS_MAP = {.*?};/s';
         $subst = 'const HUE_ICONS_MAP = {' . PHP_EOL;
 
 
         // combine the two objects
-        $full_set = array_merge($this->default_icons,$this->custom_icons);
+        $full_set = array_merge($this->default_icon_set,$this->custom_icon_set);
         usort($full_set, function($a, $b) {return strcmp($a->name, $b->name);});
 
         // read in the meta data for aliases
@@ -127,17 +129,17 @@ class IconLibrary{
         $subst = substr($subst,0,strlen($subst)-1);
 
         $subst .= PHP_EOL . '};';
-        $script = preg_replace($re, $subst, $script);
+        $this->script_file_contents = preg_replace($re, $subst, $this->script_file_contents);
 
         if(!is_null($this->version)){
             //write the version tag to the script
             $re = '/HASS-HUE-ICONS\s+%c Version [\d]+\.[\d]+\.[\d]+/m';
             $subst = 'HASS-HUE-ICONS %c Version ' . $this->version;
-            $script = preg_replace($re, $subst, $script);
+            $this->script_file_contents = preg_replace($re, $subst, $this->script_file_contents);
         }
 
-        $return_string .= '<hr/><em>Script</em><pre>' . $script . '</pre>';
-        file_put_contents($this->script_file,$script);
+        $return_string .= '<hr/><em>Script</em><pre>' . $this->script_file_contents . '</pre>';
+        file_put_contents($this->script_file_path,$this->script_file_contents);
         $meta = $this->sort_the_meta($meta);
 
         file_put_contents('meta.json',json_encode($meta,JSON_PRETTY_PRINT));
@@ -164,19 +166,19 @@ class IconLibrary{
 
     public function update_readme(){
         $return_string = '';
-        $readme = file_get_contents($this->readme_file);
+        $this->readme_file_contents = file_get_contents($this->readme_file_path);
 
         $subst = '(Start Hue Icons)' . PHP_EOL . PHP_EOL . '| Icon | Name | Icon | Name ' . PHP_EOL . '| :--- | :--- | :--- | :--- |' ;
         $new_row = true;
 
         //do the hue icons
-        foreach ($this->default_icons as $icon){
+        foreach ($this->default_icon_set as $icon){
             $subst .=  ($new_row ? PHP_EOL . '|' : '') . ' ![hue:' . $icon->name . '](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/svgs/' . $icon->name . '.svg)| hue:' . $icon->name . ' |';
             $new_row = !$new_row;
         }
         $re = '/\(Start Hue Icons\).*\(End Hue Icons\)/s';
         $subst .= PHP_EOL . PHP_EOL . '[//]: # (End Hue Icons)';
-        $readme = preg_replace($re, $subst, $readme);
+        $readme = preg_replace($re, $subst, $this->readme_file_contents);
         if(!$new_row){
             $subst .= '| |';
         }
@@ -185,7 +187,7 @@ class IconLibrary{
         $new_row = true;
 
         //do the custom icons
-        foreach ($this->custom_icons as $icon){
+        foreach ($this->custom_icon_set as $icon){
             $subst .=  ($new_row ? PHP_EOL . '|' : '') . ' ![hue:' . $icon->name . '](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/' . $icon->name . '.svg)| hue:' . $icon->name . ' |';
             $new_row = !$new_row;
         }
@@ -195,19 +197,19 @@ class IconLibrary{
 
         $re = '/\(Start Custom Icons\).*\(End Custom Icons\)/s';
         $subst .= PHP_EOL . PHP_EOL . '[//]: # (End Custom Icons)';
-        $readme = preg_replace($re, $subst, $readme);
+        $this->readme_file_contents = preg_replace($re, $subst, $this->readme_file_contents);
 
         // update the icon counts
         $re = '/(hass-hue-icons includes) (\d+) (Hue icons)/';
-        $subst = '$1 ' . sizeof($this->default_icons) . ' $3';
-        $readme = preg_replace($re, $subst, $readme, 1);
+        $subst = '$1 ' . sizeof($this->default_icon_set) . ' $3';
+        $this->readme_file_contents = preg_replace($re, $subst, $this->readme_file_contents, 1);
 
         // update the icon counts
         $re = '/(hass-hue-icons includes) (\d+) (custom icons)/';
-        $subst = '$1 ' . sizeof($this->custom_icons) . ' $3';
-        $readme = preg_replace($re, $subst, $readme, 1);
+        $subst = '$1 ' . sizeof($this->custom_icon_set) . ' $3';
+        $this->readme_file_contents = preg_replace($re, $subst, $this->readme_file_contents, 1);
 
-        file_put_contents($this->readme_file,$readme);
+        file_put_contents($this->readme_file_path,$this->readme_file_contents);
         $return_string .= '<hr/><em>README.md</em><pre>' . $readme . '</pre>';
         return $return_string;
     }
@@ -283,14 +285,14 @@ echo '<br/><a href="?v=' . $incremented_version  . '">Increment to version ' . $
 $myIconLibrary->get_latest_icons_for_comment('../custom_svgs/',12);
 echo $myIconLibrary->output_string_latest_icons;
 
-$myIconLibrary->default_icons = $myIconLibrary->read_files('../svgs/');
-$myIconLibrary->custom_icons = $myIconLibrary->read_files('../custom_svgs/');
+$myIconLibrary->default_icon_set = $myIconLibrary->read_files('../svgs/');
+$myIconLibrary->custom_icon_set = $myIconLibrary->read_files('../custom_svgs/');
 
 echo '<p><b>RELEASE NOTES</b><br/>Thanks for the suggestion. As always, feel free to raise an [icon request](https://github.com/arallsopp/hass-hue-icons/issues/new/choose) for any other hue fixtures or combinations you\'re missing.</p>';
 echo '<p><b>FEATURE REQUEST NOTES</b>
       <br/>Thanks. Its in release [v.' . $myIconLibrary->new_version . '](https://github.com/arallsopp/hass-hue-icons/releases/tag/v.' . $myIconLibrary->new_version .').
       <br/>### Want to help the community?
-      <br/>If you like what you see and want to help others discover this repo, please consider giving it a free star. Every one of the ' . sizeof($myIconLibrary->custom_icons) . ' custom icons has been driven by a community request just like yours, and stars help people find this repo.
+      <br/>If you like what you see and want to help others discover this repo, please consider giving it a free star. Every one of the ' . sizeof($myIconLibrary->custom_icon_set) . ' custom icons has been driven by a community request just like yours, and stars help people find this repo.
       <br/>### Want to get involved?
       <br/>Its always good to see these icons being used. If you\'re proud of your dash, why not share a screenshot in the [forum thread](https://community.home-assistant.io/t/created-custom-colorizable-hue-icons-as-a-lovelace-resource)?</p>';
 
