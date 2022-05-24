@@ -172,6 +172,12 @@
         "bulb-br30-hung": [
             "light"
         ],
+        "bulb-br30-hung-off": [
+            "light"
+        ],
+        "bulb-br30-off": [
+            "light"
+        ],
         "bulb-candle": [
             "light",
             "retro"
@@ -212,6 +218,18 @@
             "retro"
         ],
         "bulb-filament-a19-hung": [
+            "e26",
+            "g25",
+            "light",
+            "retro"
+        ],
+        "bulb-filament-a19-hung-off": [
+            "e26",
+            "g25",
+            "light",
+            "retro"
+        ],
+        "bulb-filament-a19-off": [
             "e26",
             "g25",
             "light",
@@ -276,10 +294,20 @@
             "light"
         ],
         "bulb-group-br30": [
-            "light"
+            "light",
+            "spot"
         ],
         "bulb-group-br30-hung": [
-            "light"
+            "light",
+            "spot"
+        ],
+        "bulb-group-br30-hung-off": [
+            "light",
+            "spot"
+        ],
+        "bulb-group-br30-off": [
+            "light",
+            "spot"
         ],
         "bulb-group-candle": [
             "light",
@@ -433,6 +461,10 @@
             "gu10",
             "light"
         ],
+        "bulb-group-spot-hung-off": [
+            "gu10",
+            "light"
+        ],
         "bulb-group-sultan-go": [
             "light"
         ],
@@ -469,6 +501,10 @@
             "light"
         ],
         "bulb-spot-hung": [
+            "gu10",
+            "light"
+        ],
+        "bulb-spot-hung-off": [
             "gu10",
             "light"
         ],
@@ -569,6 +605,9 @@
             "light"
         ],
         "ceiling-devere": [
+            "light"
+        ],
+        "ceiling-devere-off": [
             "light"
         ],
         "ceiling-explore": [
