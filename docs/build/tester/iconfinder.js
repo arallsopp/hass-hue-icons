@@ -21,7 +21,7 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
 
                 $scope.externalLibrary = params.get('library');
                 $scope.mapName = params.get('map');
-                $scope.loadExternalLibrary();
+                $scope.loadExternalIconLibrary();
 
             }else{
                 console.log('using default library');
@@ -74,7 +74,7 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             $scope.searchTerm = text;
         };
 
-        $scope.loadExternalLibrary = function(){
+        $scope.loadExternalIconLibrary = function(){
 
             var scriptEl = document.createElement('script');
 
