@@ -29,12 +29,9 @@
     <md-content layout-padding="" layout="column">
         <form ng-submit="$event.preventDefault()">
             <p>Search icons</p>
-            <md-autocomplete id="custom-template" ng-disabled="ctrl.isDisabled" md-no-cache="ctrl.noCache" md-selected-item="ctrl.selectedItem" md-search-text-change="ctrl.searchTextChange(ctrl.searchText)" md-search-text="ctrl.searchText" md-selected-item-change="ctrl.selectedItemChange(item)" md-items="item in ctrl.querySearch(ctrl.searchText)" md-item-text="item.name" md-min-length="0" md-escape-options="clear" input-aria-label="Current Icon" placeholder="Pick a Hass Hue Icon" md-menu-class="autocomplete-custom-template" md-menu-container-class="custom-container">
+            <md-autocomplete ng-model="selectedIcon" id="custom-template" ng-disabled="ctrl.isDisabled" md-no-cache="ctrl.noCache" md-selected-item="ctrl.selectedItem" md-search-text-change="ctrl.searchTextChange(ctrl.searchText)" md-search-text="ctrl.searchText" md-selected-item-change="ctrl.selectedItemChange(item)" md-items="item in ctrl.querySearch(ctrl.searchText)" md-item-text="item.name" md-min-length="0" md-escape-options="clear" input-aria-label="Current Icon" placeholder="Pick a Hass Hue Icon" md-menu-class="autocomplete-custom-template" md-menu-container-class="custom-container">
                 <md-item-template>
           <span class="item-title">
-            <!--<md-icon md-svg-icon="{{ '../../custom_svgs/' + item.name + '.svg'}}" aria-hidden="true"></md-icon>
-            <md-icon md-svg-icon="{{ '../../svgs/' + item.name + '.svg'}}" aria-hidden="true"></md-icon>
-            <md-icon md-svg-icon="{{item.srcfile}}" aria-hidden="true"></md-icon>-->
               <md-icon><svg viewBox="0 0 24 24" height="24px" width="24px" fill="#44739e" xmlns="http://www.w3.org/2000/svg"><path d="{{item.path}}"></path></svg></md-icon>
             <span>hue:{{item.name}} </span>
           </span>
@@ -47,7 +44,15 @@
             </md-autocomplete>
         </form>
     </md-content>
+
+    <md-content layout-padding="" layout="column" data-ng-if="selectedIcon">
+        <h2>Icon</h2>
+        <svg viewBox="0 0 24 24" width="48" fill="#44739e" xmlns="http://www.w3.org/2000/svg"><path d="{{selectedIcon.path}}"></path></svg></md-icon>
+        <p>Name: {{selectedIcon.name}}</p>
+        <p>Aliases: {{selectedIcon.aliases}}</p>
+    </md-content>
 </div>
+
 
 
 </body>

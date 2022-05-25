@@ -4,7 +4,9 @@
         .module('MyApp', ['ngMaterial', 'ngMessages', 'material.svgAssetsCache'])
         .controller('DemoCtrl', DemoCtrl);
 
-    function DemoCtrl ($timeout, $http, $q, $log) {
+    function DemoCtrl ($scope, $timeout, $http, $q, $log) {
+
+        $scope.selectedIcon = false;
         var self = this;
 
         self.icons = importFromScript();
@@ -30,6 +32,7 @@
 
         function selectedItemChange(item) {
             $log.info('Item changed to ' + JSON.stringify(item));
+            $scope.selectedIcon = item;
         }
 
         /**
@@ -44,7 +47,6 @@
 
                 icons.push({
                     name: icon,
-                    srcfile:'../../custom_svgs/' + icon + '.svg',
                     path:HUE_ICONS_MAP[icon].path,
                     keywords:keywords,
                     aliases:aliases,
