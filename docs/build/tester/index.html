@@ -30,7 +30,7 @@
         <md-content layout-padding="" layout="column" flex="">
             <form ng-submit="$event.preventDefault()">
                 <p>Search icons</p>
-                <md-autocomplete ng-model="selectedIcon" id="custom-template" ng-disabled="ctrl.isDisabled" md-no-cache="ctrl.noCache" md-selected-item="ctrl.selectedItem" md-search-text-change="ctrl.searchTextChange(ctrl.searchText)" md-search-text="ctrl.searchText" md-selected-item-change="ctrl.selectedItemChange(item)" md-items="item in ctrl.querySearch(ctrl.searchText)" md-item-text="item.name" md-min-length="0" md-escape-options="clear" input-aria-label="Current Icon" placeholder="Pick a Hass Hue Icon" md-menu-class="autocomplete-custom-template" md-menu-container-class="custom-container">
+                <md-autocomplete md-selected-item="selectedIcon" id="custom-template" ng-disabled="ctrl.isDisabled" md-no-cache="ctrl.noCache" md-selected-item="ctrl.selectedItem" md-search-text-change="ctrl.searchTextChange(ctrl.searchText)" md-search-text="ctrl.searchText" md-selected-item-change="ctrl.selectedItemChange(item)" md-items="item in ctrl.querySearch(ctrl.searchText)" md-item-text="item.name" md-min-length="0" md-escape-options="clear" input-aria-label="Current Icon" placeholder="Pick a Hass Hue Icon" md-menu-class="autocomplete-custom-template" md-menu-container-class="custom-container">
                     <md-item-template>
               <span class="item-title">
                   <md-icon><svg viewBox="0 0 24 24" height="24px" width="24px" fill="#44739e" xmlns="http://www.w3.org/2000/svg"><path d="{{item.path}}"></path></svg></md-icon>
@@ -50,7 +50,7 @@
             <md-card>
                 <md-card-title>
                     <md-card-title-text>
-                        <span class="md-headline">{{selectedIcon.name}}</span>
+                        <span class="md-headline">hue:{{selectedIcon.name}}</span>
                         <span class="md-subhead">{{selectedIcon.aliases}}</span>
                     </md-card-title-text>
                     <md-card-title-media>
