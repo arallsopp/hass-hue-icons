@@ -31,7 +31,11 @@
             <md-card-title>
                 <md-card-title-text>
                     <span class="md-headline"><span data-ng-if="!mapName">Hass Hue Icons </span>Cheat Sheet</span>
-                    <span class="md-subhead">Use the search box below to provide a fixture name, bulb-type or keyword</span>
+                    <span class="md-subhead">Use the search box below to provide a fixture name, bulb-type or keyword
+                    <div data-ng-if="mapName">
+                        The cheat sheet is using an external script. To revert to hass-hue-icons, click <a href="iconfinder.html">here</a>.
+                    </div>
+                    </span>
                 </md-card-title-text>
             </md-card-title>
             <md-card-content>
