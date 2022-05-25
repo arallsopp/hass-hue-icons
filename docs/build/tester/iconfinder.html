@@ -27,12 +27,25 @@
 <body data-ng-controller="AppCtrl" data-ng-app="aaIconFinder">
 <div>
     <div layout-padding="">
-        <md-content layout="column" flex="">
-            <form ng-submit="$event.preventDefault()">
-                <p>Search icons</p>
-                <input data-ng-model="searchTerm">
-            </form>
-        </md-content>
+        <md-card>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Hass Hue Icons Cheat Sheet</span>
+                    <span class="md-subhead">Use the search box below to provide a fixture name, bulb-type or keyword</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <md-input-container class="md-block" flex="">
+                    <label>Fixture name, bulb type or keyword</label>
+                    <input ng-model="searchTerm" >
+                </md-input-container>
+            </md-card-content>
+        </md-card>
+
+        <!-- TODO:
+             Link to these search results
+             Show examples
+        -->
 
         <md-content layout="row" layout-wrap="">
             <md-card data-ng-repeat="icon in icons | filter:matchesSearchTerm"
