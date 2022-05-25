@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular
-        .module('MyApp', ['ngMaterial', 'ngMessages', 'material.svgAssetsCache'])
+        .module('MyApp', ['ngMaterial', 'ngMessages'])
         .controller('DemoCtrl', DemoCtrl);
 
     function DemoCtrl ($scope, $q, $log) {
