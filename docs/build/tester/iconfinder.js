@@ -19,10 +19,9 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             if(params.get('library')){
                 console.log('loading external library');
                 $scope.mapName = params.get('map');
-                $scope.loadExternalLibrary('https://mariusthvdb.github.io/custom-icons/custom-icons.js');
+                $scope.loadExternalLibrary(params.get('library'));
             }else{
                 console.log('using default library');
-                $scope.mapName = 'HUE_ICONS_MAP';
                 $scope.importFromScript();
             }
         };

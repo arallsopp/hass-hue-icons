@@ -30,7 +30,7 @@
         <md-card>
             <md-card-title>
                 <md-card-title-text>
-                    <span class="md-headline">Hass Hue Icons Cheat Sheet</span>
+                    <span class="md-headline"><span data-ng-if="!mapName">Hass Hue Icons </span>Cheat Sheet</span>
                     <span class="md-subhead">Use the search box below to provide a fixture name, bulb-type or keyword</span>
                 </md-card-title-text>
             </md-card-title>
@@ -39,17 +39,15 @@
                     <label>Fixture name, bulb type or keyword</label>
                     <input ng-model="searchTerm">
                 </md-input-container>
-                Examples:
-                <md-button class="md-raised" data-ng-click="updateSearchTerm('spot')">spot</md-button>
-                <md-button class="md-raised" data-ng-click="updateSearchTerm('pendant')">pendant</md-button>
-                <md-button class="md-raised" data-ng-click="updateSearchTerm('ceiling')">ceiling</md-button>
+                <div data-ng-if="!mapName">
+                    Examples:
+                    <md-button class="md-raised" data-ng-click="updateSearchTerm('spot')">spot</md-button>
+                    <md-button class="md-raised" data-ng-click="updateSearchTerm('pendant')">pendant</md-button>
+                    <md-button class="md-raised" data-ng-click="updateSearchTerm('ceiling')">ceiling</md-button>
+                </div>
             </md-card-content>
         </md-card>
 
-        <!-- TODO:
-             Link to these search results
-             Show examples
-        -->
 
         <md-content layout="row" layout-wrap="">
             <md-card data-ng-repeat="icon in icons | filter:matchesSearchTerm"
@@ -60,7 +58,7 @@
                      style="margin:3px">
                 <md-card-title>
                     <md-card-title-text>
-                        <span class="md-headline">hue:{{icon.name}}</span>
+                        <span class="md-headline"><span data-ng-if="!mapName">hue:</span>{{icon.name}}</span>
                         <span class="md-subhead">{{icon.aliases}}</span>
                     </md-card-title-text>
                     <md-card-title-media>
