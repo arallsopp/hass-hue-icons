@@ -42,7 +42,7 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             scriptEl.onload = function($scope){
                 var scope = angular.element(document.querySelector('#outer')).scope();
                 scope.$apply(function(){
-                    scope.importFromScript();
+                    scope.deferredImportFromScript();
                 });
             };
             document.head.appendChild(scriptEl);
@@ -66,6 +66,32 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             $scope.icons = icons;
         }
 
+        $scope.deferredImportFromScript = function() {
+            console.log('importing!');
+            let icons = [],
+                myPromise = getIconList().then(function(result) {
+                    console.log(result);
+                    var scope = angular.element(document.querySelector('#outer')).scope();
+                    scope.$apply(function() {
+                        let icons = [];
+                        for (const icon in result) {
+                            let keywords = result[icon].keywords,
+                                aliases = keywords.join(', ');
+                            debugger;
+                            icons.push({
+                                name: icon,
+                                path: result[icon].path,
+                                keywords: keywords,
+                                aliases: aliases,
+                                value: icon + ' ' + aliases.toLowerCase()
+                            });
+                        }
+                        $scope.icons = icons;
+                    })
+                },function(fail){
+                    console.log(fail)
+                });
+        }
 
         /**
          * Create filter function for a query string
