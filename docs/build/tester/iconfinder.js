@@ -97,7 +97,24 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             console.log('importing from variable script');
 
             let icons = [];
+            for (const icon in eval($scope.mapName)) {
+                let keywords = eval($scope.mapName)[icon].keywords,
+                    aliases = keywords
+                        ? keywords.join(', ')
+                        : '',
+                    path_prop = eval($scope.mapName)[icon].path,
+                    path = path_prop
+                        ? path_prop
+                        : eval($scope.mapName)[icon];
 
+                icons.push({
+                    name: icon,
+                    path: path,
+                    keywords: keywords,
+                    aliases: aliases,
+                    value: icon + ' ' + aliases.toLowerCase()
+                });
+            }
             $scope.icons = icons;
         };
 
