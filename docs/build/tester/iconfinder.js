@@ -5,28 +5,53 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
     function($scope, $http, $mdToast) {
         $scope.searchTerm = '';
 
-
         $scope.init = function(){
-            $scope.setupSearchTerms();
-            $scope.importFromScript();
-        }
+            $scope.parseURLParams();
+        };
 
         // set up current icon if provided
-        $scope.setupSearchTerms = function() {
+        $scope.parseURLParams = function() {
             let params = new URLSearchParams(document.location.search);
             $scope.searchTerm = params.get('search')
                 ? params.get('search')
                 : '';
-        }
+
+            if(params.get('library')){
+                console.log('loading external library');
+                $scope.mapName = params.get('map');
+                $scope.loadLibrary('https://mariusthvdb.github.io/custom-icons/custom-icons.js');
+            }else{
+                console.log('using default library');
+                $scope.mapName = 'HUE_ICONS_MAP';
+                $scope.importFromScript();
+            }
+        };
 
         $scope.updateSearchTerm = function(text){
             $scope.searchTerm = text;
-        }
+        };
+
+        $scope.loadLibrary = function(url){
+
+            var scriptEl = document.createElement('script');
+
+            console.log('starting');
+
+            scriptEl.setAttribute('src', url);
+            scriptEl.setAttribute('type','text/javascript');
+            scriptEl.onload = function($scope){
+                var scope = angular.element(document.querySelector('#outer')).scope();
+                scope.$apply(function(){
+                    scope.importFromScript();
+                });
+            };
+            document.head.appendChild(scriptEl);
+        };
 
         $scope.importFromScript = function() {
+            console.log('importing!');
             let icons = [];
             for (const icon in HUE_ICONS_MAP) {
-
                 let keywords = HUE_ICONS_MAP[icon].keywords,
                     aliases = keywords.join(', ');
 
@@ -40,6 +65,7 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             }
             $scope.icons = icons;
         }
+
 
         /**
          * Create filter function for a query string
