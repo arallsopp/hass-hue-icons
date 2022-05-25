@@ -52,12 +52,15 @@
                         <span data-ng-if="externalLibrary">Icon name or keyword</span>
                     </label>
                     <input ng-model="searchTerm">
+                    <md-button class="md-raised md-primary btn-xs"
+                               data-ng-if="searchTerm"
+                               data-ng-click="copyDirectLink()">Copy direct link to this search</md-button>
                 </md-input-container>
                 <div data-ng-if="!mapName">
                     Examples:
-                    <md-button class="md-raised" data-ng-click="updateSearchTerm('spot')">spot</md-button>
-                    <md-button class="md-raised" data-ng-click="updateSearchTerm('pendant')">pendant</md-button>
-                    <md-button class="md-raised" data-ng-click="updateSearchTerm('ceiling')">ceiling</md-button>
+                    <md-button class="md-raised btn-xs md-primary" data-ng-click="updateSearchTerm('spot')">spot</md-button>
+                    <md-button class="md-raised btn-xs md-primary" data-ng-click="updateSearchTerm('pendant')">pendant</md-button>
+                    <md-button class="md-raised btn-xs md-primary" data-ng-click="updateSearchTerm('ceiling')">ceiling</md-button>
                 </div>
             </md-card-content>
         </md-card>

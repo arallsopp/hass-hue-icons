@@ -16,3 +16,9 @@
     height: 24px;
     width: 24px;
 }
+.btn-xs{
+    font-size:10px;
+    margin-left:0;
+    line-height:10px;
+    min-height:18px;
+}

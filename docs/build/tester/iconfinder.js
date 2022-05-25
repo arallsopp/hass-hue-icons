@@ -30,6 +30,46 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             }
         };
 
+        $scope.copyDirectLink = function(){
+            let url = new URL(window.location.toString()),
+                params = new URLSearchParams(url.search);
+            if (params.get('search')){
+                params.set('search',$scope.searchTerm)
+            }else{
+                params.append('search', $scope.searchTerm);
+            }
+
+            $scope.copyToClipboard(url.origin + url.pathname + '?' + params.toString(),'Link copied to clipboard')
+        };
+
+        $scope.copyToClipboard = function (content,msg) {
+            let copyElement = document.createElement("textarea");
+            copyElement.style.position = 'fixed';
+            copyElement.style.opacity = '0';
+            copyElement.textContent =  (content);
+
+            let body = document.getElementsByTagName('body')[0];
+            body.appendChild(copyElement);
+            copyElement.select();
+            document.execCommand('copy');
+            body.removeChild(copyElement);
+
+            $scope.showToast(typeof (msg)==="undefined" ? 'Copied to clipboard' : msg);
+        };
+
+        $scope.showToast = function(message){
+            $mdToast.show(
+                $mdToast.simple()
+                    .textContent(message)
+                    .hideDelay(3000))
+                .then(function() {
+                    // Toast dismissed.
+                }).catch(function() {
+                //toast failed or got closed over
+            });
+        }
+
+
         $scope.updateSearchTerm = function(text){
             $scope.searchTerm = text;
         };
