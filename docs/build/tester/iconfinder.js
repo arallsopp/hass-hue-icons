@@ -44,7 +44,11 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             if(!$scope.searchTerm){
                 return true;
             }else {
-                return (icon.value.indexOf($scope.searchTerm.toLowerCase()) !== -1);
+                let searchTerms = $scope.searchTerm.toLowerCase().split(' ');
+
+                for(let i=0;i<searchTerms.length;i++){
+                    if (icon.value.indexOf(searchTerms[i]) !== -1) return true;
+                }
             }
         }
 
