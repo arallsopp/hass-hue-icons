@@ -316,7 +316,9 @@ With view icons and state color applied. Play bars are offline.
 ![lovelace_example](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/examples/lovelace_example.png)
 
 ### Finding Icons
-Hass Hue Icons uses the new 'keywords' functionality to help you find specific fixtures. Try searching for 'pendant' or 'switch'.
+Hass Hue Icons uses the new 'keywords' functionality to help you find specific fixtures. Try searching in the Home Assistant iconpicker for 'pendant' or 'switch'.
+
+**NEW:** Hass Hue Icons also offers a [standalone preview tool](https://arallsopp.github.io/hass-hue-icons/docs/build/tester/iconfinder.html). Take a look.
 
 ### Discussion:
 There's a thread over at the [home assistant forums](https://community.home-assistant.io/t/created-custom-colorizable-hue-icons-as-a-lovelace-resource) that tracks this repo.
