@@ -19,6 +19,10 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
                 : '';
         }
 
+        $scope.updateSearchTerm = function(text){
+            $scope.searchTerm = text;
+        }
+
         $scope.importFromScript = function() {
             let icons = [];
             for (const icon in HUE_ICONS_MAP) {

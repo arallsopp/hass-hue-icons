@@ -37,8 +37,12 @@
             <md-card-content>
                 <md-input-container class="md-block" flex="">
                     <label>Fixture name, bulb type or keyword</label>
-                    <input ng-model="searchTerm" >
+                    <input ng-model="searchTerm">
                 </md-input-container>
+                Examples:
+                <md-button class="md-raised" data-ng-click="updateSearchTerm('spot')">spot</md-button>
+                <md-button class="md-raised" data-ng-click="updateSearchTerm('pendant')">pendant</md-button>
+                <md-button class="md-raised" data-ng-click="updateSearchTerm('ceiling')">ceiling</md-button>
             </md-card-content>
         </md-card>
 
