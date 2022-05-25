@@ -54,11 +54,17 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             let icons = [];
             for (const icon in eval($scope.mapName)) {
                 let keywords = eval($scope.mapName)[icon].keywords,
-                    aliases = keywords.join(', ');
+                    aliases = keywords
+                        ? keywords.join(', ')
+                        : '',
+                    path_prop = eval($scope.mapName)[icon].path,
+                    path = path_prop
+                        ? path_prop
+                        : eval($scope.mapName)[icon];
 
                 icons.push({
                     name: icon,
-                    path: eval($scope.mapName)[icon].path,
+                    path: path,
                     keywords: keywords,
                     aliases: aliases,
                     value: icon + ' ' + aliases.toLowerCase()

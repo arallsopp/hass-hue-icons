@@ -384,20 +384,24 @@
             "retro"
         ],
         "bulb-group-filament-alt-filament-hung": [
-            "light","retro"
+            "light",
+            "retro"
         ],
         "bulb-group-filament-alt-filament-hung-off": [
-            "light","retro"
+            "light",
+            "retro"
         ],
         "bulb-group-filament-alt-hung": [
             "light",
             "retro"
         ],
         "bulb-group-filament-alt-hung-off": [
-            "light","retro"
+            "light",
+            "retro"
         ],
         "bulb-group-filament-alt-off": [
-            "light","retro"
+            "light",
+            "retro"
         ],
         "bulb-group-filament-candle": [
             "light",
