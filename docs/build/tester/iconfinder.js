@@ -19,7 +19,7 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             if(params.get('library')){
                 console.log('loading external library');
                 $scope.mapName = params.get('map');
-                $scope.loadLibrary('https://mariusthvdb.github.io/custom-icons/custom-icons.js');
+                $scope.loadExternalLibrary('https://mariusthvdb.github.io/custom-icons/custom-icons.js');
             }else{
                 console.log('using default library');
                 $scope.mapName = 'HUE_ICONS_MAP';
@@ -31,7 +31,7 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             $scope.searchTerm = text;
         };
 
-        $scope.loadLibrary = function(url){
+        $scope.loadExternalLibrary = function(url){
 
             var scriptEl = document.createElement('script');
 
@@ -42,11 +42,32 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             scriptEl.onload = function($scope){
                 var scope = angular.element(document.querySelector('#outer')).scope();
                 scope.$apply(function(){
-                    scope.deferredImportFromScript();
+                    scope.importFromVariableScript();
                 });
             };
             document.head.appendChild(scriptEl);
         };
+
+        $scope.importFromVariableScript = function() {
+            /* BASED ON scope.importFromScript which is neater */
+            console.log('importing from variable script');
+
+            let icons = [];
+            for (const icon in eval($scope.mapName)) {
+                let keywords = eval($scope.mapName)[icon].keywords,
+                    aliases = keywords.join(', ');
+
+                icons.push({
+                    name: icon,
+                    path: eval($scope.mapName)[icon].path,
+                    keywords: keywords,
+                    aliases: aliases,
+                    value: icon + ' ' + aliases.toLowerCase()
+                });
+            }
+            $scope.icons = icons;
+        };
+
 
         $scope.importFromScript = function() {
             console.log('importing!');
@@ -66,32 +87,7 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             $scope.icons = icons;
         }
 
-        $scope.deferredImportFromScript = function() {
-            console.log('importing!');
-            let icons = [],
-                myPromise = getIconList().then(function(result) {
-                    console.log(result);
-                    var scope = angular.element(document.querySelector('#outer')).scope();
-                    scope.$apply(function() {
-                        let icons = [];
-                        for (const icon in result) {
-                            let keywords = result[icon].keywords,
-                                aliases = keywords.join(', ');
-                            debugger;
-                            icons.push({
-                                name: icon,
-                                path: result[icon].path,
-                                keywords: keywords,
-                                aliases: aliases,
-                                value: icon + ' ' + aliases.toLowerCase()
-                            });
-                        }
-                        $scope.icons = icons;
-                    })
-                },function(fail){
-                    console.log(fail)
-                });
-        }
+
 
         /**
          * Create filter function for a query string
