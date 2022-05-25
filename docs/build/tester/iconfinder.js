@@ -18,10 +18,14 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
 
             if(params.get('library')){
                 console.log('loading external library');
+
+                $scope.externalLibrary = params.get('library');
                 $scope.mapName = params.get('map');
-                $scope.loadExternalLibrary(params.get('library'));
+                $scope.loadExternalLibrary();
+
             }else{
                 console.log('using default library');
+                $scope.externalLibrary = false;
                 $scope.importFromScript();
             }
         };
@@ -30,13 +34,13 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             $scope.searchTerm = text;
         };
 
-        $scope.loadExternalLibrary = function(url){
+        $scope.loadExternalLibrary = function(){
 
             var scriptEl = document.createElement('script');
 
             console.log('starting');
 
-            scriptEl.setAttribute('src', url);
+            scriptEl.setAttribute('src', $scope.externalLibrary);
             scriptEl.setAttribute('type','text/javascript');
             scriptEl.onload = function($scope){
                 var scope = angular.element(document.querySelector('#outer')).scope();

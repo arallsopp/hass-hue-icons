@@ -30,17 +30,27 @@
         <md-card>
             <md-card-title>
                 <md-card-title-text>
-                    <span class="md-headline"><span data-ng-if="!mapName">Hass Hue Icons </span>Cheat Sheet</span>
-                    <span class="md-subhead">Use the search box below to provide a fixture name, bulb-type or keyword
-                    <div data-ng-if="mapName">
-                        The cheat sheet is using an external script. To revert to hass-hue-icons, click <a href="iconfinder.html">here</a>.
-                    </div>
+                    <span class="md-headline">
+                        <span data-ng-if="!externalLibrary">Hass Hue Icons </span>
+                        <span data-ng-if="externalLibrary">Icon Library </span>
+                        Cheat Sheet
+                    </span>
+                    <span class="md-subhead">Use the search box below to look for
+                         <span data-ng-if="!externalLibrary">a fixture name, bulb type or keyword</span>
+                         <span data-ng-if="externalLibrary">an icon by name or keyword</span>
+                         <div data-ng-if="mapName">
+                            The cheat sheet is using an <a data-ng-href="{{externalLibrary}}" target="_blank">external script</a>.
+                            To revert to hass-hue-icons, click <a href="iconfinder.html">here</a>.
+                        </div>
                     </span>
                 </md-card-title-text>
             </md-card-title>
             <md-card-content>
                 <md-input-container class="md-block" flex="">
-                    <label>Fixture name, bulb type or keyword</label>
+                    <label>
+                        <span data-ng-if="!externalLibrary">Fixture name, bulb type or keyword</span>
+                        <span data-ng-if="externalLibrary">Icon name or keyword</span>
+                    </label>
                     <input ng-model="searchTerm">
                 </md-input-container>
                 <div data-ng-if="!mapName">
