@@ -86,10 +86,11 @@ class IconLibrary{
     }
 
     public function update_script(){
+
         $return_string = '';
         $entity_table = '<table border="1">';
 
-        $this->$this->script_file_contents = file_get_contents($this->script_file_path);
+        $this->script_file_contents = file_get_contents($this->script_file_path);
 
         $re = '/const HUE_ICONS_MAP = {.*?};/s';
         $subst = 'const HUE_ICONS_MAP = {' . PHP_EOL;
