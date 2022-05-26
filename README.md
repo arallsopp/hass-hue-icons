@@ -315,8 +315,7 @@ Your light not there? Let me know what's missing by raising a [Custom Icon Reque
 
 ### Sample Dash
 With view icons and state color applied. Play bars are offline.
-
-<img width="492px" alt="lovelace example" src="https://cdn.jsdelivr.net/gh/arallsopp/hass-hue-icons/docs/examples/lovelace_example.png">
+![lovelace_example](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/examples/lovelace_example.png)
 
 ### Finding Icons
 Hass Hue Icons uses the new 'keywords' functionality to help you find specific fixtures. Try searching in the Home Assistant iconpicker for 'pendant' or 'switch'.

@@ -67,7 +67,7 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
                 }).catch(function() {
                 //toast failed or got closed over
             });
-        }
+        };
 
 
         $scope.updateSearchTerm = function(text){
@@ -135,7 +135,7 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
                 });
             }
             $scope.icons = icons;
-        }
+        };
 
 
 
@@ -152,7 +152,7 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
                     if (icon.value.indexOf(searchTerms[i]) !== -1) return true;
                 }
             }
-        }
+        };
 
         $scope.init();
     }
