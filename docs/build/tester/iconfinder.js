@@ -93,7 +93,6 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
 
         $scope.importFromVariableScript = function() {
             /* BASED ON scope.importFromScript which is neater */
-            window.alert('sorry, rebuilding at present... Please come back later.');
             console.log('importing from variable script');
 
             let icons = [];
