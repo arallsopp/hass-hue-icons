@@ -130,7 +130,9 @@ class IconLibrary{
         if(!is_null($this->version)){
             //write the version tag to the script
             $re = '/HASS-HUE-ICONS\s+%c Version [\d]+\.[\d]+\.[\d]+/m';
-            $subst = 'HASS-HUE-ICONS %c Version ' . $this->version;
+            $subst = 'HASS-HUE-ICONS %c Version ' . (isset($this->new_version)
+                    ? $this->new_version
+                    : $this->version);
             $this->script_file_contents = preg_replace($re, $subst, $this->script_file_contents);
         }
 
