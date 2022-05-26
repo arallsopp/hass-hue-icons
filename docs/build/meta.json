@@ -160,6 +160,12 @@
             "light",
             "pillar"
         ],
+        "bollard-off": [
+            "calla",
+            "exterior",
+            "light",
+            "pillar"
+        ],
         "bridge-v1": [
             "infrastructure"
         ],
@@ -277,17 +283,26 @@
         "bulb-group-bollard": [
             "calla",
             "exterior",
-            "light"
+            "light",
+            "pillar"
         ],
         "bulb-group-bollard-3": [
             "calla",
             "exterior",
-            "light"
+            "light",
+            "pillar"
         ],
         "bulb-group-bollard-3-off": [
             "calla",
             "exterior",
-            "light"
+            "light",
+            "pillar"
+        ],
+        "bulb-group-bollard-off": [
+            "calla",
+            "exterior",
+            "light",
+            "pillar"
         ],
         "bulb-group-bollard-wall-appear": [
             "exterior",
@@ -1731,6 +1746,14 @@
             "light"
         ],
         "wall-appear-group": [
+            "exterior",
+            "light"
+        ],
+        "wall-appear-group-off": [
+            "exterior",
+            "light"
+        ],
+        "wall-appear-off": [
             "exterior",
             "light"
         ],
