@@ -6,7 +6,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/arallsopp/hass-hue-icons)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/arallsopp/hass-hue-icons?label=community%20requests%20met)](https://github.com/arallsopp/hass-hue-icons/issues?q=is%3Aclosed)
 [![Man Hours](https://img.shields.io/endpoint?url=https%3A%2F%2Fmh.jessemillar.com%2Fhours%3Frepo%3Dhttps%3A%2F%2Fgithub.com%2Farallsopp%2Fhass-hue-icons.git)](https://jessemillar.com/r/man-hours)
-[![GH-downloads](https://img.shields.io/github/downloads/arallsopp/hass-hue-icons/total?style=flat-square)](https://github.com/arallsopp/hass-hue-icons/releases)
+
 
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
