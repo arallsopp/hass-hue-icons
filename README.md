@@ -4,7 +4,7 @@
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 ![GitHub file size in bytes](https://img.shields.io/github/size/arallsopp/hass-hue-icons/dist/hass-hue-icons.js?label=plugin%20size)
 ![GitHub last commit](https://img.shields.io/github/last-commit/arallsopp/hass-hue-icons)
-[![GitHub closed issues by-label](https://img.shields.io/github/issues-closed/arallsopp/hass-hue-icons/icon%20request?label=community%20requests)](https://github.com/arallsopp/issues?q=is%3Aclosed+label%3A"icon+request")
+[![GitHub closed issues by-label](https://img.shields.io/github/issues-closed/arallsopp/hass-hue-icons/icon%20request?label=community%20requests)](https://github.com/arallsopp/hass-hue-icons/issues?q=is%3Aclosed+label%3A"icon+request")
 [![Man Hours](https://img.shields.io/endpoint?url=https%3A%2F%2Fmh.jessemillar.com%2Fhours%3Frepo%3Dhttps%3A%2F%2Fgithub.com%2Farallsopp%2Fhass-hue-icons.git)](https://jessemillar.com/r/man-hours)
 
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
