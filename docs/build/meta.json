@@ -1079,10 +1079,22 @@
         "motion-sensor-luminance-alt": [
             "pir"
         ],
+        "motion-sensor-luminance-alt-off": [
+            "pir"
+        ],
+        "motion-sensor-luminance-off": [
+            "pir"
+        ],
         "motion-sensor-movement": [
             "pir"
         ],
+        "motion-sensor-movement-off": [
+            "pir"
+        ],
         "motion-sensor-temperature": [
+            "pir"
+        ],
+        "motion-sensor-temperature-off": [
             "pir"
         ],
         "outdoor-motion-sensor": [

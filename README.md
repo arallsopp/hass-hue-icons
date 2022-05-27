@@ -4,9 +4,8 @@
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 ![GitHub file size in bytes](https://img.shields.io/github/size/arallsopp/hass-hue-icons/dist/hass-hue-icons.js?label=plugin%20size)
 ![GitHub last commit](https://img.shields.io/github/last-commit/arallsopp/hass-hue-icons)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/arallsopp/hass-hue-icons?label=community%20requests%20met)](https://github.com/arallsopp/hass-hue-icons/issues?q=is%3Aclosed)
+[![GitHub closed issues by-label](https://img.shields.io/github/issues-closed/arallsopp/hass-hue-icons/icon%20request?label=community%20requests)](https://github.com/arallsopp/issues?q=is%3Aclosed+label%3A"icon+request")
 [![Man Hours](https://img.shields.io/endpoint?url=https%3A%2F%2Fmh.jessemillar.com%2Fhours%3Frepo%3Dhttps%3A%2F%2Fgithub.com%2Farallsopp%2Fhass-hue-icons.git)](https://jessemillar.com/r/man-hours)
-
 
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
@@ -119,7 +118,7 @@ hass-hue-icons includes 72 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons)
 
 ### User Requested Hue Icons
-hass-hue-icons includes 379 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request.
+hass-hue-icons includes 383 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request.
 
 [//]: # (Start Custom Icons)
 
@@ -240,8 +239,10 @@ hass-hue-icons includes 379 custom icons designed by the author for specific hue
 | ![hue:lily-two-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily-two-off.svg)| hue:lily-two-off | ![hue:lily-two](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily-two.svg)| hue:lily-two |
 | ![hue:lily-xl](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily-xl.svg)| hue:lily-xl | ![hue:lily](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily.svg)| hue:lily |
 | ![hue:logo-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/logo-alt.svg)| hue:logo-alt | ![hue:logo](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/logo.svg)| hue:logo |
-| ![hue:motion-sensor-luminance-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/motion-sensor-luminance-alt.svg)| hue:motion-sensor-luminance-alt | ![hue:motion-sensor-luminance](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/motion-sensor-luminance.svg)| hue:motion-sensor-luminance |
-| ![hue:motion-sensor-movement](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/motion-sensor-movement.svg)| hue:motion-sensor-movement | ![hue:motion-sensor-temperature](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/motion-sensor-temperature.svg)| hue:motion-sensor-temperature |
+| ![hue:motion-sensor-luminance-alt-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/motion-sensor-luminance-alt-off.svg)| hue:motion-sensor-luminance-alt-off | ![hue:motion-sensor-luminance-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/motion-sensor-luminance-alt.svg)| hue:motion-sensor-luminance-alt |
+| ![hue:motion-sensor-luminance-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/motion-sensor-luminance-off.svg)| hue:motion-sensor-luminance-off | ![hue:motion-sensor-luminance](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/motion-sensor-luminance.svg)| hue:motion-sensor-luminance |
+| ![hue:motion-sensor-movement-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/motion-sensor-movement-off.svg)| hue:motion-sensor-movement-off | ![hue:motion-sensor-movement](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/motion-sensor-movement.svg)| hue:motion-sensor-movement |
+| ![hue:motion-sensor-temperature-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/motion-sensor-temperature-off.svg)| hue:motion-sensor-temperature-off | ![hue:motion-sensor-temperature](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/motion-sensor-temperature.svg)| hue:motion-sensor-temperature |
 | ![hue:outdoor-motion-sensor-temperature](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/outdoor-motion-sensor-temperature.svg)| hue:outdoor-motion-sensor-temperature | ![hue:pedestal-econic](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pedestal-econic.svg)| hue:pedestal-econic |
 | ![hue:pendant-being](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pendant-being.svg)| hue:pendant-being | ![hue:pendant-cher-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pendant-cher-off.svg)| hue:pendant-cher-off |
 | ![hue:pendant-cher](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pendant-cher.svg)| hue:pendant-cher | ![hue:pendant-devote-solid](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/pendant-devote-solid.svg)| hue:pendant-devote-solid |
