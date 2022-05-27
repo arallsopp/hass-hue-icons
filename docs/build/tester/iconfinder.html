@@ -28,8 +28,8 @@
 <div id="outer">
     <div layout-padding="">
         <md-card>
-            <md-card-title>
-                <md-card-title-text>
+            <md-card-title layout="row">
+                <md-card-title-text flex="">
                     <span class="md-headline">
                         <span data-ng-if="!externalLibrary">Hass Hue Icons </span>
                         <span data-ng-if="externalLibrary">Icon Library </span>
@@ -38,12 +38,36 @@
                     <span class="md-subhead">Use the search box below to look for
                          <span data-ng-if="!externalLibrary">a fixture name, bulb type or keyword</span>
                          <span data-ng-if="externalLibrary">an icon by name or keyword</span>
-                         <div data-ng-if="mapName">
-                            The cheat sheet is using an <a data-ng-href="{{externalLibrary}}" target="_blank">external script</a>.
-                            To revert to hass-hue-icons, click <a href="iconfinder.html">here</a>.
+                        <div data-ng-if="mapName">
+                            <p>
+                            <span data-ng-if="activeExternalLibrary">
+                                The cheat sheet is using <strong><a ng-href="{{activeExternalLibrary.repo}}">{{activeExternalLibrary.name}}</a></strong> by {{activeExternalLibrary.author}}.
+                            </span>
+                            <span data-ng-if="!activeExternalLibrary">
+                                The cheat sheet is using an <a data-ng-href="{{externalLibrary}}" target="_blank">external script</a>.
+                            </span>To revert to hass-hue-icons, click <a href="iconfinder.html">here</a>.
                         </div>
                     </span>
                 </md-card-title-text>
+                <md-menu>
+                    <md-button aria-label="Open library interactions menu" ng-click="openMenu($mdMenu, $event)">
+                        Load Another Library
+                    </md-button>
+                    <md-menu-content>
+                        <md-menu-item data-ng-repeat="lib in supportedLibraries">
+                            <md-button ng-click="newWindow(lib)">
+                                <strong>{{lib.name}}</strong> by {{lib.author}}
+                            </md-button>
+                        </md-menu-item>
+
+                        <md-menu-divider data-ng-if="mapName"></md-menu-divider>
+                        <md-menu-item data-ng-if="mapName">
+                            <md-button ng-click="newWindow()">
+                                <strong>Hass Hue Icons</strong> by arallsopp
+                            </md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
             </md-card-title>
             <md-card-content>
                 <md-input-container class="md-block" flex="">
