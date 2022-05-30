@@ -188,16 +188,20 @@
             "infrastructure"
         ],
         "bulb-br30": [
-            "light"
+            "light",
+            "spot"
         ],
         "bulb-br30-hung": [
-            "light"
+            "light",
+            "spot"
         ],
         "bulb-br30-hung-off": [
-            "light"
+            "light",
+            "spot"
         ],
         "bulb-br30-off": [
-            "light"
+            "light",
+            "spot"
         ],
         "bulb-candle": [
             "light",
@@ -1696,60 +1700,68 @@
             "light"
         ],
         "sync-box": [
-            "infrastructure",
-            "light"
+            "light",
+            "media"
         ],
         "sync-box-alt": [
-            "infrastructure",
-            "light"
+            "light",
+            "media"
         ],
         "sync-box-alt-off": [
-            "light"
+            "light",
+            "media"
         ],
         "sync-box-off": [
-            "light"
+            "light",
+            "media"
         ],
         "sync-high": [
-            "infrastructure",
-            "light"
+            "light",
+            "media"
         ],
         "sync-high-off": [
-            "light"
+            "light",
+            "media"
         ],
         "sync-intense": [
-            "infrastructure",
-            "light"
+            "light",
+            "media"
         ],
         "sync-intense-off": [
-            "light"
+            "light",
+            "media"
         ],
         "sync-moderate": [
-            "infrastructure",
-            "light"
+            "light",
+            "media"
         ],
         "sync-moderate-off": [
-            "light"
+            "light",
+            "media"
         ],
         "sync-music": [
-            "infrastructure",
-            "light"
+            "light",
+            "media"
         ],
         "sync-music-alt": [
-            "infrastructure",
-            "light"
+            "light",
+            "media"
         ],
         "sync-music-alt-off": [
-            "light"
+            "light",
+            "media"
         ],
         "sync-music-off": [
-            "light"
+            "light",
+            "media"
         ],
         "sync-subtle": [
-            "infrastructure",
-            "light"
+            "light",
+            "media"
         ],
         "sync-subtle-off": [
-            "light"
+            "light",
+            "media"
         ],
         "table-cylinder-lamp": [
             "light"
@@ -1759,6 +1771,7 @@
             "light"
         ],
         "table-wash": [
+            "floor",
             "light"
         ],
         "tap": [
@@ -1766,6 +1779,7 @@
             "switch"
         ],
         "upstairs": [
+            "area",
             "light"
         ],
         "wall-appear": [
