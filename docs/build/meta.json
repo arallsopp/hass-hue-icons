@@ -154,6 +154,18 @@
             "light",
             "table"
         ],
+        "bloom-group-off": [
+            "floor",
+            "light",
+            "light",
+            "table"
+        ],
+        "bloom-off": [
+            "floor",
+            "light",
+            "light",
+            "table"
+        ],
         "bollard": [
             "calla",
             "exterior",
@@ -170,6 +182,9 @@
             "infrastructure"
         ],
         "bridge-v2": [
+            "infrastructure"
+        ],
+        "bridge-v2-off": [
             "infrastructure"
         ],
         "bulb-br30": [
