@@ -211,6 +211,18 @@ class IconLibrary{
         $return_string .= '<hr/><em>README.md</em><pre>' . $readme . '</pre>';
         return $return_string;
     }
+    private function flag_if_more_than_two_decimal_places($item_path,$name){
+        //find any coords in the path that exceed 2dp
+        $re = '/\.\d{3,10}/m';
+        preg_match_all($re, $item_path, $matches, PREG_SET_ORDER, 0);
+
+        //go through each and round them.
+        if(sizeof($matches)){
+            echo '<h2>Re-save ' . $name . '</h2>';
+        }
+
+        return $item_path;
+    }
 
     public function read_files($path,$debug = false) {
         if($debug) echo 'reading <em>' . $path . '</em>';
@@ -243,6 +255,7 @@ class IconLibrary{
                     //clean the spaces out.
                     $item_path = str_replace(array("\r", "\n", "\t"), ' ', $item->path);
                     $item_path = str_replace("  "," ",$item_path);
+                    $item_path = $this->flag_if_more_than_two_decimal_places($item_path,$name);
                     $optimised_output = '<svg viewBox="0 0 24 24" height="24px" width="24px" fill="#44739e" xmlns="http://www.w3.org/2000/svg"><title>hue:' . $item->name . '</title><desc>Source: https://github.com/arallsopp/hass-hue-icons</desc><path d="' . $item_path . '"/></svg>';
                     if ($content !== $optimised_output) {
                         file_put_contents($file, $optimised_output);
