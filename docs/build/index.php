@@ -256,7 +256,7 @@ class IconLibrary{
                     $item_path = str_replace(array("\r", "\n", "\t"), ' ', $item->path);
                     $item_path = str_replace("  "," ",$item_path);
                     $item_path = $this->flag_if_more_than_two_decimal_places($item_path,$name);
-                    $optimised_output = '<svg viewBox="0 0 24 24" height="24px" width="24px" fill="#44739e" xmlns="http://www.w3.org/2000/svg"><title>hue:' . $item->name . '</title><desc>Source: https://github.com/arallsopp/hass-hue-icons</desc><path d="' . $item_path . '"/></svg>';
+                    $optimised_output = '<svg viewBox="0 0 24 24" fill="#44739e" xmlns="http://www.w3.org/2000/svg"><title>hue:' . $item->name . '</title><desc>Source: https://github.com/arallsopp/hass-hue-icons</desc><path d="' . $item_path . '"/></svg>';
                     if ($content !== $optimised_output) {
                         file_put_contents($file, $optimised_output);
                     }
