@@ -1693,19 +1693,24 @@
             "light"
         ],
         "scene-concentrate": [
-            "app","mood"
+            "app",
+            "mood"
         ],
         "scene-energize": [
-            "app","mood"
+            "app",
+            "mood"
         ],
         "scene-nightlight": [
-            "app","mood"
+            "app",
+            "mood"
         ],
         "scene-read": [
-            "app","mood"
+            "app",
+            "mood"
         ],
         "scene-relax": [
-            "app","mood"
+            "app",
+            "mood"
         ],
         "signe": [
             "light"
