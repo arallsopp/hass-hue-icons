@@ -272,6 +272,10 @@
             "light",
             "retro"
         ],
+        "bulb-filament-candle-hung": [
+            "light",
+            "retro"
+        ],
         "bulb-filament-hung": [
             "g40",
             "light",
@@ -438,6 +442,10 @@
             "retro"
         ],
         "bulb-group-filament-candle": [
+            "light",
+            "retro"
+        ],
+        "bulb-group-filament-candle-hung": [
             "light",
             "retro"
         ],
