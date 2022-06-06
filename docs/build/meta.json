@@ -1692,6 +1692,21 @@
         "sana-alt": [
             "light"
         ],
+        "scene-concentrate": [
+            "app","mood"
+        ],
+        "scene-energize": [
+            "app","mood"
+        ],
+        "scene-nightlight": [
+            "app","mood"
+        ],
+        "scene-read": [
+            "app","mood"
+        ],
+        "scene-relax": [
+            "app","mood"
+        ],
         "signe": [
             "light"
         ],
