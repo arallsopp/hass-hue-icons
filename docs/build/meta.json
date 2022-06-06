@@ -444,7 +444,11 @@
         "bulb-group-filament-candle": [
             "light",
             "retro"
-        ]
+        ],
+        "bulb-group-filament-candles": [
+            "light",
+            "retro"
+        ],
         "bulb-group-filament-candles-hung": [
             "light",
             "retro"
