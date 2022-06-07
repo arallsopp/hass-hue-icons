@@ -7,19 +7,16 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
         $scope.supportedLibraries = [{
             name: 'bha-icons',
             url: 'https://cdn.jsdelivr.net/gh/hulkhaugen/hass-bha-icons/dist/hass-bha-icons.js',
-            map: 'BHA_ICONS_MAP',
             author: 'hulkhaugen',
             repo: 'https://github.com/hulkhaugen/hass-bha-icons'
         }, {
             name: 'crypto-icons',
             url: 'https://cdn.jsdelivr.net/gh/GH2user/hass-crypto-icons/dist/hass-crypto-icons.js',
-            map: 'CRYPTO_ICONS_MAP',
             author: 'GH2user',
             repo: 'https://github.com/GH2user/hass-crypto-icons'
         }, {
             name: 'custom-icons',
             url: 'https://cdn.jsdelivr.net/gh/Mariusthvdb/custom-icons/custom-icons.js',
-            map: 'CUSTOM_ICONS_MAP',
             author: 'Mariusthvdb',
             repo: 'https://github.com/Mariusthvdb/custom-icons'
         }];
@@ -40,8 +37,6 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
                 console.log('loading external library');
 
                 $scope.externalLibrary = params.get('library');
-                $scope.mapName = params.get('map');
-
                 $scope.activeExternalLibrary = $scope.supportedLibraries.find(lib => lib.url == $scope.externalLibrary);
 
                 $scope.loadExternalIconLibrary();
@@ -100,7 +95,6 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
         $scope.loadExternalIconLibrary = function () {
 
             var scriptEl = document.createElement('script');
-
             console.log('starting');
 
             scriptEl.setAttribute('src', $scope.externalLibrary);
@@ -108,55 +102,39 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             scriptEl.onload = function ($scope) {
                 var scope = angular.element(document.querySelector('#outer')).scope();
                 scope.$apply(function () {
-                    scope.importFromVariableScript();
+                    scope.importFromScript();
                 });
             };
             document.head.appendChild(scriptEl);
         };
 
-        $scope.importFromVariableScript = function () {
-            /* BASED ON scope.importFromScript which is neater */
-            console.log('importing from variable script');
-
-            let icons = [];
-            for (const icon in eval($scope.mapName)) {
-                let keywords = eval($scope.mapName)[icon].keywords,
-                    aliases = keywords
-                        ? keywords.join(', ')
-                        : '',
-                    path_prop = eval($scope.mapName)[icon].path,
-                    path = path_prop
-                        ? path_prop
-                        : eval($scope.mapName)[icon];
-
-                icons.push({
-                    name: icon,
-                    path: path,
-                    keywords: keywords,
-                    aliases: aliases,
-                    value: icon + ' ' + aliases.toLowerCase()
-                });
-            }
-            $scope.icons = icons;
-        };
-
-
         $scope.importFromScript = function () {
             console.log('importing!');
-            let icons = [];
-            for (const icon in HUE_ICONS_MAP) {
-                let keywords = HUE_ICONS_MAP[icon].keywords,
-                    aliases = keywords.join(', ');
 
-                icons.push({
-                    name: icon,
-                    path: HUE_ICONS_MAP[icon].path,
-                    keywords: keywords,
-                    aliases: aliases,
-                    value: 'hue:' + icon + ' ' + aliases.toLowerCase()
-                });
-            }
-            $scope.icons = icons;
+            //new method for getting icons back, without knowing the name of the map
+            $scope.icons = [];
+            let icon_list = getIconList(); // is a promise
+            icon_list.then(function(my_list){
+                for(const icon in my_list){
+                    let this_icon = getIcon(my_list[icon].name); //is a promise
+                    this_icon.then(function(my_icon){
+                        console.log('adding', my_list[icon].name);
+                        let keywords = my_list[icon].keywords,
+                            aliases = keywords
+                                ? keywords.join(', ')
+                                : '';
+
+                        $scope.icons.push({
+                            name:my_list[icon].name,
+                            path: my_icon.path,
+                            keywords:keywords,
+                            aliases: aliases,
+                            value: ('hue:' + my_list[icon].name + ' ' + aliases).toLowerCase()
+                        });
+                        $scope.$applyAsync();
+                    })
+                }
+            });
         };
 
 
@@ -183,7 +161,7 @@ app.controller('AppCtrl', ['$scope', '$http','$mdToast',
             if (typeof library === "undefined"){
                 window.open('iconfinder.html');
             }else{
-            window.open('iconfinder.html?library=' + library.url + '&map=' + library.map);
+            window.open('iconfinder.html?library=' + library.url);
             }
         }
 

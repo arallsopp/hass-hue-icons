@@ -38,7 +38,7 @@
                     <span class="md-subhead">Use the search box below to look for
                          <span data-ng-if="!externalLibrary">a fixture name, bulb type or keyword</span>
                          <span data-ng-if="externalLibrary">an icon by name or keyword</span>
-                        <div data-ng-if="mapName">
+                        <div data-ng-if="externalLibrary">
                             <p>
                             <span data-ng-if="activeExternalLibrary">
                                 The cheat sheet is using <strong><a ng-href="{{activeExternalLibrary.repo}}">{{activeExternalLibrary.name}}</a></strong> by {{activeExternalLibrary.author}}.
@@ -60,8 +60,8 @@
                             </md-button>
                         </md-menu-item>
 
-                        <md-menu-divider data-ng-if="mapName"></md-menu-divider>
-                        <md-menu-item data-ng-if="mapName">
+                        <md-menu-divider data-ng-if="externalLibrary"></md-menu-divider>
+                        <md-menu-item data-ng-if="externalLibrary">
                             <md-button ng-click="newWindow()">
                                 <strong>Hass Hue Icons</strong> by arallsopp
                             </md-button>
@@ -80,7 +80,7 @@
                                data-ng-if="searchTerm"
                                data-ng-click="copyDirectLink()">Copy direct link to this search</md-button>
                 </md-input-container>
-                <div data-ng-if="!mapName">
+                <div data-ng-if="!externalLibrary">
                     Examples:
                     <md-button class="md-raised btn-xs md-primary" data-ng-click="updateSearchTerm('spot')">spot</md-button>
                     <md-button class="md-raised btn-xs md-primary" data-ng-click="updateSearchTerm('pendant')">pendant</md-button>
@@ -99,7 +99,7 @@
                      class="no-margin-card">
                 <md-card-title>
                     <md-card-title-text>
-                        <span class="md-headline"><span data-ng-if="!mapName">hue:</span>{{icon.name}}</span>
+                        <span class="md-headline"><span data-ng-if="!externalLibrary">hue:</span>{{icon.name}}</span>
                         <span class="md-subhead">{{icon.aliases}}</span>
                     </md-card-title-text>
                     <md-card-title-media>
