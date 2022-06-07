@@ -118,7 +118,7 @@ hass-hue-icons includes 72 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons)
 
 ### User Requested Hue Icons
-hass-hue-icons includes 398 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request.
+hass-hue-icons includes 400 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request.
 
 [//]: # (Start Custom Icons)
 
@@ -291,7 +291,8 @@ hass-hue-icons includes 398 custom icons designed by the author for specific hue
 | ![hue:room-storage-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/room-storage-off.svg)| hue:room-storage-off | ![hue:room-studio-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/room-studio-off.svg)| hue:room-studio-off |
 | ![hue:room-terrace-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/room-terrace-off.svg)| hue:room-terrace-off | ![hue:room-toilet-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/room-toilet-off.svg)| hue:room-toilet-off |
 | ![hue:sana-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/sana-alt.svg)| hue:sana-alt | ![hue:sana](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/sana.svg)| hue:sana |
-| ![hue:scene-concentrate](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/scene-concentrate.svg)| hue:scene-concentrate | ![hue:scene-energize](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/scene-energize.svg)| hue:scene-energize |
+| ![hue:scene-bright](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/scene-bright.svg)| hue:scene-bright | ![hue:scene-concentrate](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/scene-concentrate.svg)| hue:scene-concentrate |
+| ![hue:scene-dimmed](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/scene-dimmed.svg)| hue:scene-dimmed | ![hue:scene-energize](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/scene-energize.svg)| hue:scene-energize |
 | ![hue:scene-nightlight](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/scene-nightlight.svg)| hue:scene-nightlight | ![hue:scene-read](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/scene-read.svg)| hue:scene-read |
 | ![hue:scene-relax](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/scene-relax.svg)| hue:scene-relax | ![hue:signe-gradient-floor](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/signe-gradient-floor.svg)| hue:signe-gradient-floor |
 | ![hue:signe-gradient-table](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/signe-gradient-table.svg)| hue:signe-gradient-table | ![hue:signe](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/signe.svg)| hue:signe |

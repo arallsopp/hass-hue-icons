@@ -1692,7 +1692,15 @@
         "sana-alt": [
             "light"
         ],
+        "scene-bright": [
+            "app",
+            "mood"
+        ],
         "scene-concentrate": [
+            "app",
+            "mood"
+        ],
+        "scene-dimmed": [
             "app",
             "mood"
         ],
