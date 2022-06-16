@@ -530,6 +530,15 @@
         "bulb-group-sultan-3-hung": [
             "light"
         ],
+        "bulb-group-sultan-3-hung-off": [
+            "light"
+        ],
+        "bulb-group-sultan-3-off": [
+            "light"
+        ],
+        "bulb-group-sultan-3-offf": [
+            "light"
+        ],
         "bulb-group-sultan-4": [
             "e26",
             "light"
