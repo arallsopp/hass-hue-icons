@@ -1045,6 +1045,9 @@
             "light",
             "table"
         ],
+        "go-portable-table": [
+            "light"
+        ],
         "gradient-lightstrip": [
             "led",
             "light"
