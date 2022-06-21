@@ -1853,6 +1853,10 @@
             "light",
             "switch"
         ],
+        "tap-dial": [
+            "light",
+            "switch"
+        ],
         "upstairs": [
             "area",
             "light"
