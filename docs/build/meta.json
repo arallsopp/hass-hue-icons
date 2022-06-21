@@ -1048,6 +1048,9 @@
         "go-portable-table": [
             "light"
         ],
+        "go-portable-table-alt": [
+            "light"
+        ],
         "gradient-lightstrip": [
             "led",
             "light"
