@@ -1235,6 +1235,11 @@
             "ceiling",
             "light"
         ],
+        "perifo-spot": [
+            "ceiling",
+            "light",
+            "track"
+        ],
         "phoenix-pendant": [
             "ceiling",
             "light"
