@@ -316,7 +316,7 @@ $myIconLibrary->custom_icon_set = $myIconLibrary->read_files('../custom_svgs/');
 
 echo '<p><b>RELEASE NOTES</b><br/><textarea style="height:40px">Thanks for the suggestion. As always, feel free to raise an [icon request](https://github.com/arallsopp/hass-hue-icons/issues/new/choose) for any other hue fixtures or combinations you\'re missing.</textarea></p>';
 echo '<p><b>FEATURE REQUEST NOTES</b><br/>
-      <textarea>Thanks. Its in release [v.' . $myIconLibrary->new_version . '](https://github.com/arallsopp/hass-hue-icons/releases/tag/v.' . $myIconLibrary->new_version .').' . PHP_EOL .
+      <textarea>Thanks. Its in release [v' . $myIconLibrary->new_version . '](https://github.com/arallsopp/hass-hue-icons/releases/tag/v.' . $myIconLibrary->new_version .').' . PHP_EOL .
       '### Want to help the community?' . PHP_EOL .
       'If you like what you see and want to help others discover this repo, please consider giving it a free star. Every one of the ' . sizeof($myIconLibrary->custom_icon_set) . ' custom icons has been driven by a community request just like yours, and stars help people find this repo.' . PHP_EOL .
       '### Want to get involved?' . PHP_EOL .
