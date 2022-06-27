@@ -1,6 +1,5 @@
-const HUE_ICON_KEYWORDS = ["bob","sue","fred"];
+const HUE_ICON_KEYWORDS = ["bathroom","light","wall","floor","ceiling","pendant","table","lamp","calla","exterior","pillar","infrastructure","spot","retro","g40","e26","g25","par38","sultan","aurelle","devere","enrave","surimu","milliskin","led","flood","bollard","gu10","switch","panel","area","music","room","spotify","sync","zone","philips","pir","track","tv","info","loft","bannister","shower","barbecue","double","garage","cupboard","pc","food","console","xbox","config","tools","bed","single","exercise","weights","coat","bear","toy","cook","utility","washing","lounge","settee","sofa","chaise","rocking","toys","chair","work","door","garden","trees","swim","games","ping","basement","upstairs","box","filing","easel","paint","picnic","wc","app","mood","media"];
 const HUE_ICONS_MAP = {
-
   "adore":{
     path:"M21.6,8.8H2.4C1.6,8.8,1,9.7,1,10.7v1.9c0,1.1,0.7,1.6,1.4,1.6h6.9c0,0,0,0,0,0.1v0.4c0,0.6,0.5,1.1,1.1,1.1 h3.3c0.6,0,1.1-0.5,1.1-1.1v-0.4c0,0,0,0,0-0.1h6.9c0.7,0,1.4-0.5,1.4-1.6v-1.9C23,9.7,22.4,8.8,21.6,8.8z M21.6,13.2H2.4 c-0.1,0-0.4,0-0.4-0.6c0-0.5,0.3-0.9,0.4-0.9h19.1c0.2,0,0.4,0.3,0.4,0.9C22,13.2,21.7,13.2,21.6,13.2z", 
     keywords: [0,1,2]

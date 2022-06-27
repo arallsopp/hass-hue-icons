@@ -116,8 +116,9 @@ class IconLibrary{
 
         $this->script_file_contents = file_get_contents($this->script_file_path);
 
+
         $re = '/const HUE_ICONS_MAP = {.*?};/s';
-        $subst = 'const HUE_ICONS_MAP = {' . PHP_EOL;
+        $subst = 'const HUE_ICONS_MAP = {';
 
 
         // combine the two objects
@@ -160,6 +161,11 @@ class IconLibrary{
                     : $this->version);
             $this->script_file_contents = preg_replace($re, $subst, $this->script_file_contents);
         }
+
+        // update the list of keywords
+        $re = '/const HUE_ICON_KEYWORDS = \[.*?\];/s';
+        $subst = 'const HUE_ICON_KEYWORDS = [' . sprintf('"%s"', implode('","', $this->keywords )) . '];';
+        $this->script_file_contents = preg_replace($re,$subst,$this->script_file_contents);
 
         $return_string .= '<hr/><em>Script</em><pre>' . $this->script_file_contents . '</pre>';
         file_put_contents($this->script_file_path,$this->script_file_contents);
