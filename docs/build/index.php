@@ -93,6 +93,15 @@ class IconLibrary{
 
     private function build_keywords($meta){
         /* todo: iterate meta looking for all unique keywords */
+        $keywords = [];
+        foreach ($meta->aliases as $aliases) {
+           foreach($aliases as $alias){
+               if(array_search($alias,$keywords) === false){
+                   array_push($keywords,$alias);
+               }
+           }
+        }
+        die(var_dump($keywords));
     }
     public function update_script(){
 

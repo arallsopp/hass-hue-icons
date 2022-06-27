@@ -1,12 +1,13 @@
+const HUE_ICON_KEYWORDS = ["bob","sue","fred"];
 const HUE_ICONS_MAP = {
 
   "adore":{
     path:"M21.6,8.8H2.4C1.6,8.8,1,9.7,1,10.7v1.9c0,1.1,0.7,1.6,1.4,1.6h6.9c0,0,0,0,0,0.1v0.4c0,0.6,0.5,1.1,1.1,1.1 h3.3c0.6,0,1.1-0.5,1.1-1.1v-0.4c0,0,0,0,0-0.1h6.9c0.7,0,1.4-0.5,1.4-1.6v-1.9C23,9.7,22.4,8.8,21.6,8.8z M21.6,13.2H2.4 c-0.1,0-0.4,0-0.4-0.6c0-0.5,0.3-0.9,0.4-0.9h19.1c0.2,0,0.4,0.3,0.4,0.9C22,13.2,21.7,13.2,21.6,13.2z", 
-    keywords: ["bathroom","light","wall"]
+    keywords: [1,2,3]
   },
   "adore-alt":{
     path:"M21.6,9.1H2.4C1.6,9.1,1,9.8,1,10.6v2.1c0,0.8,0.6,1.5,1.4,1.5h6.9c0,0,0,0,0,0.1c0,0.6,0.5,1.1,1.1,1.1h3.3 c0.6,0,1.1-0.5,1.1-1.1c0,0,0,0,0-0.1h6.9c0.8,0,1.4-0.7,1.4-1.5v-2.1C23,9.8,22.4,9.1,21.6,9.1z M21.6,13.2H2.4 C2.2,13.2,2,13,2,12.8c0-0.3,0.2-0.5,0.4-0.5h19.1c0.2,0,0.4,0.2,0.4,0.5C22,13,21.8,13.2,21.6,13.2z", 
-    keywords: ["bathroom","light","wall"]
+    keywords: [1,3]
   },
   "adore-alt-off":{
     path:"M1.49,3.24L7.35,9.1H2.4C1.6,9.1,1,9.8,1,10.6v2.1c0,0.8,0.6,1.5,1.4,1.5h6.9c0,0,0,0,0,0.1 c0,0.6,0.5,1.1,1.1,1.1h3.25l6.94,6.94l1.38-1.38L2.88,1.86L1.49,3.24z M2.4,13.2C2.2,13.2,2,13,2,12.8c0-0.3,0.2-0.5,0.4-0.5h8.15 l0.9,0.9H2.4z M21.6,9.1h-9.93l3.2,3.2h6.63c0.2,0,0.4,0.2,0.4,0.5c0.1,0.2-0.1,0.4-0.3,0.4h-5.83l1,1h4.93 c0.8,0,1.4-0.7,1.4-1.5v-2.1C23,9.8,22.4,9.1,21.6,9.1z", 
@@ -1945,7 +1946,7 @@ async function getIcon(name) {
 async function getIconList() {
   return Object.entries(HUE_ICONS_MAP).map(([icon, content]) => ({
     name: icon,
-    keywords: content.keywords
+    keywords: HUE_ICON_KEYWORDS.filter(function(word,index){return content.keywords.includes(index)})
   }));
 }
 window.customIcons = window.customIcons || {};
