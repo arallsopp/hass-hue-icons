@@ -30,6 +30,7 @@ class IconLibrary{
     public $new_version;
     public $version;
     public $output_string_latest_icons = '';
+    private $keywords = [];
 
     public function __construct(){}
 
@@ -92,21 +93,26 @@ class IconLibrary{
     }
 
     private function build_keywords($meta){
-        /* todo: iterate meta looking for all unique keywords */
-        $keywords = [];
+        $this->keywords = [];
         foreach ($meta->aliases as $aliases) {
            foreach($aliases as $alias){
-               if(array_search($alias,$keywords) === false){
-                   array_push($keywords,$alias);
+               if(array_search($alias,$this->keywords) === false){
+                   array_push($this->keywords,$alias);
                }
            }
         }
-        die(var_dump($keywords));
     }
+    private function get_indices_from_keywords($aliases){
+        $indices = [];
+        foreach($aliases as $alias){
+            array_push($indices,array_search($alias,$this->keywords));
+        }
+        return $indices;
+    }
+
     public function update_script(){
 
         $return_string = '';
-        $entity_table = '<table border="1">';
 
         $this->script_file_contents = file_get_contents($this->script_file_path);
 
@@ -122,7 +128,8 @@ class IconLibrary{
         $meta = json_decode(file_get_contents('meta.json'));
 
         // build a unique set of keywords used
-        $keywords = $this->build_keywords($meta);
+        $this->build_keywords($meta);
+
 
         //output all icons
         foreach ($full_set as $icon) {
@@ -132,10 +139,10 @@ class IconLibrary{
             }
             $icon_aliases = $meta->aliases->{$icon->name};
             $icon_aliases_as_array_vals = sprintf('"%s"', implode('","', $icon_aliases ) );
-            $subst .= PHP_EOL . '  "' . $icon->name . '":{' . PHP_EOL . '    path:"' . $icon->path . '", ' . PHP_EOL . '    keywords: [' . $icon_aliases_as_array_vals . ']' . PHP_EOL . '  },';
+            $icon_aliases_as_indices = $this->get_indices_from_keywords($icon_aliases);
+            $icon_aliases_as_array_vals = implode(',', $icon_aliases_as_indices );
 
-            //update entity table
-            $entity_table .= '<tr' . ($icon_aliases_as_array_vals == '"light"' ? ' style="background:#f3d1d1"' : '') . '><td><img src="../' . (file_exists( '../svgs/' . $icon->name . '.svg') ? 'svgs/'  : 'custom_svgs/') . $icon->name . '.svg"</td><th>' . $icon->name . '</th><td>' . $icon_aliases_as_array_vals . '</td></tr>';
+            $subst .= PHP_EOL . '  "' . $icon->name . '":{' . PHP_EOL . '    path:"' . $icon->path . '", ' . PHP_EOL . '    keywords: [' . $icon_aliases_as_array_vals . ']' . PHP_EOL . '  },';
 
         }
 
@@ -159,9 +166,6 @@ class IconLibrary{
         $meta = $this->sort_the_meta($meta);
 
         file_put_contents('meta.json',json_encode($meta,JSON_PRETTY_PRINT));
-
-        $return_string .= '<h2>Entity Table</h2>' . $entity_table . '</table>';
-        return $return_string;
     }
 
     private function sort_the_meta($meta){
