@@ -1,10 +1,12 @@
 <?php
 // Run this to regenerate the documentation and script from svgs in the svg and custom_svg folders
 
-/* todo: as you parse meta.json, generate a list of unique keywords
+/* done: as you parse meta.json, generate a list of unique keywords
          matching in the array, or adding a new one for each.
          store the index of each against the icon as you go for the script.
          dump the keywords array at the top of the script (
+
+  findings: NO. THE GZ COMPRESSOR BUILT INTO HA ALREADY MANAGES BETTER THAN THIS. NO POINT. ABANDONING.
  */
 
 class HassHueIcon{
