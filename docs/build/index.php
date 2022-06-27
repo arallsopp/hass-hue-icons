@@ -1,6 +1,12 @@
 <?php
 // Run this to regenerate the documentation and script from svgs in the svg and custom_svg folders
 
+/* todo: as you parse meta.json, generate a list of unique keywords
+         matching in the array, or adding a new one for each.
+         store the index of each against the icon as you go for the script.
+         dump the keywords array at the top of the script (
+ */
+
 class HassHueIcon{
     public $path;
     public $name;
@@ -85,6 +91,9 @@ class IconLibrary{
         $this->version = $matches[0][1];
     }
 
+    private function build_keywords($meta){
+        /* todo: iterate meta looking for all unique keywords */
+    }
     public function update_script(){
 
         $return_string = '';
@@ -103,6 +112,9 @@ class IconLibrary{
         // read in the meta data for aliases
         $meta = json_decode(file_get_contents('meta.json'));
 
+        // build a unique set of keywords used
+        $keywords = $this->build_keywords($meta);
+
         //output all icons
         foreach ($full_set as $icon) {
             //see if it has an alias
@@ -115,9 +127,6 @@ class IconLibrary{
 
             //update entity table
             $entity_table .= '<tr' . ($icon_aliases_as_array_vals == '"light"' ? ' style="background:#f3d1d1"' : '') . '><td><img src="../' . (file_exists( '../svgs/' . $icon->name . '.svg') ? 'svgs/'  : 'custom_svgs/') . $icon->name . '.svg"</td><th>' . $icon->name . '</th><td>' . $icon_aliases_as_array_vals . '</td></tr>';
-
-            //todo: update the object here so that you have the meta?
-            //even better, make it build the properties logically, then spit out the file system changes, etc.
 
         }
 
