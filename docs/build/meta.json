@@ -1969,6 +1969,18 @@
             "exterior",
             "light"
         ],
+        "wall-lucca-alt-below-off": [
+            "exterior",
+            "light"
+        ],
+        "wall-lucca-alt-off": [
+            "exterior",
+            "light"
+        ],
+        "wall-lucca-off": [
+            "exterior",
+            "light"
+        ],
         "wall-nyro": [
             "exterior",
             "light"
