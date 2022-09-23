@@ -512,6 +512,10 @@
             "exterior",
             "light"
         ],
+        "bulb-group-recessed-ceiling": [
+            "light",
+            "spot"
+        ],
         "bulb-group-spot": [
             "gu10",
             "light"
@@ -579,6 +583,16 @@
             "light"
         ],
         "bulb-group-wall-nyro-flood-alt": [
+            "light",
+            "pendant"
+        ],
+        "bulb-lightguide-flask": [
+            "light"
+        ],
+        "bulb-lightguide-oval": [
+            "light"
+        ],
+        "bulb-lightguide-round": [
             "light"
         ],
         "bulb-par-38": [
@@ -1410,7 +1424,8 @@
             "info"
         ],
         "recessed-ceiling": [
-            "light"
+            "light",
+            "spot"
         ],
         "recessed-floor": [
             "light"
