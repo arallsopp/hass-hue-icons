@@ -480,6 +480,9 @@
         "bulb-group-go-sultan": [
             "light"
         ],
+        "bulb-group-go-sultan-off": [
+            "light"
+        ],
         "bulb-group-golfball-e14": [
             "light"
         ],
@@ -889,6 +892,9 @@
         "daylo-wall": [
             "light"
         ],
+        "daylo-wall-off": [
+            "light"
+        ],
         "desk-lamp": [
             "light",
             "table"
@@ -1218,7 +1224,15 @@
             "ceiling",
             "light"
         ],
+        "pendant-devote-solid-off": [
+            "ceiling",
+            "light"
+        ],
         "pendant-devote-three": [
+            "ceiling",
+            "light"
+        ],
+        "pendant-devote-three-off": [
             "ceiling",
             "light"
         ],
@@ -1226,11 +1240,23 @@
             "ceiling",
             "light"
         ],
+        "pendant-devote-three-solid-off": [
+            "ceiling",
+            "light"
+        ],
         "pendant-devote-two": [
             "ceiling",
             "light"
         ],
+        "pendant-devote-two-off": [
+            "ceiling",
+            "light"
+        ],
         "pendant-devote-two-solid": [
+            "ceiling",
+            "light"
+        ],
+        "pendant-devote-two-solid-off": [
             "ceiling",
             "light"
         ],
