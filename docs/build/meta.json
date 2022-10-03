@@ -1220,6 +1220,10 @@
             "ceiling",
             "light"
         ],
+        "pendant-devote-off": [
+            "ceiling",
+            "light"
+        ],
         "pendant-devote-solid": [
             "ceiling",
             "light"
