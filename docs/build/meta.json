@@ -331,6 +331,9 @@
             "exterior",
             "light"
         ],
+        "bulb-group-bollard-wall-appear-go": [
+            "light"
+        ],
         "bulb-group-br30": [
             "light",
             "spot"
