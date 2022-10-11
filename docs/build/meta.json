@@ -584,6 +584,9 @@
         "bulb-group-sultan-spot-off": [
             "light"
         ],
+        "bulb-group-wall-lucca": [
+            "light","exterior"
+        ],
         "bulb-group-wall-nyro-flood": [
             "exterior",
             "light"
