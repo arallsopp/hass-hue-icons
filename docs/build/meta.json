@@ -585,7 +585,8 @@
             "light"
         ],
         "bulb-group-wall-lucca": [
-            "light","exterior"
+            "exterior",
+            "light"
         ],
         "bulb-group-wall-nyro-flood": [
             "exterior",
