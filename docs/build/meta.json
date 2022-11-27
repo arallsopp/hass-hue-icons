@@ -936,6 +936,11 @@
             "sync",
             "zone"
         ],
+        "festivia": [
+            "light",
+            "christmas",
+            "string"
+        ],
         "floor-lantern": [
             "bollard",
             "exterior",
