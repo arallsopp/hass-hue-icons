@@ -118,7 +118,7 @@ hass-hue-icons includes 72 Hue icons modelled upon the Hue iOS app for personal 
 [//]: # (End Hue Icons)
 
 ### User Requested Hue Icons
-hass-hue-icons includes 428 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request.
+hass-hue-icons includes 430 custom icons designed by the author for specific hue fixtures and bulb combinations that aren't represented by the 'official' icon set. Each of these has been hand drawn in Illustrator and proposed in response to a community request.
 
 [//]: # (Start Custom Icons)
 
@@ -249,7 +249,8 @@ hass-hue-icons includes 428 custom icons designed by the author for specific hue
 | ![hue:liane](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/liane.svg)| hue:liane | ![hue:lightstrip-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lightstrip-off.svg)| hue:lightstrip-off |
 | ![hue:lightstrip-tv-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lightstrip-tv-alt.svg)| hue:lightstrip-tv-alt | ![hue:lightstrip-tv-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lightstrip-tv-off.svg)| hue:lightstrip-tv-off |
 | ![hue:lightstrip-tv](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lightstrip-tv.svg)| hue:lightstrip-tv | ![hue:lightstrip-wrap](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lightstrip-wrap.svg)| hue:lightstrip-wrap |
-| ![hue:lily-two-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily-two-off.svg)| hue:lily-two-off | ![hue:lily-two](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily-two.svg)| hue:lily-two |
+| ![hue:lily-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily-alt.svg)| hue:lily-alt | ![hue:lily-two-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily-two-off.svg)| hue:lily-two-off |
+| ![hue:lily-two](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily-two.svg)| hue:lily-two | ![hue:lily-xl-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily-xl-alt.svg)| hue:lily-xl-alt |
 | ![hue:lily-xl](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily-xl.svg)| hue:lily-xl | ![hue:lily](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/lily.svg)| hue:lily |
 | ![hue:logo-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/logo-alt.svg)| hue:logo-alt | ![hue:logo](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/logo.svg)| hue:logo |
 | ![hue:motion-sensor-luminance-alt-off](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/motion-sensor-luminance-alt-off.svg)| hue:motion-sensor-luminance-alt-off | ![hue:motion-sensor-luminance-alt](https://raw.githubusercontent.com/arallsopp/hass-hue-icons/main/docs/custom_svgs/motion-sensor-luminance-alt.svg)| hue:motion-sensor-luminance-alt |

@@ -1154,6 +1154,11 @@
             "light",
             "spot"
         ],
+        "lily-alt": [
+            "exterior",
+            "light",
+            "spot"
+        ],
         "lily-two": [
             "exterior",
             "light",
@@ -1165,6 +1170,11 @@
             "spot"
         ],
         "lily-xl": [
+            "exterior",
+            "light",
+            "spot"
+        ],
+        "lily-xl-alt": [
             "exterior",
             "light",
             "spot"
