@@ -1806,6 +1806,10 @@
             "app",
             "mood"
         ],
+        "scene-natural-light": [
+            "app",
+            "mood"
+        ],
         "scene-nightlight": [
             "app",
             "mood"
@@ -1815,6 +1819,10 @@
             "mood"
         ],
         "scene-relax": [
+            "app",
+            "mood"
+        ],
+        "scene-rest": [
             "app",
             "mood"
         ],
