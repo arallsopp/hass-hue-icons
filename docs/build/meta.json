@@ -1094,7 +1094,13 @@
         "gradient-tube-long": [
             "light"
         ],
+        "gradient-tube-long-off": [
+            "light"
+        ],
         "gradient-tube-short": [
+            "light"
+        ],
+        "gradient-tube-short-off": [
             "light"
         ],
         "home": [
@@ -1830,6 +1836,9 @@
             "light"
         ],
         "signe-gradient-floor": [
+            "light"
+        ],
+        "signe-gradient-floor-off": [
             "light"
         ],
         "signe-gradient-table": [
