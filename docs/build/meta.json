@@ -970,6 +970,9 @@
         "floor-spot": [
             "light"
         ],
+        "floor-spot-group": [
+            "light"
+        ],
         "floor-spot-off": [
             "light"
         ],
