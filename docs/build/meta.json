@@ -830,6 +830,14 @@
         "ceiling-square": [
             "aurelle",
             "light",
+            "light",
+            "panel",
+            "surimu"
+        ],
+        "ceiling-square-off": [
+            "aurelle",
+            "light",
+            "light",
             "panel",
             "surimu"
         ],
