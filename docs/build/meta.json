@@ -1315,6 +1315,11 @@
             "ceiling",
             "light"
         ],
+        "perifo-pendant": [
+            "ceiling",
+            "light",
+            "track"
+        ],
         "perifo-spot": [
             "ceiling",
             "light",

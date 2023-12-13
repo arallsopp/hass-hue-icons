@@ -335,5 +335,13 @@ echo $myIconLibrary->update_script();
         color:red;
     }
 </style>
+<hr/>
+<h3>Instructions:</h3>
+<ul>
+    <li>Create the icon</li>
+    <li>Run the build script</li>
+    <li>Use the script to generate comment and release notes</li>
+    <li>Be sure to include the JS file in the release</li>
+</ul>
 </body>
 </html>
