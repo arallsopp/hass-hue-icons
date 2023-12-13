@@ -340,6 +340,7 @@ echo $myIconLibrary->update_script();
 <ul>
     <li>Create the icon</li>
     <li>Run the build script</li>
+    <li>Remove any line breaks in the script or source image files.</li>
     <li>Use the script to generate comment and release notes</li>
     <li>Be sure to include the JS file in the release</li>
 </ul>
